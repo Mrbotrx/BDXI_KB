@@ -1,4 +1,5 @@
-<div align="center"><img src="https://raw.githubusercontent.com/Mrbotrx/bdxi_tv/main/kbctlogo.png" width="150" alt="BDXI IPTV M3U8 Playlist Logo">📺 BDXI_KB IPTV
+<div align="center"><img src="https://raw.githubusercontent.com/Mrbotrx/bdxi_tv/main/kbctlogo.png" width="150" alt="BDXI IPTV M3U8 Playlist Logo"> 
+        📺 BDXI_KB IPTV
 
 BDXI IPTV · M3U8 Playlist · Live TV
 
