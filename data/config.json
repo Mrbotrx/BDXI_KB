@@ -1,0 +1,14 @@
+{
+  "name": "KB IPTV",
+  "brand": "KB",
+  "india_limit": 250,
+  "country": {
+    "bangladesh": "BD",
+    "india": "IN"
+  },
+  "playlists": {
+    "bangladesh": "Bangladesh.m3u8",
+    "india": "India.m3u8",
+    "bdxi": "BDXI.m3u8"
+  }
+}
