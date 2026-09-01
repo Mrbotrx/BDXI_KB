@@ -1,19 +1,45 @@
 const fs = require("fs");
 const path = require("path");
 
+console.log("KB IPTV - Secure API Generator");
+
+/*
+ * ==========================================
+ * SECURE API CONFIG
+ * ==========================================
+ */
+
 const API = {
   channels: process.env.CHANNELS_API,
   streams: process.env.STREAMS_API,
   logos: process.env.LOGOS_API
 };
 
-const INDIA_LIMIT = 250;
+/*
+ * ==========================================
+ * OUTPUT DIRECTORY
+ * ==========================================
+ */
 
-const OUTPUT_DIR = path.join(
+const OUT_DIR = path.join(
   __dirname,
   "..",
   "playlists"
 );
+
+/*
+ * ==========================================
+ * INDIA LIMIT
+ * ==========================================
+ */
+
+const INDIA_LIMIT = 250;
+
+/*
+ * ==========================================
+ * CHECK SECRETS
+ * ==========================================
+ */
 
 for (const [name, url] of Object.entries(API)) {
   if (!url) {
@@ -23,6 +49,12 @@ for (const [name, url] of Object.entries(API)) {
   }
 }
 
+/*
+ * ==========================================
+ * HELPERS
+ * ==========================================
+ */
+
 function clean(value) {
   return String(value || "")
     .replace(/"/g, "'")
@@ -31,37 +63,38 @@ function clean(value) {
 }
 
 async function getJSON(url) {
+
   const response = await fetch(url, {
     headers: {
-      "User-Agent": "BDXI-KB-IPTV/1.0",
+      "User-Agent": "KB-IPTV/1.0",
       "Accept": "application/json"
     }
   });
 
   if (!response.ok) {
     throw new Error(
-      `API request failed: HTTP ${response.status}`
+      `API HTTP ${response.status}`
     );
   }
 
   return response.json();
 }
 
-/*
- * Country
- */
-
 function getCountry(channel) {
+
   return String(
     channel?.country || ""
   ).toUpperCase();
 }
 
 /*
- * Quality
+ * ==========================================
+ * QUALITY SCORE
+ * ==========================================
  */
 
 function qualityScore(stream) {
+
   const quality =
     clean(stream.quality)
       .toLowerCase();
@@ -79,10 +112,13 @@ function qualityScore(stream) {
 }
 
 /*
- * Remove known bad labels
+ * ==========================================
+ * BAD STREAM FILTER
+ * ==========================================
  */
 
 function isBad(stream) {
+
   const label =
     clean(stream.label)
       .toLowerCase();
@@ -95,10 +131,9 @@ function isBad(stream) {
 }
 
 /*
- * Popular channel priority
- *
- * This is a curated priority list.
- * Unknown channels still remain.
+ * ==========================================
+ * POPULAR CHANNELS
+ * ==========================================
  */
 
 const POPULAR = {
@@ -108,11 +143,6 @@ const POPULAR = {
     "Star Sports 2",
     "Star Sports 3",
     "Star Sports HD",
-    "Sony Sports 1",
-    "Sony Sports 2",
-    "Sony Sports 3",
-    "Sony Sports 4",
-    "Sony Sports 5",
     "Sony Sports Ten 1",
     "Sony Sports Ten 2",
     "Sony Sports Ten 3",
@@ -126,7 +156,6 @@ const POPULAR = {
     "Colors",
     "Colors Bangla",
     "Sony SAB",
-    "Sony Entertainment Television",
     "Sun TV",
     "Sun Music",
     "Asianet",
@@ -169,21 +198,31 @@ const POPULAR = {
 };
 
 /*
- * Normalize popular names
+ * ==========================================
+ * NORMALIZE NAME
+ * ==========================================
  */
 
 function normalizeName(value) {
+
   return clean(value)
     .toLowerCase()
     .replace(/[^a-z0-9]+/g, " ")
     .trim();
 }
 
+/*
+ * ==========================================
+ * POPULAR SCORE
+ * ==========================================
+ */
+
 function popularScore(
   channel,
   stream,
   countryCodes
 ) {
+
   const name =
     normalizeName(
       stream.title ||
@@ -193,19 +232,18 @@ function popularScore(
 
   let score = 0;
 
-  for (const code of countryCodes) {
+  for (const country of countryCodes) {
 
     const list =
-      POPULAR[code] || [];
+      POPULAR[country] || [];
 
     for (let i = 0; i < list.length; i++) {
 
       const popularName =
         normalizeName(list[i]);
 
-      if (
-        name === popularName
-      ) {
+      if (name === popularName) {
+
         score = Math.max(
           score,
           100000 - i
@@ -218,7 +256,9 @@ function popularScore(
 }
 
 /*
- * Logo map
+ * ==========================================
+ * LOGO MAP
+ * ==========================================
  */
 
 function makeLogoMap(logos) {
@@ -237,14 +277,11 @@ function makeLogoMap(logos) {
     const old =
       map.get(logo.channel);
 
-    /*
-     * Prefer in-use logo.
-     */
-
     if (
       !old ||
       logo.in_use === true
     ) {
+
       map.set(
         logo.channel,
         clean(logo.url)
@@ -256,9 +293,9 @@ function makeLogoMap(logos) {
 }
 
 /*
- * ========================================
- * BEST STREAM PER CHANNEL
- * ========================================
+ * ==========================================
+ * SELECT BEST STREAM
+ * ==========================================
  */
 
 function selectBest(
@@ -269,6 +306,10 @@ function selectBest(
 
   const channelMap = new Map();
 
+  /*
+   * Country filter
+   */
+
   for (const channel of channels) {
 
     const country =
@@ -277,12 +318,17 @@ function selectBest(
     if (
       countryCodes.includes(country)
     ) {
+
       channelMap.set(
         channel.id,
         channel
       );
     }
   }
+
+  /*
+   * Best stream per channel
+   */
 
   const best = new Map();
 
@@ -308,7 +354,7 @@ function selectBest(
     }
 
     /*
-     * Remove known bad labels
+     * Bad label filter
      */
 
     if (isBad(stream)) {
@@ -324,22 +370,25 @@ function selectBest(
       continue;
     }
 
-    const current = best.get(
-      channel.id
-    );
+    const current =
+      best.get(channel.id);
 
     if (!current) {
 
       best.set(
         channel.id,
         {
-          stream,
-          channel
+          channel,
+          stream
         }
       );
 
       continue;
     }
+
+    /*
+     * Popular priority
+     */
 
     const newPopular =
       popularScore(
@@ -355,10 +404,6 @@ function selectBest(
         countryCodes
       );
 
-    /*
-     * Popular stream wins
-     */
-
     if (
       newPopular > oldPopular
     ) {
@@ -366,8 +411,8 @@ function selectBest(
       best.set(
         channel.id,
         {
-          stream,
-          channel
+          channel,
+          stream
         }
       );
 
@@ -381,8 +426,7 @@ function selectBest(
     }
 
     /*
-     * Same popularity:
-     * highest quality wins.
+     * Quality priority
      */
 
     const newQuality =
@@ -400,20 +444,22 @@ function selectBest(
       best.set(
         channel.id,
         {
-          stream,
-          channel
+          channel,
+          stream
         }
       );
     }
   }
 
-  return [...best.values()];
+  return [
+    ...best.values()
+  ];
 }
 
 /*
- * ========================================
+ * ==========================================
  * SORT
- * ========================================
+ * ==========================================
  */
 
 function sortChannels(
@@ -440,6 +486,7 @@ function sortChannels(
     if (
       popularA !== popularB
     ) {
+
       return popularB - popularA;
     }
 
@@ -452,6 +499,7 @@ function sortChannels(
     if (
       qualityA !== qualityB
     ) {
+
       return qualityB - qualityA;
     }
 
@@ -474,9 +522,9 @@ function sortChannels(
 }
 
 /*
- * ========================================
- * M3U
- * ========================================
+ * ==========================================
+ * CREATE M3U8
+ * ==========================================
  */
 
 function createM3U(
@@ -495,7 +543,7 @@ function createM3U(
     `# KB IPTV - ${groupName}\n`;
 
   output +=
-    "# BEST + FAST\n";
+    "# BEST FAST PLAYLIST\n";
 
   output +=
     `# Total Channels: ${list.length}\n`;
@@ -531,7 +579,7 @@ function createM3U(
       getCountry(channel);
 
     let info =
-      `#EXTINF:-1`;
+      "#EXTINF:-1";
 
     info +=
       ` tvg-id="${id}"`;
@@ -540,6 +588,7 @@ function createM3U(
       ` tvg-name="${name}"`;
 
     if (logo) {
+
       info +=
         ` tvg-logo="${logo}"`;
     }
@@ -551,6 +600,7 @@ function createM3U(
       ` group-title="${groupName}"`;
 
     if (quality) {
+
       info +=
         ` tvg-quality="${quality}"`;
     }
@@ -562,7 +612,7 @@ function createM3U(
       `${info}\n`;
 
     /*
-     * Keep supplied headers
+     * Optional user-agent
      */
 
     if (stream.user_agent) {
@@ -570,6 +620,10 @@ function createM3U(
       output +=
         `#EXTVLCOPT:http-user-agent=${clean(stream.user_agent)}\n`;
     }
+
+    /*
+     * Optional referrer
+     */
 
     if (stream.referrer) {
 
@@ -585,43 +639,35 @@ function createM3U(
 }
 
 /*
- * ========================================
+ * ==========================================
  * MAIN
- * ========================================
+ * ==========================================
  */
 
 async function main() {
 
   console.log(
-    "===================================="
+    "KB IPTV - Secure API Generator"
   );
 
   console.log(
-    "       BDXI-KB BEST FAST IPTV"
+    "Loading API data..."
   );
 
-  console.log(
-    "       INDIA + BANGLADESH"
-  );
-
-  console.log(
-    "       INDIA MAX = 250"
-  );
-
-  console.log(
-    "===================================="
-  );
+  /*
+   * Make output directory
+   */
 
   fs.mkdirSync(
-    OUTPUT_DIR,
+    OUT_DIR,
     {
       recursive: true
     }
   );
 
-  console.log(
-    "Loading API..."
-  );
+  /*
+   * Download APIs
+   */
 
   const [
     channels,
@@ -638,18 +684,22 @@ async function main() {
   );
 
   console.log(
-    `Streams : ${streams.length}`
+    `Streams: ${streams.length}`
   );
 
   console.log(
-    `Logos   : ${logos.length}`
+    `Logos: ${logos.length}`
   );
 
   /*
-   * ======================================
+   * ========================================
    * BANGLADESH
-   * ======================================
+   * ========================================
    */
+
+  console.log(
+    "Generating Bangladesh..."
+  );
 
   const bd =
     selectBest(
@@ -663,27 +713,28 @@ async function main() {
     ["BD"]
   );
 
-  const bdM3U =
+  fs.writeFileSync(
+    path.join(
+      OUT_DIR,
+      "Bangladesh.m3u8"
+    ),
     createM3U(
       bd,
       logos,
       "Bangladesh"
-    );
-
-  fs.writeFileSync(
-    path.join(
-      OUTPUT_DIR,
-      "Bangladesh.m3u8"
     ),
-    bdM3U,
     "utf8"
   );
 
   /*
-   * ======================================
+   * ========================================
    * INDIA MAX 250
-   * ======================================
+   * ========================================
    */
+
+  console.log(
+    "Generating India MAX 250..."
+  );
 
   const india =
     selectBest(
@@ -703,27 +754,28 @@ async function main() {
       INDIA_LIMIT
     );
 
-  const indiaM3U =
+  fs.writeFileSync(
+    path.join(
+      OUT_DIR,
+      "India.m3u8"
+    ),
     createM3U(
       india250,
       logos,
       "India"
-    );
-
-  fs.writeFileSync(
-    path.join(
-      OUTPUT_DIR,
-      "India.m3u8"
     ),
-    indiaM3U,
     "utf8"
   );
 
   /*
-   * ======================================
+   * ========================================
    * BDXI = INDIA + BANGLADESH
-   * ======================================
+   * ========================================
    */
+
+  console.log(
+    "Generating BDXI India + Bangladesh..."
+  );
 
   const bdxi =
     selectBest(
@@ -737,25 +789,28 @@ async function main() {
     ["BD", "IN"]
   );
 
-  const bdxiM3U =
+  fs.writeFileSync(
+    path.join(
+      OUT_DIR,
+      "BDXI.m3u8"
+    ),
     createM3U(
       bdxi,
       logos,
       "BDXI"
-    );
-
-  fs.writeFileSync(
-    path.join(
-      OUTPUT_DIR,
-      "BDXI.m3u8"
     ),
-    bdxiM3U,
     "utf8"
   );
 
+  /*
+   * ========================================
+   * RESULT
+   * ========================================
+   */
+
   console.log("");
   console.log(
-    "============== RESULT =============="
+    "================================"
   );
 
   console.log(
@@ -763,7 +818,7 @@ async function main() {
   );
 
   console.log(
-    `India      : ${india250.length} / 250`
+    `India      : ${india250.length} / ${INDIA_LIMIT}`
   );
 
   console.log(
@@ -771,342 +826,23 @@ async function main() {
   );
 
   console.log(
-    "===================================="
+    "================================"
   );
 
   console.log(
-    "All playlists generated successfully."
+    "PLAYLISTS GENERATED SUCCESSFULLY"
   );
 }
 
 main().catch(error => {
 
+  console.error("");
   console.error(
     "BUILD ERROR:"
   );
 
   console.error(
-    error.message
-  );
-
-  process.exit(1);
-});
-
-async function getJSON(url) {
-  const response = await fetch(url, {
-    headers: {
-      "User-Agent": "KB-IPTV/1.0",
-      "Accept": "application/json"
-    }
-  });
-
-  if (!response.ok) {
-    throw new Error(
-      `API request failed: HTTP ${response.status}`
-    );
-  }
-
-  return response.json();
-}
-
-function getCountries(channel) {
-  if (!channel) {
-    return [];
-  }
-
-  if (Array.isArray(channel.country)) {
-    return channel.country.map(
-      x => String(x).toUpperCase()
-    );
-  }
-
-  if (channel.country) {
-    return [
-      String(channel.country).toUpperCase()
-    ];
-  }
-
-  return [];
-}
-
-function isBad(stream) {
-  const label =
-    clean(stream.label).toLowerCase();
-
-  return (
-    label.includes("broken") ||
-    label.includes("geo-blocked") ||
-    label.includes("geoblocked")
-  );
-}
-
-function createLogoMap(logos) {
-  const map = new Map();
-
-  for (const logo of logos) {
-    if (
-      !logo.channel ||
-      !logo.url
-    ) {
-      continue;
-    }
-
-    if (!map.has(logo.channel)) {
-      map.set(
-        logo.channel,
-        clean(logo.url)
-      );
-    }
-  }
-
-  return map;
-}
-
-function generatePlaylist(
-  streams,
-  channels,
-  logos,
-  countryCodes,
-  title
-) {
-  const channelMap = new Map();
-
-  for (const channel of channels) {
-
-    const countries =
-      getCountries(channel);
-
-    if (
-      countries.some(code =>
-        countryCodes.includes(code)
-      )
-    ) {
-      channelMap.set(
-        channel.id,
-        channel
-      );
-    }
-  }
-
-  const logoMap =
-    createLogoMap(logos);
-
-  const unique = new Map();
-
-  for (const stream of streams) {
-
-    const url =
-      clean(stream.url);
-
-    if (!url) {
-      continue;
-    }
-
-    if (
-      !url
-        .toLowerCase()
-        .includes(".m3u8")
-    ) {
-      continue;
-    }
-
-    if (isBad(stream)) {
-      continue;
-    }
-
-    const channel =
-      channelMap.get(
-        stream.channel
-      );
-
-    if (!channel) {
-      continue;
-    }
-
-    if (!unique.has(url)) {
-      unique.set(url, {
-        stream,
-        channel
-      });
-    }
-  }
-
-  const list =
-    [...unique.values()];
-
-  list.sort((a, b) => {
-
-    const nameA =
-      clean(
-        a.stream.title ||
-        a.channel.name ||
-        a.channel.id
-      );
-
-    const nameB =
-      clean(
-        b.stream.title ||
-        b.channel.name ||
-        b.channel.id
-      );
-
-    return nameA.localeCompare(nameB);
-  });
-
-  let output =
-    "#EXTM3U\n";
-
-  output +=
-    `# KB IPTV - ${title}\n`;
-
-  output +=
-    `# Total: ${list.length}\n`;
-
-  output +=
-    `# Updated: ${new Date().toISOString()}\n\n`;
-
-  for (const item of list) {
-
-    const stream =
-      item.stream;
-
-    const channel =
-      item.channel;
-
-    const id =
-      clean(channel.id);
-
-    const name =
-      clean(
-        stream.title ||
-        channel.name ||
-        channel.id
-      );
-
-    const logo =
-      logoMap.get(id) || "";
-
-    let info =
-      `#EXTINF:-1 tvg-id="${id}"`;
-
-    info +=
-      ` tvg-name="${name}"`;
-
-    if (logo) {
-      info +=
-        ` tvg-logo="${logo}"`;
-    }
-
-    info +=
-      ` group-title="${title}"`;
-
-    output +=
-      `${info},${name}\n`;
-
-    output +=
-      `${clean(stream.url)}\n\n`;
-  }
-
-  return output;
-}
-
-async function main() {
-
-  console.log(
-    "KB IPTV - Secure API Generator"
-  );
-
-  fs.mkdirSync(
-    OUT_DIR,
-    { recursive: true }
-  );
-
-  /*
-   * API URLs are received only
-   * through GitHub Secrets.
-   */
-
-  const [
-    channels,
-    streams,
-    logos
-  ] = await Promise.all([
-    getJSON(SOURCES.channels),
-    getJSON(SOURCES.streams),
-    getJSON(SOURCES.logos)
-  ]);
-
-  console.log(
-    `Channels: ${channels.length}`
-  );
-
-  console.log(
-    `Streams: ${streams.length}`
-  );
-
-  console.log(
-    `Logos: ${logos.length}`
-  );
-
-  const playlists = [
-    {
-      file: "Bangladesh.m3u8",
-      title: "Bangladesh",
-      codes: ["BD"]
-    },
-    {
-      file: "India.m3u8",
-      title: "India",
-      codes: ["IN"]
-    },
-    {
-      file: "BDXI.m3u8",
-      title: "BDXI",
-      codes: ["BD", "IN"]
-    }
-  ];
-
-  for (const item of playlists) {
-
-    const content =
-      generatePlaylist(
-        streams,
-        channels,
-        logos,
-        item.codes,
-        item.title
-      );
-
-    const file =
-      path.join(
-        OUT_DIR,
-        item.file
-      );
-
-    fs.writeFileSync(
-      file,
-      content,
-      "utf8"
-    );
-
-    console.log(
-      `Created: ${item.file}`
-    );
-  }
-
-  console.log(
-    "All playlists generated."
-  );
-}
-
-main().catch(error => {
-
-  console.error(
-    "Generation failed:"
-  );
-
-  console.error(
-    error.message
+    error.stack || error.message
   );
 
   process.exit(1);
