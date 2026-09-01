@@ -1,0 +1,95 @@
+name: BDXI-KB Auto M3U8 Update
+
+on:
+  workflow_dispatch:
+
+  schedule:
+    # Every 3 hours
+    - cron: "0 */3 * * *"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: bdxi-kb-update
+  cancel-in-progress: true
+
+jobs:
+  update-playlists:
+    name: Generate BDXI KB Playlists
+    runs-on: ubuntu-latest
+
+    steps:
+
+      # =========================
+      # 1. Checkout Repository
+      # =========================
+
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # =========================
+      # 2. Setup Node.js
+      # =========================
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # =========================
+      # 3. Generate Playlists
+      # =========================
+
+      - name: Generate M3U8
+        env:
+          CHANNELS_API: ${{ secrets.CHANNELS_API }}
+          STREAMS_API: ${{ secrets.STREAMS_API }}
+          LOGOS_API: ${{ secrets.LOGOS_API }}
+          LANGUAGES_API: ${{ secrets.LANGUAGES_API }}
+          COUNTRIES_API: ${{ secrets.COUNTRIES_API }}
+        run: |
+          node scripts/generate.js
+
+      # =========================
+      # 4. Verify Files
+      # =========================
+
+      - name: Verify playlists
+        run: |
+          echo "Checking generated playlists..."
+
+          test -s playlists/Bangladesh.m3u8
+          test -s playlists/India.m3u8
+          test -s playlists/BDXI.m3u8
+
+          echo "Bangladesh:"
+          wc -l playlists/Bangladesh.m3u8
+
+          echo "India:"
+          wc -l playlists/India.m3u8
+
+          echo "BDXI:"
+          wc -l playlists/BDXI.m3u8
+
+          echo "Playlist verification completed."
+
+      # =========================
+      # 5. Commit Changes
+      # =========================
+
+      - name: Commit updated playlists
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add playlists/Bangladesh.m3u8
+          git add playlists/India.m3u8
+          git add playlists/BDXI.m3u8
+
+          if git diff --cached --quiet; then
+            echo "No playlist changes."
+          else
+            git commit -m "Auto update BDXI KB M3U8 playlists"
+            git push
+          fi
