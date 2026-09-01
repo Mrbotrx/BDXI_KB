@@ -1,7 +1,6 @@
 name: KB IPTV Auto Update
 
 on:
-
   workflow_dispatch:
 
   schedule:
@@ -14,22 +13,37 @@ on:
 permissions:
   contents: write
 
-jobs:
+concurrency:
+  group: kb-iptv-update
+  cancel-in-progress: true
 
+jobs:
   generate:
 
     runs-on: ubuntu-latest
 
     steps:
 
+      # ==============================
+      # CHECKOUT
+      # ==============================
       - name: Checkout Repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: main
 
+      # ==============================
+      # NODE
+      # ==============================
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
           node-version: "20"
 
+      # ==============================
+      # GENERATE
+      # ==============================
       - name: Generate KB IPTV
         env:
           CHANNELS_API: ${{ secrets.CHANNELS_API }}
@@ -38,24 +52,41 @@ jobs:
         run: |
           node scripts/generate.js
 
+      # ==============================
+      # GIT CONFIG
+      # ==============================
+      - name: Configure Git
+        run: |
+          git config user.name "KB IPTV Bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+      # ==============================
+      # SYNC REMOTE
+      # ==============================
+      - name: Sync Main Branch
+        run: |
+          git fetch origin main
+          git reset --soft origin/main
+
+      # ==============================
+      # COMMIT
+      # ==============================
       - name: Commit Generated Files
         run: |
-
-          git config user.name "KB IPTV Bot"
-
-          git config user.email "actions@github.com"
 
           git add api/api.json
           git add playlists/*.m3u8
 
           if git diff --cached --quiet; then
-
-            echo "No changes."
-
-          else
-
-            git commit -m "Auto update KB IPTV"
-
-            git push
-
+            echo "No generated changes."
+            exit 0
           fi
+
+          git commit -m "Auto update KB IPTV"
+
+      # ==============================
+      # PUSH
+      # ==============================
+      - name: Push Changes
+        run: |
+          git push origin HEAD:main
