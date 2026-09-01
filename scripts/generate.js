@@ -13,13 +13,36 @@ const API = {
   logos: process.env.LOGOS_API
 };
 
+/* ==========================================
+   PATHS
+========================================== */
+
+const ROOT_DIR = path.join(__dirname, "..");
+
 const OUT_DIR = path.join(
-  __dirname,
-  "..",
+  ROOT_DIR,
   "playlists"
 );
 
+const API_DIR = path.join(
+  ROOT_DIR,
+  "api"
+);
+
 const INDIA_LIMIT = 250;
+
+/* ==========================================
+   GITHUB API URL
+   CHANGE OWNER/REPO IF NEEDED
+========================================== */
+
+const GITHUB_OWNER = "Mrbotrx";
+const GITHUB_REPO = "KB-IPTV";
+const GITHUB_BRANCH = "main";
+
+const RAW_BASE =
+  `https://raw.githubusercontent.com/` +
+  `${GITHUB_OWNER}/${GITHUB_REPO}/${GITHUB_BRANCH}`;
 
 /* ==========================================
    CHECK API SECRETS
@@ -32,6 +55,24 @@ for (const [name, url] of Object.entries(API)) {
     );
   }
 }
+
+/* ==========================================
+   CREATE DIRECTORIES
+========================================== */
+
+fs.mkdirSync(
+  OUT_DIR,
+  {
+    recursive: true
+  }
+);
+
+fs.mkdirSync(
+  API_DIR,
+  {
+    recursive: true
+  }
+);
 
 /* ==========================================
    HELPERS
@@ -63,6 +104,7 @@ async function getJSON(url) {
 }
 
 function countryOf(channel) {
+
   return String(
     channel?.country || ""
   ).toUpperCase();
@@ -75,9 +117,9 @@ function countryOf(channel) {
 function kbName(channel, stream) {
 
   let name = clean(
-    stream.title ||
-    channel.name ||
-    channel.id
+    stream?.title ||
+    channel?.name ||
+    channel?.id
   );
 
   name = name
@@ -91,14 +133,17 @@ function kbName(channel, stream) {
    AUTO CATEGORY
 ========================================== */
 
-function autoCategory(channel, stream) {
+function autoCategory(
+  channel,
+  stream
+) {
 
   const metadata = [
-    stream.category,
-    stream.group,
-    stream.group_title,
-    channel.category,
-    channel.categories
+    stream?.category,
+    stream?.group,
+    stream?.group_title,
+    channel?.category,
+    channel?.categories
   ];
 
   for (const value of metadata) {
@@ -119,14 +164,15 @@ function autoCategory(channel, stream) {
       typeof value === "string" &&
       value.trim()
     ) {
+
       return formatCategory(value);
     }
   }
 
   const name = clean(
-    stream.title ||
-    channel.name ||
-    channel.id
+    stream?.title ||
+    channel?.name ||
+    channel?.id
   ).toLowerCase();
 
   /* NEWS */
@@ -293,7 +339,7 @@ function formatCategory(value) {
 function qualityScore(stream) {
 
   const quality =
-    clean(stream.quality)
+    clean(stream?.quality)
       .toLowerCase();
 
   const match =
@@ -304,7 +350,7 @@ function qualityScore(stream) {
   }
 
   return Number(
-    stream.height || 0
+    stream?.height || 0
   );
 }
 
@@ -314,14 +360,21 @@ function qualityScore(stream) {
 
 function isBad(stream) {
 
-  const label =
-    clean(stream.label)
-      .toLowerCase();
+  const text = [
+    stream?.label,
+    stream?.title,
+    stream?.quality
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
 
   return (
-    label.includes("broken") ||
-    label.includes("geo-blocked") ||
-    label.includes("geoblocked")
+    text.includes("broken") ||
+    text.includes("dead") ||
+    text.includes("offline") ||
+    text.includes("geo-blocked") ||
+    text.includes("geoblocked")
   );
 }
 
@@ -414,9 +467,9 @@ function popularScore(
 
   const name =
     normalizeName(
-      stream.title ||
-      channel.name ||
-      channel.id
+      stream?.title ||
+      channel?.name ||
+      channel?.id
     );
 
   let score = 0;
@@ -426,7 +479,11 @@ function popularScore(
     const list =
       POPULAR[country] || [];
 
-    for (let i = 0; i < list.length; i++) {
+    for (
+      let i = 0;
+      i < list.length;
+      i++
+    ) {
 
       if (
         name ===
@@ -507,21 +564,18 @@ function selectBest(
     }
   }
 
-  const best =
-    new Map();
+  const best = new Map();
 
   for (const stream of streams) {
 
     const url =
-      clean(stream.url);
+      clean(stream?.url);
 
     if (!url)
       continue;
 
     if (
-      !url
-        .toLowerCase()
-        .includes(".m3u8")
+      !/^https?:\/\//i.test(url)
     ) {
       continue;
     }
@@ -700,19 +754,11 @@ function createM3U(
   const logoMap =
     makeLogoMap(logos);
 
-  /*
-   * HEADER
-   */
-
   let output =
     createHeader(
       groupName,
       list.length
     );
-
-  /*
-   * CHANNELS
-   */
 
   for (const item of list) {
 
@@ -725,19 +771,11 @@ function createM3U(
     const id =
       clean(channel.id);
 
-    /*
-     * Name ends with KB
-     */
-
     const name =
       kbName(
         channel,
         stream
       );
-
-    /*
-     * Automatic category
-     */
 
     const category =
       autoCategory(
@@ -787,19 +825,11 @@ function createM3U(
     output +=
       `${info}\n`;
 
-    /*
-     * User Agent
-     */
-
     if (stream.user_agent) {
 
       output +=
         `#EXTVLCOPT:http-user-agent=${clean(stream.user_agent)}\n`;
     }
-
-    /*
-     * Referrer
-     */
 
     if (stream.referrer) {
 
@@ -815,56 +845,191 @@ function createM3U(
 }
 
 /* ==========================================
+   SAVE PLAYLIST
+========================================== */
+
+function savePlaylist(
+  filename,
+  content
+) {
+
+  const file =
+    path.join(
+      OUT_DIR,
+      filename
+    );
+
+  fs.writeFileSync(
+    file,
+    content,
+    "utf8"
+  );
+
+  console.log(
+    `Created: ${filename}`
+  );
+}
+
+/* ==========================================
+   CREATE API.JSON
+========================================== */
+
+function createAPIFile(
+  bd,
+  india,
+  bdxi
+) {
+
+  const updated =
+    new Date().toISOString();
+
+  const apiData = {
+
+    name: "KB IPTV",
+
+    brand: "KB",
+
+    description:
+      "BEST FAST PLAYLIST",
+
+    updated: updated,
+
+    total: {
+      bangladesh: bd.length,
+      india: india.length,
+      bdxi: bdxi.length
+    },
+
+    playlists: {
+
+      bangladesh: {
+        name: "Bangladesh",
+        country: "BD",
+        total: bd.length,
+        format: "M3U8",
+
+        url:
+          `${RAW_BASE}/playlists/Bangladesh.m3u8`
+      },
+
+      india: {
+        name: "India",
+        country: "IN",
+        total: india.length,
+        limit: INDIA_LIMIT,
+        format: "M3U8",
+
+        url:
+          `${RAW_BASE}/playlists/India.m3u8`
+      },
+
+      bdxi: {
+        name: "BDXI",
+
+        countries: [
+          "BD",
+          "IN"
+        ],
+
+        total: bdxi.length,
+        format: "M3U8",
+
+        url:
+          `${RAW_BASE}/playlists/BDXI.m3u8`
+      }
+    },
+
+    api: {
+      name: "KB IPTV API",
+      format: "JSON",
+
+      url:
+        `${RAW_BASE}/api/api.json`
+    },
+
+    facebook:
+      "https://www.facebook.com,kallyan.biswas.29"
+  };
+
+  const apiFile =
+    path.join(
+      API_DIR,
+      "api.json"
+    );
+
+  fs.writeFileSync(
+    apiFile,
+    JSON.stringify(
+      apiData,
+      null,
+      2
+    ),
+    "utf8"
+  );
+
+  console.log(
+    "Created: api/api.json"
+  );
+
+  return apiData;
+}
+
+/* ==========================================
    MAIN
 ========================================== */
 
 async function main() {
 
+  console.log("");
   console.log(
-    "KB IPTV - Secure API Generator"
+    "======================================"
   );
+  console.log(
+    " KB IPTV - BUILD START"
+  );
+  console.log(
+    "======================================"
+  );
+
+  /* ========================================
+     FETCH API
+  ======================================== */
 
   console.log(
-    "Loading API data..."
+    "Downloading API data..."
   );
-
-  fs.mkdirSync(
-    OUT_DIR,
-    {
-      recursive: true
-    }
-  );
-
-  /*
-   * Download API data
-   */
 
   const [
     channels,
     streams,
     logos
   ] = await Promise.all([
+
     getJSON(API.channels),
+
     getJSON(API.streams),
+
     getJSON(API.logos)
+
   ]);
 
   console.log(
-    `Channels: ${channels.length}`
+    `Channels : ${channels.length}`
   );
 
   console.log(
-    `Streams: ${streams.length}`
+    `Streams  : ${streams.length}`
   );
 
   console.log(
-    `Logos: ${logos.length}`
+    `Logos    : ${logos.length}`
   );
 
   /* ========================================
      BANGLADESH
   ======================================== */
 
+  console.log("");
   console.log(
     "Generating Bangladesh..."
   );
@@ -881,28 +1046,25 @@ async function main() {
     ["BD"]
   );
 
-  fs.writeFileSync(
-    path.join(
-      OUT_DIR,
-      "Bangladesh.m3u8"
-    ),
+  savePlaylist(
+    "Bangladesh.m3u8",
     createM3U(
       bd,
       logos,
       "Bangladesh"
-    ),
-    "utf8"
+    )
   );
 
   /* ========================================
-     INDIA MAX 250
+     INDIA
   ======================================== */
 
+  console.log("");
   console.log(
-    "Generating India MAX 250..."
+    "Generating India..."
   );
 
-  const india =
+  const indiaAll =
     selectBest(
       streams,
       channels,
@@ -910,33 +1072,31 @@ async function main() {
     );
 
   sortChannels(
-    india,
+    indiaAll,
     ["IN"]
   );
 
-  const india250 =
-    india.slice(
+  const india =
+    indiaAll.slice(
       0,
       INDIA_LIMIT
     );
 
-  fs.writeFileSync(
-    path.join(
-      OUT_DIR,
-      "India.m3u8"
-    ),
+  savePlaylist(
+    "India.m3u8",
     createM3U(
-      india250,
+      india,
       logos,
       "India"
-    ),
-    "utf8"
+    )
   );
 
   /* ========================================
-     BDXI = INDIA + BANGLADESH
+     BDXI
+     BANGLADESH + INDIA
   ======================================== */
 
+  console.log("");
   console.log(
     "Generating BDXI..."
   );
@@ -953,26 +1113,46 @@ async function main() {
     ["BD", "IN"]
   );
 
-  fs.writeFileSync(
-    path.join(
-      OUT_DIR,
-      "BDXI.m3u8"
-    ),
+  savePlaylist(
+    "BDXI.m3u8",
     createM3U(
       bdxi,
       logos,
       "BDXI"
-    ),
-    "utf8"
+    )
   );
 
   /* ========================================
-     RESULT
+     CREATE API JSON
   ======================================== */
 
   console.log("");
   console.log(
-    "================================"
+    "Generating API JSON..."
+  );
+
+  const api =
+    createAPIFile(
+      bd,
+      india,
+      bdxi
+    );
+
+  /* ========================================
+     FINAL RESULT
+  ======================================== */
+
+  console.log("");
+  console.log(
+    "======================================"
+  );
+
+  console.log(
+    " KB IPTV - BUILD SUCCESS"
+  );
+
+  console.log(
+    "======================================"
   );
 
   console.log(
@@ -980,31 +1160,59 @@ async function main() {
   );
 
   console.log(
-    `India      : ${india250.length} / 250`
+    `India      : ${india.length} / ${INDIA_LIMIT}`
   );
 
   console.log(
     `BDXI       : ${bdxi.length}`
   );
 
+  console.log("");
   console.log(
-    "================================"
+    "API FILE:"
   );
 
   console.log(
-    "PLAYLISTS GENERATED SUCCESSFULLY"
+    `${RAW_BASE}/api/api.json`
+  );
+
+  console.log("");
+  console.log(
+    "PLAYLIST API:"
+  );
+
+  console.log(
+    `BD      : ${RAW_BASE}/playlists/Bangladesh.m3u8`
+  );
+
+  console.log(
+    `INDIA   : ${RAW_BASE}/playlists/India.m3u8`
+  );
+
+  console.log(
+    `BDXI    : ${RAW_BASE}/playlists/BDXI.m3u8`
+  );
+
+  console.log(
+    "======================================"
   );
 }
+
+/* ==========================================
+   ERROR HANDLER
+========================================== */
 
 main().catch(error => {
 
   console.error("");
+
   console.error(
     "BUILD ERROR:"
   );
 
   console.error(
-    error.stack || error.message
+    error.stack ||
+    error.message
   );
 
   process.exit(1);
