@@ -1,101 +1,81 @@
 #EXTM3U
 # KB IPTV - Bangladesh
-# Total: 32
-# Updated: 2026-09-01T18:41:24.638Z
+# BEST FAST PLAYLIST
+# Total Channels: 25
+# Updated: 2026-09-01T20:30:44.539Z
 
-#EXTINF:-1 tvg-id="AnandaTV.bd" tvg-name="Ananda TV" tvg-logo="https://i.imgur.com/jkbo7Qe.png" group-title="Bangladesh",Ananda TV
-http://103.99.249.139/anandatv/index.m3u8
-
-#EXTINF:-1 tvg-id="AnandaTV.bd" tvg-name="Ananda TV" tvg-logo="https://i.imgur.com/jkbo7Qe.png" group-title="Bangladesh",Ananda TV
-https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/anandatv.stream/live-orgin/anandatv.stream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="ATNBangla.bd" tvg-name="ATN Bangla" tvg-logo="https://i.imgur.com/K1HmMRz.png" group-title="Bangladesh",ATN Bangla
+#EXTINF:-1 tvg-id="ATNBangla.bd" tvg-name="ATN Bangla" tvg-logo="https://i.imgur.com/K1HmMRz.png" tvg-country="BD" group-title="Bangladesh" tvg-quality="720p",ATN Bangla
 http://tvsen5.aynascope.net/atnbangla/index.m3u8
 
-#EXTINF:-1 tvg-id="ATNBangla.bd" tvg-name="ATN Bangla" tvg-logo="https://i.imgur.com/K1HmMRz.png" group-title="Bangladesh",ATN Bangla
-https://tvsen5.aynaott.com/atnbangla/index.m3u8
-
-#EXTINF:-1 tvg-id="ATNMusic.bd" tvg-name="ATN Music" tvg-logo="https://www.jagobd.com/wp-content/uploads/2015/12/atnmusic.jpg?x50681" group-title="Bangladesh",ATN Music
-https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/atnmusic.stream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="BanglaVision.bd" tvg-name="Bangla Vision" tvg-logo="https://i.imgur.com/nCWgp38.png" group-title="Bangladesh",Bangla Vision
-https://tvsen5.aynaott.com/banglavision/index.m3u8
-
-#EXTINF:-1 tvg-id="BoishakhiTV.bd" tvg-name="Boishakhi TV" tvg-logo="https://i.imgur.com/gxL05Y4.png" group-title="Bangladesh",Boishakhi TV
-https://boishakhi.sonarbanglatv.com/boishakhi/boishakhitv/index.m3u8
-
-#EXTINF:-1 tvg-id="ChannelS.bd" tvg-name="Channel S" tvg-logo="https://www.channels.com.bd/storage/project_files/logo/2024-05-14a_n17156821814310.png" group-title="Bangladesh",Channel S
-https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/channels.stream/live-orgin/channels.stream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="DBCNews.bd" tvg-name="DBC News" tvg-logo="https://i.imgur.com/Qbt6q4z.png" group-title="Bangladesh",DBC News
-http://tvn3.chowdhury-shaheb.com/dbc/index.m3u8
-
-#EXTINF:-1 tvg-id="DurontoTV.bd" tvg-name="Duronto TV" tvg-logo="https://i.imgur.com/gXsddRK.png" group-title="Bangladesh",Duronto TV
-https://tvsen6.aynaott.com/6xyZ3N4oHv2KBJdB6W4p/index.m3u8
-
-#EXTINF:-1 tvg-id="EkhonTV.bd" tvg-name="Ekhon TV" tvg-logo="https://i.imgur.com/tRrDh6z.png" group-title="Bangladesh",Ekhon TV
-https://tplay.live/out/bangladesh/ekhontv.index.m3u8
-
-#EXTINF:-1 tvg-id="EkusheyTV.bd" tvg-name="Ekushey TV" tvg-logo="https://i.imgur.com/lRpkGHj.png" group-title="Bangladesh",Ekushey TV
-https://ekusheyserver.com/etvlivesn.m3u8
-
-#EXTINF:-1 tvg-id="GaziTV.bd" tvg-name="Gazi TV" tvg-logo="https://i.imgur.com/2Lzhiq6.png" group-title="Bangladesh",Gazi TV
-http://tvn1.chowdhury-shaheb.com/gazitv/index.m3u8
-
-#EXTINF:-1 tvg-id="GaziTV.bd" tvg-name="Gazi TV" tvg-logo="https://i.imgur.com/2Lzhiq6.png" group-title="Bangladesh",Gazi TV
-https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/gazibdz.stream/live-orgin/gazibdz.stream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="GreenTV.bd" tvg-name="Green TV" tvg-logo="https://www.jagobd.com/wp-content/uploads/2022/12/green-tv.jpg" group-title="Bangladesh",Green TV
-https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/greentv.stream/live-orgin/greentv.stream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="MaasrangaTV.bd" tvg-name="Maasranga TV" tvg-logo="https://i.imgur.com/uVZJMed.png" group-title="Bangladesh",Maasranga TV
-http://tvsen5.aynascope.net/maasrangatv/index.m3u8
-
-#EXTINF:-1 tvg-id="MaasrangaTV.bd" tvg-name="Maasranga TV" tvg-logo="https://i.imgur.com/uVZJMed.png" group-title="Bangladesh",Maasranga TV
-https://tvsen5.aynaott.com/maasrangatv/index.m3u8
-
-#EXTINF:-1 tvg-id="MadaniChannelBangla.bd" tvg-name="Madani Channel Bangla" tvg-logo="https://i.imgur.com/vIJTVia.png" group-title="Bangladesh",Madani Channel Bangla
-https://streaming.madanichannel.tv/static/streaming-playlists/hls/d3e49b76-ac06-4689-a641-9200445b647f/master.m3u8
-
-#EXTINF:-1 tvg-id="MovieBangla.bd" tvg-name="Movie Bangla" tvg-logo="https://www.jagobd.com/wp-content/uploads/2016/02/moviebangla.jpg?x50681" group-title="Bangladesh",Movie Bangla
-http://alvetv.com/moviebanglatv/8080/index.m3u8
-
-#EXTINF:-1 tvg-id="MyTV.bd" tvg-name="My TV" tvg-logo="https://i.imgur.com/475qK5T.png" group-title="Bangladesh",My TV
-https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/mytv-up-off.stream/live-orgin/mytv-up-off.stream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="NANTV.bd" tvg-name="NAN TV" tvg-logo="https://www.jagobd.com/wp-content/uploads/2019/11/NAN-TV-Logo-02.png" group-title="Bangladesh",NAN TV
-https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/nantv.stream/live-orgin/nantv.stream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="News21BanglaTV.bd" tvg-name="News 21 Bangla TV" tvg-logo="https://i.imgur.com/ijuJfmd.png" group-title="Bangladesh",News 21 Bangla TV
-http://103.190.133.68:1935/news21live/live/playlist.m3u8
-
-#EXTINF:-1 tvg-id="NexusTV.bd" tvg-name="Nexus TV" tvg-logo="https://i.imgur.com/XcJZKg4.png" group-title="Bangladesh",Nexus TV
-https://tvsen6.aynaott.com/Epm7WrFa/index.m3u8
-
-#EXTINF:-1 tvg-id="NTV.bd" tvg-name="NTV" tvg-logo="https://i.imgur.com/l75bDTx.png" group-title="Bangladesh",NTV
+#EXTINF:-1 tvg-id="NTV.bd" tvg-name="NTV" tvg-logo="https://i.imgur.com/l75bDTx.png" tvg-country="BD" group-title="Bangladesh" tvg-quality="720p",NTV
 https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8
 
-#EXTINF:-1 tvg-id="RajdhaniTV.bd" tvg-name="Rajdhani TV" tvg-logo="https://i.imgur.com/MBm2gPz.jpeg" group-title="Bangladesh",Rajdhani TV
-https://stream.shariarsuvo.com/hls5/rajdhanicable.m3u8
-
-#EXTINF:-1 tvg-id="RTV.bd" tvg-name="RTV" tvg-logo="https://i.imgur.com/yu8ugqt.png" group-title="Bangladesh",RTV
+#EXTINF:-1 tvg-id="RTV.bd" tvg-name="RTV" tvg-logo="https://i.imgur.com/yu8ugqt.png" tvg-country="BD" group-title="Bangladesh" tvg-quality="720p",RTV
 http://tvsen5.aynascope.net/RtvHD/index.m3u8
 
-#EXTINF:-1 tvg-id="RTV.bd" tvg-name="RTV" tvg-logo="https://i.imgur.com/yu8ugqt.png" group-title="Bangladesh",RTV
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/rtv-sg.stream/index.m3u8
+#EXTINF:-1 tvg-id="DBCNews.bd" tvg-name="DBC News" tvg-logo="https://i.imgur.com/Qbt6q4z.png" tvg-country="BD" group-title="Bangladesh" tvg-quality="480p",DBC News
+http://tvn3.chowdhury-shaheb.com/dbc/index.m3u8
 
-#EXTINF:-1 tvg-id="RTV.bd" tvg-name="RTV" tvg-logo="https://i.imgur.com/yu8ugqt.png" group-title="Bangladesh",RTV
-https://tvsen5.aynaott.com/RtvHD/index.m3u8
+#EXTINF:-1 tvg-id="MaasrangaTV.bd" tvg-name="Maasranga TV" tvg-logo="https://i.imgur.com/uVZJMed.png" tvg-country="BD" group-title="Bangladesh" tvg-quality="720p",Maasranga TV
+http://tvsen5.aynascope.net/maasrangatv/index.m3u8
 
-#EXTINF:-1 tvg-id="RTV.bd" tvg-name="RTV" tvg-logo="https://i.imgur.com/yu8ugqt.png" group-title="Bangladesh",RTV
-http://tvn3.chowdhury-shaheb.com/rtv/index.m3u8
-
-#EXTINF:-1 tvg-id="RupashiBanglaTV.bd" tvg-name="Rupashi Bangla TV" tvg-logo="https://i.imgur.com/9idHs20.png" group-title="Bangladesh",Rupashi Bangla TV
-https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/ruposhibangla.stream/playlist.m3u8
-
-#EXTINF:-1 tvg-id="TSports.bd" tvg-name="T Sports" tvg-logo="https://i.imgur.com/2JzlorD.png" group-title="Bangladesh",T Sports
+#EXTINF:-1 tvg-id="TSports.bd" tvg-name="T Sports" tvg-logo="https://i.imgur.com/2JzlorD.png" tvg-country="BD" group-title="Bangladesh" tvg-quality="1080p",T Sports
 https://tvsen5.aynaott.com/TnMn5kZz8aLm/index.m3u8
 
-#EXTINF:-1 tvg-id="VoktaTV.bd" tvg-name="Vokta TV" tvg-logo="https://i.imgur.com/szAGBCU.png" group-title="Bangladesh",Vokta TV
+#EXTINF:-1 tvg-id="EkusheyTV.bd" tvg-name="Ekushey TV" tvg-logo="https://i.imgur.com/lRpkGHj.png" tvg-country="BD" group-title="Bangladesh" tvg-quality="480p",Ekushey TV
+https://ekusheyserver.com/etvlivesn.m3u8
+
+#EXTINF:-1 tvg-id="EkhonTV.bd" tvg-name="Ekhon TV" tvg-logo="https://i.imgur.com/tRrDh6z.png" tvg-country="BD" group-title="Bangladesh" tvg-quality="1080p",Ekhon TV
+https://tplay.live/out/bangladesh/ekhontv.index.m3u8
+
+#EXTINF:-1 tvg-id="GaziTV.bd" tvg-name="Gazi TV" tvg-logo="https://i.imgur.com/2Lzhiq6.png" tvg-country="BD" group-title="Bangladesh" tvg-quality="1080p",Gazi TV
+http://tvn1.chowdhury-shaheb.com/gazitv/index.m3u8
+
+#EXTINF:-1 tvg-id="GreenTV.bd" tvg-name="Green TV" tvg-logo="https://www.jagobd.com/wp-content/uploads/2022/12/green-tv.jpg" tvg-country="BD" group-title="Bangladesh" tvg-quality="1080p",Green TV
+https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/greentv.stream/live-orgin/greentv.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="MadaniChannelBangla.bd" tvg-name="Madani Channel Bangla" tvg-logo="https://i.imgur.com/vIJTVia.png" tvg-country="BD" group-title="Bangladesh" tvg-quality="1080p",Madani Channel Bangla
+https://streaming.madanichannel.tv/static/streaming-playlists/hls/d3e49b76-ac06-4689-a641-9200445b647f/master.m3u8
+
+#EXTINF:-1 tvg-id="RajdhaniTV.bd" tvg-name="Rajdhani TV" tvg-logo="https://i.imgur.com/MBm2gPz.jpeg" tvg-country="BD" group-title="Bangladesh" tvg-quality="1080p",Rajdhani TV
+https://stream.shariarsuvo.com/hls5/rajdhanicable.m3u8
+
+#EXTINF:-1 tvg-id="BanglaVision.bd" tvg-name="Bangla Vision" tvg-logo="https://i.imgur.com/nCWgp38.png" tvg-country="BD" group-title="Bangladesh" tvg-quality="720p",Bangla Vision
+https://tvsen5.aynaott.com/banglavision/index.m3u8
+
+#EXTINF:-1 tvg-id="DurontoTV.bd" tvg-name="Duronto TV" tvg-logo="https://i.imgur.com/gXsddRK.png" tvg-country="BD" group-title="Bangladesh" tvg-quality="720p",Duronto TV
+https://tvsen6.aynaott.com/6xyZ3N4oHv2KBJdB6W4p/index.m3u8
+
+#EXTINF:-1 tvg-id="RupashiBanglaTV.bd" tvg-name="Rupashi Bangla TV" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Rupashi_Bangla.png" tvg-country="BD" group-title="Bangladesh" tvg-quality="720p",Rupashi Bangla TV
+https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/ruposhibangla.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="VoktaTV.bd" tvg-name="Vokta TV" tvg-logo="https://i.imgur.com/szAGBCU.png" tvg-country="BD" group-title="Bangladesh" tvg-quality="720p",Vokta TV
 https://vokta.raytahost.com/live/voktatv/index.m3u8
+
+#EXTINF:-1 tvg-id="NexusTV.bd" tvg-name="Nexus TV" tvg-logo="https://i.imgur.com/XcJZKg4.png" tvg-country="BD" group-title="Bangladesh" tvg-quality="576p",Nexus TV
+https://tvsen6.aynaott.com/Epm7WrFa/index.m3u8
+
+#EXTINF:-1 tvg-id="AnandaTV.bd" tvg-name="Ananda TV" tvg-logo="https://i.imgur.com/jkbo7Qe.png" tvg-country="BD" group-title="Bangladesh" tvg-quality="480p",Ananda TV
+http://103.99.249.139/anandatv/index.m3u8
+
+#EXTINF:-1 tvg-id="ATNMusic.bd" tvg-name="ATN Music" tvg-logo="https://www.jagobd.com/wp-content/uploads/2015/12/atnmusic.jpg?x50681" tvg-country="BD" group-title="Bangladesh" tvg-quality="360p",ATN Music
+https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/atnmusic.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="BoishakhiTV.bd" tvg-name="Boishakhi TV" tvg-logo="https://i.imgur.com/gxL05Y4.png" tvg-country="BD" group-title="Bangladesh",Boishakhi TV
+https://boishakhi.sonarbanglatv.com/boishakhi/boishakhitv/index.m3u8
+
+#EXTINF:-1 tvg-id="ChannelS.bd" tvg-name="Channel S" tvg-logo="https://www.channels.com.bd/storage/project_files/logo/2024-05-14a_n17156821814310.png" tvg-country="BD" group-title="Bangladesh",Channel S
+https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/channels.stream/live-orgin/channels.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="MovieBangla.bd" tvg-name="Movie Bangla" tvg-logo="https://www.jagobd.com/wp-content/uploads/2016/02/moviebangla.jpg?x50681" tvg-country="BD" group-title="Bangladesh",Movie Bangla
+http://alvetv.com/moviebanglatv/8080/index.m3u8
+
+#EXTINF:-1 tvg-id="MyTV.bd" tvg-name="My TV" tvg-logo="https://i.imgur.com/475qK5T.png" tvg-country="BD" group-title="Bangladesh",My TV
+https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/mytv-up-off.stream/live-orgin/mytv-up-off.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="NANTV.bd" tvg-name="NAN TV" tvg-logo="https://www.jagobd.com/wp-content/uploads/2019/11/NAN-TV-Logo-02.png" tvg-country="BD" group-title="Bangladesh",NAN TV
+https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI2/nantv.stream/live-orgin/nantv.stream/playlist.m3u8
+
+#EXTINF:-1 tvg-id="News21BanglaTV.bd" tvg-name="News 21 Bangla TV" tvg-logo="https://i.imgur.com/ijuJfmd.png" tvg-country="BD" group-title="Bangladesh",News 21 Bangla TV
+http://103.190.133.68:1935/news21live/live/playlist.m3u8
 
