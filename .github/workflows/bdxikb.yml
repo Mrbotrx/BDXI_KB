@@ -1,65 +1,61 @@
-name: BDXI-KB IPTV Auto Update
+name: KB IPTV Auto Update
 
 on:
+
   workflow_dispatch:
 
   schedule:
-    - cron: "0 */1 * * *"
+    - cron: "*/30 * * * *"
+
+  push:
+    branches:
+      - main
 
 permissions:
   contents: write
 
-concurrency:
-  group: bdxikb-update
-  cancel-in-progress: true
-
 jobs:
+
   generate:
+
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: "20"
 
-      - name: Generate playlists
+      - name: Generate KB IPTV
         env:
           CHANNELS_API: ${{ secrets.CHANNELS_API }}
           STREAMS_API: ${{ secrets.STREAMS_API }}
           LOGOS_API: ${{ secrets.LOGOS_API }}
-        run: node scripts/generate.js
-
-      - name: Verify playlists
         run: |
-          set -e
+          node scripts/generate.js
 
-          test -s playlists/Bangladesh.m3u8
-          test -s playlists/India.m3u8
-          test -s playlists/BDXI.m3u8
-
-          echo "Bangladesh:"
-          grep -c "^#EXTINF" playlists/Bangladesh.m3u8 || true
-
-          echo "India:"
-          grep -c "^#EXTINF" playlists/India.m3u8 || true
-
-          echo "BDXI:"
-          grep -c "^#EXTINF" playlists/BDXI.m3u8 || true
-
-      - name: Commit changes
+      - name: Commit Generated Files
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add playlists/
+          git config user.name "KB IPTV Bot"
+
+          git config user.email "actions@github.com"
+
+          git add api/api.json
+          git add playlists/*.m3u8
 
           if git diff --cached --quiet; then
+
             echo "No changes."
+
           else
-            git commit -m "Update BDXI India Bangladesh playlists"
+
+            git commit -m "Auto update KB IPTV"
+
             git push
+
           fi
