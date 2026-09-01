@@ -1,8 +1,8 @@
 #EXTM3U
 # KB IPTV - BDXI
 # BEST FAST PLAYLIST
-# Total Channels: 691
-# Updated: 2026-09-01T20:39:03.402Z
+# Total Channels: 696
+# Updated: 2026-09-01T20:45:29.206Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="ATNBangla.bd" tvg-name="ATN Bangla KB" tvg-logo="https://i.imgur.com/K1HmMRz.png" tvg-country="BD" group-title="general" tvg-quality="720p",ATN Bangla KB
@@ -193,6 +193,9 @@ https://cc-czbq30x55knit.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da6
 #EXTINF:-1 tvg-id="ETVAndhraPradesh.in" tvg-name="ETV Andhra Pradesh KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ETV_ANDHRA_PRADESH/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="1080p",ETV Andhra Pradesh KB
 https://d1g35elx8qnif3.cloudfront.net/v1/master/9d43eacaed199f8d5883927e7aef514a8a08e108/ETV_AP_H264_cloud_in/index.m3u8
 
+#EXTINF:-1 tvg-id="ETVBeats.in" tvg-name="ETV Beats KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/ETVBeats1.png" tvg-country="IN" group-title="Music" tvg-quality="1080p",ETV Beats KB
+https://jmp2.uk/stvp-IN4900002RV
+
 #EXTINF:-1 tvg-id="ETVCinema.in" tvg-name="ETV Cinema HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ETV_CINEMA/images/LOGO_HD/image.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",ETV Cinema HD KB
 https://d27zlkxhgwrfgo.cloudfront.net/v1/master/9d43eacaed199f8d5883927e7aef514a8a08e108/ETV_CINEMA_H264_cloud_in/index.m3u8
 
@@ -240,6 +243,9 @@ https://gtc-yupp.vgcdn.net/vglive-sk-254807/index.m3u8
 
 #EXTINF:-1 tvg-id="GuaranteeNews.in" tvg-name="Guarantee News KB" tvg-logo="https://media.licdn.com/dms/image/v2/D560BAQHYZzbGJ7ViZA/company-logo_200_200/company-logo_200_200/0/1728031377890?e=2147483647&v=beta&t=bIsZgNUCcg0M_-Zqeu5wKYgBt_1-pI798X9lP5CxhTM" tvg-country="IN" group-title="News" tvg-quality="1080p",Guarantee News KB
 https://guaranteenews.in:8443/live/gnews/index.m3u8
+
+#EXTINF:-1 tvg-id="HareKrsnaTV.in" tvg-name="Hare Krsna TV KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/DISTROTV/LIVECHANNEL/6669891abac4421ebc53365e/images/logo_20231219_202633_68.png" tvg-country="IN" group-title="Religious" tvg-quality="1080p",Hare Krsna TV KB
+https://hktv.harekrsnatv.com/HKTV/HKWebApp/manifest.mpd
 
 #EXTINF:-1 tvg-id="HebronTV.in" tvg-name="Hebron TV KB" tvg-logo="https://i0.wp.com/hebrontv.in/wp-content/uploads/2023/11/hebron-.png?w=512" tvg-country="IN" group-title="Religious" tvg-quality="1080p",Hebron TV KB
 https://account20.livebox.co.in/charleshls/live.m3u8
@@ -584,6 +590,9 @@ https://stream.ottlive.co.in/utvtamil/index.m3u8
 #EXTINF:-1 tvg-id="UTVPalakkad.in" tvg-name="UTV Palakkad KB" tvg-logo="https://utvpkd.in/assets/img/logo.png" tvg-country="IN" group-title="general" tvg-quality="1080p",UTV Palakkad KB
 https://em4qj6nedyvg-hls-live.wmncdn.net/liveunit/89b1e919eed04e59383cf820d644c20e.sdp/playlist.m3u8
 
+#EXTINF:-1 tvg-id="VijayTakkar.in" tvg-name="Vijay Takkar APAC KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_VIJAY_TAKKAR/images/LOGO_HD/image.png" tvg-country="IN" group-title="Music" tvg-quality="1080p",Vijay Takkar APAC KB
+https://tglmp01.akamaized.net/out/v1/c1071012b73f4f189b202e1529e8f802/manifest.mpd
+
 #EXTINF:-1 tvg-id="VillageTV.in" tvg-name="Village TV KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/VillageTV.png" tvg-country="IN" group-title="Religious" tvg-quality="1080p",Village TV KB
 https://live.villagetv.net/villagetv/hd/index.m3u8
 
@@ -805,9 +814,6 @@ https://live.gulistannews.in/hls/gul.m3u8
 
 #EXTINF:-1 tvg-id="Gyandarshan.in" tvg-name="Gyandarshan KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_GYANDARSHAN/images/LOGO_HD/image.png" tvg-country="IN" group-title="education" tvg-quality="720p",Gyandarshan KB
 https://cdn-6.pishow.tv/live/14/master.m3u8
-
-#EXTINF:-1 tvg-id="HareKrsnaTV.in" tvg-name="Hare Krsna TV KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/DISTROTV/LIVECHANNEL/6669891abac4421ebc53365e/images/logo_20231219_202633_68.png" tvg-country="IN" group-title="Religious" tvg-quality="720p",Hare Krsna TV KB
-https://airtelapp.shemaroo.com/harekrsnatv/smil:harekrsnatvadp.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="HarvestTV.in" tvg-name="Harvest TV KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_HARVEST_TV_24X7/images/LOGO_HD/image.png" tvg-country="IN" group-title="Religious" tvg-quality="720p",Harvest TV KB
 https://7mbd4ogkr3gx-hls-live.wmncdn.net/harvesttvlive1/bbb19eae240ec100af921d511efc86a0.sdp/index.m3u8
@@ -1674,6 +1680,17 @@ http://103.72.101.252:8080/live/1411.m3u8
 
 #EXTINF:-1 tvg-id="SonyMax2.in" tvg-name="Sony Max 2 KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/SonyMAX2.png" tvg-country="IN" group-title="Movies" tvg-quality="576p",Sony Max 2 KB
 http://149.71.34.166:8000/play/a00z/index.m3u8
+
+#EXTINF:-1 tvg-id="StarBharat.in" tvg-name="Star Bharat KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_BHARAT/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="576p",Star Bharat KB
+http://103.253.18.58:8000/play/a00u
+
+#EXTINF:-1 tvg-id="StarGoldThrills.in" tvg-name="Star Gold Thrills KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_GOLD_THRILLS/images/LOGO_HD/image.png" tvg-country="IN" group-title="Movies" tvg-quality="576p",Star Gold Thrills KB
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+#EXTVLCOPT:http-referrer=https://www.hotstar.com/
+http://103.253.18.58:8000/play/a00o
+
+#EXTINF:-1 tvg-id="StarSports1Hindi.in" tvg-name="Star Sports 1 Hindi KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_SPORTS_1_HINDI/images/LOGO_HD/image.png" tvg-country="IN" group-title="Sports" tvg-quality="576p",Star Sports 1 Hindi KB
+http://103.253.18.58:8000/play/a03o
 
 #EXTINF:-1 tvg-id="StarUtsavMovies.in" tvg-name="Star Utsav Movies KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_UTSAV_MOVIES/images/LOGO_HD/image.png" tvg-country="IN" group-title="Movies" tvg-quality="576p",Star Utsav Movies KB
 http://149.71.34.166:8000/play/a059/index.m3u8
