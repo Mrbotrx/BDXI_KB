@@ -1183,7 +1183,7 @@ function createAPIFile(
     },
 
     facebook:
-      "https://www.facebook.com,kallyan.biswas.29"
+      "https://www.facebook.com/kallyan.biswas.29"
 
   };
 
