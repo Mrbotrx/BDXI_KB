@@ -2,7 +2,7 @@
   "name": "KB IPTV",
   "brand": "KB",
   "description": "BEST FAST PLAYLIST",
-  "updated": "2026-09-02T05:20:37.773Z",
+  "updated": "2026-09-02T06:20:06.194Z",
   "version": "1.0",
   "limits": {
     "india": 250
@@ -6847,5 +6847,5 @@
   "api": {
     "self": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/api.json"
   },
-  "facebook": "https://www.facebook.com,kallyan.biswas.29"
+  "facebook": "https://www.facebook.com/kallyan.biswas.29"
 }
