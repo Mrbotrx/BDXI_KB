@@ -1,14 +1,13 @@
-<div align="center"><img src="https://raw.githubusercontent.com/Mrbotrx/bdxi_tv/main/kbctlogo.png" width="130" alt="BDXI_KB IPTV">📺 BDXI_KB
+<div align="center"><img src="https://raw.githubusercontent.com/Mrbotrx/bdxi_tv/main/kbctlogo.png" width="130" alt="BDXI_KB IPTV">
+     
+     
+     📺 BDXI_KB
 
 "BDXI IPTV" · "M3U8 Playlist" · "Live TV"
 
 Bangladesh 🇧🇩 · India 🇮🇳 · BDXI 🌍
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=18&pause=1000&center=true&vCenter=true&width=550&lines=BDXI+IPTV;M3U8+PLAYLIST;LIVE+TV+STREAMING;BANGLADESH+IPTV;INDIA+IPTV;BDXI+LIVE+TV" alt="BDXI IPTV">""IPTV" (https://img.shields.io/badge/IPTV-Live%20TV-E91E63?style=flat-square)" (#-playlists)
-""M3U8" (https://img.shields.io/badge/M3U8-Playlist-2196F3?style=flat-square)" (#-playlists)
-""HLS" (https://img.shields.io/badge/HLS-Streaming-FF9800?style=flat-square)" (#-features)
 
-</div>---
 
 🎬 Playlists
 
