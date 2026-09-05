@@ -2,7 +2,7 @@
   "name": "KB IPTV",
   "brand": "KB",
   "description": "BEST FAST PLAYLIST",
-  "updated": "2026-09-05T00:14:10.767Z",
+  "updated": "2026-09-05T04:44:58.146Z",
   "version": "1.0",
   "limits": {
     "india": 250
@@ -10,7 +10,7 @@
   "total": {
     "Bangladesh": 25,
     "India": 250,
-    "BDXI": 706
+    "BDXI": 718
   },
   "playlists": {
     "Bangladesh": {
@@ -34,7 +34,7 @@
         "BD",
         "IN"
       ],
-      "total": 706,
+      "total": 718,
       "format": "M3U8",
       "url": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/playlists/BDXI.m3u8"
     }
@@ -226,6 +226,13 @@
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#ZeeCinema.in"
       },
       {
+        "id": "StarJalsha.in",
+        "name": "Star Jalsha KB",
+        "country": "IN",
+        "category": "Entertainment",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#StarJalsha.in"
+      },
+      {
         "id": "AsianetNews.in",
         "name": "Asianet News KB",
         "country": "IN",
@@ -268,6 +275,13 @@
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#NDTVIndia.in"
       },
       {
+        "id": "TimesNow.in",
+        "name": "Times Now KB",
+        "country": "IN",
+        "category": "News",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#TimesNow.in"
+      },
+      {
         "id": "RepublicTV.in",
         "name": "Republic TV KB",
         "country": "IN",
@@ -287,6 +301,13 @@
         "country": "IN",
         "category": "Sports",
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#DDSports.in"
+      },
+      {
+        "id": "Travelxp.in",
+        "name": "Travelxp 4K HDR KB",
+        "country": "IN",
+        "category": "Lifestyle",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#Travelxp.in"
       },
       {
         "id": "AndTV.in",
@@ -737,6 +758,13 @@
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#IndiaDailyLive.in"
       },
       {
+        "id": "IndiaTVAapKiAdalat.in",
+        "name": "India TV Aap Ki Adalat KB",
+        "country": "IN",
+        "category": "Documentary",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#IndiaTVAapKiAdalat.in"
+      },
+      {
         "id": "IndiaTVSpeedNews.in",
         "name": "India TV Speed News KB",
         "country": "IN",
@@ -798,6 +826,13 @@
         "country": "IN",
         "category": "Religious",
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#MahaaBhakti.in"
+      },
+      {
+        "id": "MalaiMurasuTV.in",
+        "name": "Malai Murasu TV KB",
+        "country": "IN",
+        "category": "News",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#MalaiMurasuTV.in"
       },
       {
         "id": "MangoMobileTV.in",
@@ -1311,6 +1346,27 @@
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#SonyEntertainmentTelevision.in"
       },
       {
+        "id": "SonyMarathi.in",
+        "name": "Sony Marathi KB",
+        "country": "IN",
+        "category": "Entertainment",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#SonyMarathi.in"
+      },
+      {
+        "id": "SonyPix.in",
+        "name": "Sony Pix HD KB",
+        "country": "IN",
+        "category": "Movies",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#SonyPix.in"
+      },
+      {
+        "id": "SonyWah.in",
+        "name": "Sony Wah KB",
+        "country": "IN",
+        "category": "Movies",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#SonyWah.in"
+      },
+      {
         "id": "SouthStation.in",
         "name": "South Station KB",
         "country": "IN",
@@ -1458,6 +1514,13 @@
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#ThalaaTV.in"
       },
       {
+        "id": "TheJungleBook.in",
+        "name": "The Jungle Book KB",
+        "country": "IN",
+        "category": "Kids",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#TheJungleBook.in"
+      },
+      {
         "id": "TheMovieClub.in",
         "name": "The Movie Club KB",
         "country": "IN",
@@ -1505,13 +1568,6 @@
         "country": "IN",
         "category": "Religious",
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#TotalBhakti.in"
-      },
-      {
-        "id": "Travelxp.in",
-        "name": "Travelxp HD KB",
-        "country": "IN",
-        "category": "Lifestyle",
-        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#Travelxp.in"
       },
       {
         "id": "TVBRICSEnglish.in",
@@ -1596,6 +1652,13 @@
         "country": "IN",
         "category": "Entertainment",
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#ZeeBangla.in"
+      },
+      {
+        "id": "ZeeBollymovies.in",
+        "name": "Zee Bollymovies Australia KB",
+        "country": "IN",
+        "category": "Movies",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#ZeeBollymovies.in"
       },
       {
         "id": "ZeeCafe.in",
@@ -1904,69 +1967,6 @@
         "country": "IN",
         "category": "general",
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#DDBihar.in"
-      },
-      {
-        "id": "DDChhattisgarh.in",
-        "name": "DD Chhattisgarh KB",
-        "country": "IN",
-        "category": "general",
-        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#DDChhattisgarh.in"
-      },
-      {
-        "id": "DDKisan.in",
-        "name": "DD Kisan KB",
-        "country": "IN",
-        "category": "education",
-        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#DDKisan.in"
-      },
-      {
-        "id": "DDMadhyaPradesh.in",
-        "name": "DD Madhya Pradesh KB",
-        "country": "IN",
-        "category": "general",
-        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#DDMadhyaPradesh.in"
-      },
-      {
-        "id": "DDRajasthan.in",
-        "name": "DD Rajasthan KB",
-        "country": "IN",
-        "category": "general",
-        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#DDRajasthan.in"
-      },
-      {
-        "id": "DDUrdu.in",
-        "name": "DD Urdu KB",
-        "country": "IN",
-        "category": "general",
-        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#DDUrdu.in"
-      },
-      {
-        "id": "DDUttarPradesh.in",
-        "name": "DD Uttar Pradesh KB",
-        "country": "IN",
-        "category": "general",
-        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#DDUttarPradesh.in"
-      },
-      {
-        "id": "DDUttarakhand.in",
-        "name": "DD Uttarakhand KB",
-        "country": "IN",
-        "category": "general",
-        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#DDUttarakhand.in"
-      },
-      {
-        "id": "DesiChannel.in",
-        "name": "Desi Channel KB",
-        "country": "IN",
-        "category": "Entertainment",
-        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#DesiChannel.in"
-      },
-      {
-        "id": "DharsanTV.in",
-        "name": "Dharsan TV KB",
-        "country": "IN",
-        "category": "Religious",
-        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#DharsanTV.in"
       }
     ],
     "BDXI": [
@@ -2004,6 +2004,13 @@
         "country": "BD",
         "category": "News",
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#DBCNews.bd"
+      },
+      {
+        "id": "StarJalsha.in",
+        "name": "Star Jalsha KB",
+        "country": "IN",
+        "category": "Entertainment",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#StarJalsha.in"
       },
       {
         "id": "MaasrangaTV.bd",
@@ -2069,6 +2076,13 @@
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#NDTVIndia.in"
       },
       {
+        "id": "TimesNow.in",
+        "name": "Times Now KB",
+        "country": "IN",
+        "category": "News",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#TimesNow.in"
+      },
+      {
         "id": "RepublicTV.in",
         "name": "Republic TV KB",
         "country": "IN",
@@ -2088,6 +2102,13 @@
         "country": "IN",
         "category": "Sports",
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#DDSports.in"
+      },
+      {
+        "id": "Travelxp.in",
+        "name": "Travelxp 4K HDR KB",
+        "country": "IN",
+        "category": "Lifestyle",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#Travelxp.in"
       },
       {
         "id": "AndTV.in",
@@ -2559,6 +2580,13 @@
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#IndiaDailyLive.in"
       },
       {
+        "id": "IndiaTVAapKiAdalat.in",
+        "name": "India TV Aap Ki Adalat KB",
+        "country": "IN",
+        "category": "Documentary",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#IndiaTVAapKiAdalat.in"
+      },
+      {
         "id": "IndiaTVSpeedNews.in",
         "name": "India TV Speed News KB",
         "country": "IN",
@@ -2627,6 +2655,13 @@
         "country": "IN",
         "category": "Religious",
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#MahaaBhakti.in"
+      },
+      {
+        "id": "MalaiMurasuTV.in",
+        "name": "Malai Murasu TV KB",
+        "country": "IN",
+        "category": "News",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#MalaiMurasuTV.in"
       },
       {
         "id": "MangoMobileTV.in",
@@ -3147,6 +3182,27 @@
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#SonyEntertainmentTelevision.in"
       },
       {
+        "id": "SonyMarathi.in",
+        "name": "Sony Marathi KB",
+        "country": "IN",
+        "category": "Entertainment",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#SonyMarathi.in"
+      },
+      {
+        "id": "SonyPix.in",
+        "name": "Sony Pix HD KB",
+        "country": "IN",
+        "category": "Movies",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#SonyPix.in"
+      },
+      {
+        "id": "SonyWah.in",
+        "name": "Sony Wah KB",
+        "country": "IN",
+        "category": "Movies",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#SonyWah.in"
+      },
+      {
         "id": "SouthStation.in",
         "name": "South Station KB",
         "country": "IN",
@@ -3294,6 +3350,13 @@
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#ThalaaTV.in"
       },
       {
+        "id": "TheJungleBook.in",
+        "name": "The Jungle Book KB",
+        "country": "IN",
+        "category": "Kids",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#TheJungleBook.in"
+      },
+      {
         "id": "TheMovieClub.in",
         "name": "The Movie Club KB",
         "country": "IN",
@@ -3341,13 +3404,6 @@
         "country": "IN",
         "category": "Religious",
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#TotalBhakti.in"
-      },
-      {
-        "id": "Travelxp.in",
-        "name": "Travelxp HD KB",
-        "country": "IN",
-        "category": "Lifestyle",
-        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#Travelxp.in"
       },
       {
         "id": "TVBRICSEnglish.in",
@@ -3432,6 +3488,13 @@
         "country": "IN",
         "category": "Entertainment",
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#ZeeBangla.in"
+      },
+      {
+        "id": "ZeeBollymovies.in",
+        "name": "Zee Bollymovies Australia KB",
+        "country": "IN",
+        "category": "Movies",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#ZeeBollymovies.in"
       },
       {
         "id": "ZeeCafe.in",
@@ -3833,18 +3896,18 @@
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#Enterr10Bangla.in"
       },
       {
+        "id": "ETNow.in",
+        "name": "ET Now KB",
+        "country": "IN",
+        "category": "Business",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#ETNow.in"
+      },
+      {
         "id": "FaktMarathi.in",
         "name": "Fakt Marathi KB",
         "country": "IN",
         "category": "Entertainment",
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#FaktMarathi.in"
-      },
-      {
-        "id": "GoldminesMovies.in",
-        "name": "Goldmines Movies KB",
-        "country": "IN",
-        "category": "Movies",
-        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#GoldminesMovies.in"
       },
       {
         "id": "GoodNewsToday.in",
@@ -3866,13 +3929,6 @@
         "country": "IN",
         "category": "Religious",
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#GospelTVIndia.in"
-      },
-      {
-        "id": "GulistanNews.in",
-        "name": "Gulistan News KB",
-        "country": "IN",
-        "category": "News",
-        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#GulistanNews.in"
       },
       {
         "id": "Gyandarshan.in",
@@ -4020,13 +4076,6 @@
         "country": "IN",
         "category": "News",
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#MalabarNews.in"
-      },
-      {
-        "id": "MalaiMurasuTV.in",
-        "name": "Malai Murasu TV KB",
-        "country": "IN",
-        "category": "News",
-        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#MalaiMurasuTV.in"
       },
       {
         "id": "MalarTV.in",
@@ -4218,6 +4267,13 @@
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#RajMusixTelugu.in"
       },
       {
+        "id": "RDXGoa.in",
+        "name": "RDX Goa KB",
+        "country": "IN",
+        "category": "News",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#RDXGoa.in"
+      },
+      {
         "id": "RongeenTV.in",
         "name": "Rongeen TV KB",
         "country": "IN",
@@ -4321,13 +4377,6 @@
         "country": "IN",
         "category": "Movies",
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#SonyMax1.in"
-      },
-      {
-        "id": "StarJalsha.in",
-        "name": "Star Jalsha HD KB",
-        "country": "IN",
-        "category": "Entertainment",
-        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#StarJalsha.in"
       },
       {
         "id": "StarMaa.in",
@@ -4519,6 +4568,13 @@
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#VoktaTV.bd"
       },
       {
+        "id": "WeOneKerala.in",
+        "name": "We One Kerala KB",
+        "country": "IN",
+        "category": "general",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#WeOneKerala.in"
+      },
+      {
         "id": "WOWKidz.in",
         "name": "WOW Kidz KB",
         "country": "IN",
@@ -4657,6 +4713,13 @@
         "country": "IN",
         "category": "News",
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#ZeeTeluguNews.in"
+      },
+      {
+        "id": "ZeeTV.in",
+        "name": "Zee TV HD KB",
+        "country": "IN",
+        "category": "Entertainment",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#ZeeTV.in"
       },
       {
         "id": "ZeeUttarPradeshUttarakhand.in",
@@ -5051,6 +5114,13 @@
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#Goldmines.in"
       },
       {
+        "id": "GoldminesMovies.in",
+        "name": "Goldmines Movies KB",
+        "country": "IN",
+        "category": "Movies",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#GoldminesMovies.in"
+      },
+      {
         "id": "GoodnessTV.in",
         "name": "Goodness TV KB",
         "country": "IN",
@@ -5343,6 +5413,13 @@
         "country": "IN",
         "category": "News",
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#MahaaNews.in"
+      },
+      {
+        "id": "Mango.in",
+        "name": "Mango KB",
+        "country": "IN",
+        "category": "Entertainment",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#Mango.in"
       },
       {
         "id": "ManoranjanPrime.in",
@@ -5896,6 +5973,13 @@
         "country": "IN",
         "category": "Movies",
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#SonyMax2.in"
+      },
+      {
+        "id": "SonyMax.in",
+        "name": "Sony Max KB",
+        "country": "IN",
+        "category": "Movies",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#SonyMax.in"
       },
       {
         "id": "SonyPal.in",
