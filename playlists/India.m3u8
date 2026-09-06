@@ -2,8 +2,20 @@
 # KB IPTV - India
 # BEST FAST PLAYLIST
 # Total Channels: 250
-# Updated: 2026-09-05T23:05:59.519Z
+# Updated: 2026-09-06T01:09:59.907Z
 # Facebook: https://www.facebook.com/kallyan.biswas.29
+
+#EXTINF:-1 tvg-id="SonySportsTen1.in" tvg-name="Sony Sports Ten 1 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_SPORTS_TEN_1_HD/images/LOGO_HD/image.png" tvg-country="IN" group-title="Sports" tvg-quality="1080p",Sony Sports Ten 1 KB
+https://cloudplay-sonyliv.pages.dev/ten1.m3u8
+
+#EXTINF:-1 tvg-id="SonySportsTen2.in" tvg-name="Sony Sports Ten 2 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_SPORTS_TEN_2/images/LOGO_HD/image.png" tvg-country="IN" group-title="Sports" tvg-quality="1080p",Sony Sports Ten 2 KB
+https://cloudplay-sonyliv.pages.dev/ten2.m3u8
+
+#EXTINF:-1 tvg-id="SonySportsTen4.in" tvg-name="Sony Sports Ten 4 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_SPORTS_TEN_4_HD/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="Sports" tvg-quality="1080p",Sony Sports Ten 4 KB
+https://cloudplay-sonyliv.pages.dev/ten4.m3u8
+
+#EXTINF:-1 tvg-id="SonySportsTen5.in" tvg-name="Sony Sports Ten 5 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_SPORTS_TEN_5_HD/images/LOGO_HD/image.png" tvg-country="IN" group-title="Sports" tvg-quality="1080p",Sony Sports Ten 5 KB
+https://cloudplay-sonyliv.pages.dev/ten5.m3u8
 
 #EXTINF:-1 tvg-id="ZeeCinema.in" tvg-name="Zee Cinema KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_CINEMA_HD/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="Movies" tvg-quality="576p",Zee Cinema KB
 https://d1g8wgjurz8via.cloudfront.net/bpk-tv/NGCHD/default/NGCHD.m3u8
@@ -489,17 +501,41 @@ http://103.213.31.109:90/ShemarooFilmiGaane/playlist.m3u8
 #EXTINF:-1 tvg-id="ShubhTV.in" tvg-name="Shubh TV KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SHUBH_TV/images/LOGO_HD/image.png" tvg-country="IN" group-title="IPTV" tvg-quality="1080p",Shubh TV KB
 https://d2g1vdc6ozl2o8.cloudfront.net/out/v1/0a0dc7d7911b4fddbb4dfc963fdd4b9e/index.m3u8
 
+#EXTINF:-1 tvg-id="SonyAath.in" tvg-name="Sony Aath KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_8/images/LOGO_HD/image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Sony Aath KB
+https://cloudplay-sonyliv.pages.dev/aath.m3u8
+
+#EXTINF:-1 tvg-id="SonyBBCEarth.in" tvg-name="Sony BBC Earth HD KB" tvg-logo="https://dtil.tmsimg.com/assets/s143799_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="Documentary" tvg-quality="1080p",Sony BBC Earth HD KB
+https://cloudplay-sonyliv.pages.dev/bbcearthhd.m3u8
+
 #EXTINF:-1 tvg-id="SonyEntertainmentTelevision.in" tvg-name="Sony Entertainment Television HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SET/images/LOGO_HD/image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Sony Entertainment Television HD KB
 http://38.96.178.205/SONYHD/index.m3u8
 
 #EXTINF:-1 tvg-id="SonyMarathi.in" tvg-name="Sony Marathi KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_MARATHI/images/LOGO_HD/image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Sony Marathi KB
 https://sl.vodep39240327.workers.dev/channel/SONY+MARATHI.m3u8
 
+#EXTINF:-1 tvg-id="SonyMax2.in" tvg-name="Sony Max 2 KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/SonyMAX2.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Sony Max 2 KB
+https://cloudplay-sonyliv.pages.dev/max2.m3u8
+
+#EXTINF:-1 tvg-id="SonyMax.in" tvg-name="Sony Max HD KB" tvg-logo="https://i.imgur.com/LBICKI5.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Sony Max HD KB
+https://cloudplay-sonyliv.pages.dev/maxhd.m3u8
+
+#EXTINF:-1 tvg-id="SonyPal.in" tvg-name="Sony Pal KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_PAL/images/LOGO_HD/image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Sony Pal KB
+https://cloudplay-sonyliv.pages.dev/pal.m3u8
+
 #EXTINF:-1 tvg-id="SonyPix.in" tvg-name="Sony Pix HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_PIX/images/LOGO_HD/image.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Sony Pix HD KB
 https://sl.vodep39240327.workers.dev/channel/SONY+PIX+HD.m3u8
 
+#EXTINF:-1 tvg-id="SonySAB.in" tvg-name="Sony SAB HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_SAB_HD/images/LOGO_HD/image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Sony SAB HD KB
+https://cloudplay-sonyliv.pages.dev/sabhd.m3u8
+
+#EXTINF:-1 tvg-id="SonySportsTen3Hindi.in" tvg-name="Sony Sports Ten 3 Hindi HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_SPORTS_TEN_3_HD/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="Sports" tvg-quality="1080p",Sony Sports Ten 3 Hindi HD KB
+https://cloudplay-sonyliv.pages.dev/ten3hd.m3u8
+
 #EXTINF:-1 tvg-id="SonyWah.in" tvg-name="Sony Wah KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_WAH/images/LOGO_HD/image.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Sony Wah KB
 https://sl.vodep39240327.workers.dev/channel/SONY+WAH.m3u8
+
+#EXTINF:-1 tvg-id="SonyYay.in" tvg-name="Sony Yay! KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_YAY/images/LOGO_HD/image.png" tvg-country="IN" group-title="animation" tvg-quality="1080p",Sony Yay! KB
+https://cloudplay-sonyliv.pages.dev/yay.m3u8
 
 #EXTINF:-1 tvg-id="SouthStation.in" tvg-name="South Station KB" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN3800008CX_20260325T012316SQUARE.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",South Station KB
 https://cc-yw7ztecy8do3q.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-yw7ztecy8do3q/SS_IN.m3u8
@@ -723,40 +759,4 @@ https://cdn-1.pishow.tv/live/397/master.m3u8
 
 #EXTINF:-1 tvg-id="BhojpuriCinema.in" tvg-name="Bhojpuri Cinema KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_BHOJPURI_CINEMA/images/LOGO_HD/image.png" tvg-country="IN" group-title="Movies" tvg-quality="720p",Bhojpuri Cinema KB
 https://live-bhojpuri.akamaized.net/liveabr/playlist.m3u8
-
-#EXTINF:-1 tvg-id="BIGTV.in" tvg-name="BIG TV KB" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/4f/BiG_TV_%28Stacked%29.svg/revision/latest/scale-to-width-down/250?cb=20180316124023" tvg-country="IN" group-title="News" tvg-quality="720p",BIG TV KB
-https://cdn-1.pishow.tv/live/1059/master.m3u8
-
-#EXTINF:-1 tvg-id="BRKNews.in" tvg-name="BRK News KB" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/brk-news.png" tvg-country="IN" group-title="News" tvg-quality="720p",BRK News KB
-https://mumbai-edge.smartplaytv.in/BRKNEWS/index.m3u8
-
-#EXTINF:-1 tvg-id="BTTV.in" tvg-name="BT TV KB" tvg-logo="https://akm-img-a-in.tosshub.com/businesstoday/resource/img/best-bank-new.png" tvg-country="IN" group-title="News" tvg-quality="720p",BT TV KB
-https://feeds.intoday.in/bttv/itgd.m3u8
-
-#EXTINF:-1 tvg-id="ChannelWIN.in" tvg-name="Channel WIN KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_CHANNEL_WIN/images/LOGO_HD/image.png" tvg-country="IN" group-title="Religious" tvg-quality="720p",Channel WIN KB
-https://cdn-4.pishow.tv/live/229/master.m3u8
-
-#EXTINF:-1 tvg-id="CnewsBharat.in" tvg-name="Cnews Bharat KB" tvg-logo="https://raw.githubusercontent.com/satish-kumar07/iptv-channel-logos/refs/heads/main/Cnews%20Bharat.png" tvg-country="IN" group-title="News" tvg-quality="720p",Cnews Bharat KB
-https://legitpro.co.in/cnews/cnews/index.fmp4.m3u8
-
-#EXTINF:-1 tvg-id="ColorsMENA.in" tvg-name="Colors MENA HD KB" tvg-logo="https://i.imgur.com/LjNFTdC.png" tvg-country="IN" group-title="Entertainment" tvg-quality="720p",Colors MENA HD KB
-https://da86m1sqpm3o0.cloudfront.net/28072023/smil:colorsme.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="ColorsTamil.in" tvg-name="Colors Tamil HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS_TAMIL/images/LOGO_HD/image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="720p",Colors Tamil HD KB
-https://da86m1sqpm3o0.cloudfront.net/28072023/smil:colorstamilhd11.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="CVREnglish.in" tvg-name="CVR English KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/CVR_English.png" tvg-country="IN" group-title="News" tvg-quality="720p",CVR English KB
-https://cdn-2.pishow.tv/live/425/master.m3u8
-
-#EXTINF:-1 tvg-id="Dangal2.in" tvg-name="Dangal 2 KB" tvg-logo="https://i.imgur.com/BEr1r7L.png" tvg-country="IN" group-title="Entertainment" tvg-quality="720p",Dangal 2 KB
-https://live-dangal2.akamaized.net/liveabr/playlist.m3u8
-
-#EXTINF:-1 tvg-id="DangalTV.in" tvg-name="Dangal TV KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DANGAL/images/LOGO_HD/image.png" tvg-country="IN" group-title="general" tvg-quality="720p",Dangal TV KB
-https://live-dangal.akamaized.net/liveabr/playlist.m3u8
-
-#EXTINF:-1 tvg-id="DDBharati.in" tvg-name="DD Bharati KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_BHARATI/images/LOGO_HD/image.png" tvg-country="IN" group-title="culture" tvg-quality="720p",DD Bharati KB
-https://cdn-1.pishow.tv/live/10/master.m3u8
-
-#EXTINF:-1 tvg-id="DDBihar.in" tvg-name="DD Bihar KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_BIHAR/images/LOGO_HD/image.png" tvg-country="IN" group-title="general" tvg-quality="720p",DD Bihar KB
-https://cdn-4.pishow.tv/live/35/master.m3u8
 
