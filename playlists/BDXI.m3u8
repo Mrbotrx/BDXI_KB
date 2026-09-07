@@ -2,7 +2,7 @@
 # KB IPTV - BDXI
 # BEST FAST PLAYLIST
 # Total Channels: 719
-# Updated: 2026-09-07T01:10:31.012Z
+# Updated: 2026-09-07T06:20:25.006Z
 # Facebook: https://www.facebook.com/kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="ATNBangla.bd" tvg-name="ATN Bangla KB" tvg-logo="https://i.imgur.com/K1HmMRz.png" tvg-country="BD" group-title="general" tvg-quality="720p",ATN Bangla KB
@@ -978,7 +978,7 @@ https://cdn-3.pishow.tv/live/1253/master.m3u8
 #EXTINF:-1 tvg-id="MusicIndia.in" tvg-name="Music India KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Music_India.png" tvg-country="IN" group-title="Music" tvg-quality="720p",Music India KB
 https://cdn-2.pishow.tv/live/226/master.m3u8
 
-#EXTINF:-1 tvg-id="NDTV24x7.in" tvg-name="NDTV 24x7 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NDTV_24X7/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="720p",NDTV 24x7 KB
+#EXTINF:-1 tvg-id="NDTV24x7.in" tvg-name="NDTV 24x7 KB" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/NDTV_247.svg/960px-NDTV_247.svg.png" tvg-country="IN" group-title="News" tvg-quality="720p",NDTV 24x7 KB
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/NDTV24x7.m3u8
 
 #EXTINF:-1 tvg-id="News24.in" tvg-name="News 24 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS24/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="720p",News 24 KB
