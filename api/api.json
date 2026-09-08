@@ -2,7 +2,7 @@
   "name": "KB IPTV",
   "brand": "KB",
   "description": "BEST FAST PLAYLIST",
-  "updated": "2026-09-07T23:53:22.938Z",
+  "updated": "2026-09-08T02:33:29.023Z",
   "version": "1.0",
   "limits": {
     "india": 250
@@ -10,7 +10,7 @@
   "total": {
     "Bangladesh": 25,
     "India": 250,
-    "BDXI": 719
+    "BDXI": 720
   },
   "playlists": {
     "Bangladesh": {
@@ -34,7 +34,7 @@
         "BD",
         "IN"
       ],
-      "total": 719,
+      "total": 720,
       "format": "M3U8",
       "url": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/playlists/BDXI.m3u8"
     }
@@ -1731,13 +1731,6 @@
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#ZBCartoon.in"
       },
       {
-        "id": "ZeeBangla.in",
-        "name": "Zee Bangla HD KB",
-        "country": "IN",
-        "category": "Entertainment",
-        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#ZeeBangla.in"
-      },
-      {
         "id": "ZeeBollymovies.in",
         "name": "Zee Bollymovies Australia KB",
         "country": "IN",
@@ -1967,6 +1960,13 @@
         "country": "IN",
         "category": "Movies",
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#BhojpuriCinema.in"
+      },
+      {
+        "id": "BIGTV.in",
+        "name": "BIG TV KB",
+        "country": "IN",
+        "category": "News",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#BIGTV.in"
       }
     ],
     "BDXI": [
@@ -3567,13 +3567,6 @@
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#ZBCartoon.in"
       },
       {
-        "id": "ZeeBangla.in",
-        "name": "Zee Bangla HD KB",
-        "country": "IN",
-        "category": "Entertainment",
-        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#ZeeBangla.in"
-      },
-      {
         "id": "ZeeBollymovies.in",
         "name": "Zee Bollymovies Australia KB",
         "country": "IN",
@@ -4701,6 +4694,13 @@
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#Zee24Taas.in"
       },
       {
+        "id": "ZeeBangla.in",
+        "name": "Zee Bangla HD KB",
+        "country": "IN",
+        "category": "Entertainment",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#ZeeBangla.in"
+      },
+      {
         "id": "ZeeBharat.in",
         "name": "Zee Bharat KB",
         "country": "IN",
@@ -5483,6 +5483,13 @@
         "country": "IN",
         "category": "News",
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#MathrubhumiNews.in"
+      },
+      {
+        "id": "MeiAlaiTV.in",
+        "name": "Mei Alai TV KB",
+        "country": "IN",
+        "category": "general",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#MeiAlaiTV.in"
       },
       {
         "id": "MHOneShraddha.in",

@@ -2,7 +2,7 @@
 # KB IPTV - India
 # BEST FAST PLAYLIST
 # Total Channels: 250
-# Updated: 2026-09-07T23:53:22.776Z
+# Updated: 2026-09-08T02:33:28.862Z
 # Facebook: https://www.facebook.com/kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="SonySportsTen1.in" tvg-name="Sony Sports Ten 1 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_SPORTS_TEN_1_HD/images/LOGO_HD/image.png" tvg-country="IN" group-title="Sports" tvg-quality="1080p",Sony Sports Ten 1 KB
@@ -658,9 +658,6 @@ https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-yrfmusic-xiaomi/pl
 #EXTINF:-1 tvg-id="ZBCartoon.in" tvg-name="ZB Cartoon KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/zbcatun.png" tvg-country="IN" group-title="Kids" tvg-quality="1080p",ZB Cartoon KB
 https://server.zillarbarta.com/zbcatun/video.m3u8
 
-#EXTINF:-1 tvg-id="ZeeBangla.in" tvg-name="Zee Bangla HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_BANGLA_HD/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Zee Bangla HD KB
-http://103.165.93.31:8095/zeeBangla/index.m3u8
-
 #EXTINF:-1 tvg-id="ZeeBollymovies.in" tvg-name="Zee Bollymovies Australia KB" tvg-logo="https://framerusercontent.com/images/mqfJ18x4jYe0GbZUbxSHsbnWU.png?scale-down-to=512" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Zee Bollymovies Australia KB
 https://amg17931-zee-amg17931c8-samsung-au-8871.playouts.now.amagi.tv/playlist.m3u8
 
@@ -759,4 +756,7 @@ https://cdn-1.pishow.tv/live/397/master.m3u8
 
 #EXTINF:-1 tvg-id="BhojpuriCinema.in" tvg-name="Bhojpuri Cinema KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_BHOJPURI_CINEMA/images/LOGO_HD/image.png" tvg-country="IN" group-title="Movies" tvg-quality="720p",Bhojpuri Cinema KB
 https://live-bhojpuri.akamaized.net/liveabr/playlist.m3u8
+
+#EXTINF:-1 tvg-id="BIGTV.in" tvg-name="BIG TV KB" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/4f/BiG_TV_%28Stacked%29.svg/revision/latest/scale-to-width-down/250?cb=20180316124023" tvg-country="IN" group-title="News" tvg-quality="720p",BIG TV KB
+https://cdn-1.pishow.tv/live/1059/master.m3u8
 

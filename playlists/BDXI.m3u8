@@ -1,8 +1,8 @@
 #EXTM3U
 # KB IPTV - BDXI
 # BEST FAST PLAYLIST
-# Total Channels: 719
-# Updated: 2026-09-07T23:53:22.933Z
+# Total Channels: 720
+# Updated: 2026-09-08T02:33:29.019Z
 # Facebook: https://www.facebook.com/kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="ATNBangla.bd" tvg-name="ATN Bangla KB" tvg-logo="https://i.imgur.com/K1HmMRz.png" tvg-country="BD" group-title="general" tvg-quality="720p",ATN Bangla KB
@@ -694,9 +694,6 @@ https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-yrfmusic-xiaomi/pl
 #EXTINF:-1 tvg-id="ZBCartoon.in" tvg-name="ZB Cartoon KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/zbcatun.png" tvg-country="IN" group-title="Kids" tvg-quality="1080p",ZB Cartoon KB
 https://server.zillarbarta.com/zbcatun/video.m3u8
 
-#EXTINF:-1 tvg-id="ZeeBangla.in" tvg-name="Zee Bangla HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_BANGLA_HD/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Zee Bangla HD KB
-http://103.165.93.31:8095/zeeBangla/index.m3u8
-
 #EXTINF:-1 tvg-id="ZeeBollymovies.in" tvg-name="Zee Bollymovies Australia KB" tvg-logo="https://framerusercontent.com/images/mqfJ18x4jYe0GbZUbxSHsbnWU.png?scale-down-to=512" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Zee Bollymovies Australia KB
 https://amg17931-zee-amg17931c8-samsung-au-8871.playouts.now.amagi.tv/playlist.m3u8
 
@@ -1184,6 +1181,9 @@ https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zee24kalak/v1/manifest/611d79b
 #EXTINF:-1 tvg-id="Zee24Taas.in" tvg-name="Zee 24 Taas KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_24_TAAS/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="News" tvg-quality="720p",Zee 24 Taas KB
 https://dgrvlduwztkd4.cloudfront.net/index_5.m3u8
 
+#EXTINF:-1 tvg-id="ZeeBangla.in" tvg-name="Zee Bangla HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_BANGLA_HD/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="720p",Zee Bangla HD KB
+https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/ZeeBanglaHD.m3u8
+
 #EXTINF:-1 tvg-id="ZeeBharat.in" tvg-name="Zee Bharat KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_BHARAT/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="News" tvg-quality="720p",Zee Bharat KB
 https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zeehindustan/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/96bbab12-582e-4540-af70-510ab6824581/main.m3u8
 
@@ -1522,6 +1522,9 @@ https://mumt02.tangotv.in/MANTAVYA24X7NEWS/index.m3u8
 
 #EXTINF:-1 tvg-id="MathrubhumiNews.in" tvg-name="Mathrubhumi News KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_MATHRUBHUMI_NEWS/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="576p",Mathrubhumi News KB
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/mathrubhuminews_nim_https/110322/mathrubhuminews/playlist.m3u8
+
+#EXTINF:-1 tvg-id="MeiAlaiTV.in" tvg-name="Mei Alai TV KB" tvg-logo="https://www.meialai.in/assets/meialai-DBaBUZTH.png" tvg-country="IN" group-title="general" tvg-quality="576p",Mei Alai TV KB
+https://meialai.iptelevishion.com/meialai/2/index.m3u8
 
 #EXTINF:-1 tvg-id="MHOneShraddha.in" tvg-name="MH One Shraddha KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_MH_ONE_SHRADDHA/images/LOGO_HD/image.png" tvg-country="IN" group-title="Religious" tvg-quality="576p",MH One Shraddha KB
 https://mumt01.tangotv.in/O5aw8Zn3MHONESHRADDHA/index.m3u8
