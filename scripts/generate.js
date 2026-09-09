@@ -1,7 +1,10 @@
 const fs = require("fs");
 const path = require("path");
 
-console.log("KB IPTV - Secure API Generator");
+console.log("======================================");
+console.log("       KB IPTV AUTO GENERATOR");
+console.log("          BDXI_KB / MAIN");
+console.log("======================================");
 
 /* ==========================================
    SECURE API
@@ -60,21 +63,25 @@ for (const [name, url] of Object.entries(API)) {
 }
 
 /* ==========================================
-   DIRECTORIES
+   CREATE DIRECTORIES
 ========================================== */
 
 fs.mkdirSync(
   OUT_DIR,
-  { recursive: true }
+  {
+    recursive: true
+  }
 );
 
 fs.mkdirSync(
   API_DIR,
-  { recursive: true }
+  {
+    recursive: true
+  }
 );
 
 /* ==========================================
-   HELPERS
+   CLEAN TEXT
 ========================================== */
 
 function clean(value) {
@@ -86,16 +93,21 @@ function clean(value) {
 
 }
 
+/* ==========================================
+   FETCH JSON
+========================================== */
+
 async function getJSON(url) {
 
-  const response = await fetch(url, {
-
-    headers: {
-      "User-Agent": "KB-IPTV/1.0",
-      "Accept": "application/json"
+  const response = await fetch(
+    url,
+    {
+      headers: {
+        "User-Agent": "KB-IPTV/1.0",
+        "Accept": "application/json"
+      }
     }
-
-  });
+  );
 
   if (!response.ok) {
 
@@ -109,6 +121,10 @@ async function getJSON(url) {
 
 }
 
+/* ==========================================
+   COUNTRY
+========================================== */
+
 function countryOf(channel) {
 
   return String(
@@ -118,11 +134,13 @@ function countryOf(channel) {
 }
 
 /* ==========================================
-   CHANNEL NAME
-   ALWAYS END WITH KB
+   KB CHANNEL NAME
 ========================================== */
 
-function kbName(channel, stream) {
+function kbName(
+  channel,
+  stream
+) {
 
   let name = clean(
     stream?.title ||
@@ -139,7 +157,8 @@ function kbName(channel, stream) {
 }
 
 /* ==========================================
-   CATEGORY
+   AUTO CATEGORY
+   RELIGION REMOVED
 ========================================== */
 
 function autoCategory(
@@ -147,268 +166,538 @@ function autoCategory(
   stream
 ) {
 
-  const metadata = [
+  const channelName = clean(
+    channel?.name ||
+    channel?.id ||
+    ""
+  );
 
-    stream?.category,
-    stream?.group,
-    stream?.group_title,
-    channel?.category,
+  const streamName = clean(
+    stream?.title ||
+    ""
+  );
+
+  const network = clean(
+    channel?.network ||
+    ""
+  );
+
+  const categories = Array.isArray(
     channel?.categories
+  )
+    ? channel.categories
+    : [];
 
-  ];
+  const rawText = [
+    channelName,
+    streamName,
+    network,
+    ...categories
+  ]
+    .join(" ")
+    .toLowerCase();
 
-  for (const value of metadata) {
+  /* ========================================
+     OFFICIAL CATEGORY MAP
+  ======================================== */
 
-    if (Array.isArray(value)) {
+  const officialMap = {
 
-      const found = value
-        .map(clean)
-        .filter(Boolean)
-        .find(Boolean);
+    news: "News",
 
-      if (found) {
+    sport: "Sports",
+    sports: "Sports",
 
-        return formatCategory(found);
+    movie: "Movies",
+    movies: "Movies",
 
-      }
+    music: "Music",
+
+    kids: "Kids",
+
+    animation: "Animation",
+
+    entertainment: "Entertainment",
+
+    comedy: "Comedy",
+
+    documentary: "Documentary",
+
+    lifestyle: "Lifestyle",
+
+    business: "Business",
+
+    technology: "Technology",
+    tech: "Technology",
+
+    education: "Education",
+
+    culture: "Culture",
+
+    cooking: "Cooking",
+
+    classic: "Classic",
+
+    general: "General"
+
+  };
+
+  /* ========================================
+     OFFICIAL CATEGORY FIRST
+  ======================================== */
+
+  for (
+    const category of categories
+  ) {
+
+    const key = clean(category)
+      .toLowerCase()
+      .trim();
+
+    /*
+      IMPORTANT:
+      Religion intentionally ignored.
+    */
+
+    if (
+      key === "religion" ||
+      key === "religious"
+    ) {
+
+      continue;
 
     }
 
     if (
-      typeof value === "string" &&
-      value.trim()
+      officialMap[key]
     ) {
 
-      return formatCategory(value);
+      return officialMap[key];
 
     }
 
   }
 
-  const name = clean(
-
-    stream?.title ||
-    channel?.name ||
-    channel?.id
-
-  ).toLowerCase();
-
-  /* NEWS */
+  /* ========================================
+     NEWS
+  ======================================== */
 
   if (
-    /\bnews\b|news24|aaj tak|ndtv|cnn|bbc|republic|times now|abp news|dbc|somoy|jamuna tv|ekattor|independent/
-      .test(name)
+    /\bnews\b|
+     news24|
+     news 24|
+     aaj tak|
+     ndtv|
+     cnn|
+     bbc|
+     republic|
+     times now|
+     abp|
+     news18|
+     india tv|
+     dbc|
+     somoy|
+     jamuna tv|
+     ekattor|
+     independent|
+     channel i news|
+     banglavision news|
+     desh tv|
+     ntv news|
+     atn news|
+     bloomberg
+    /ix.test(rawText)
   ) {
 
     return "News";
 
   }
 
-  /* SPORTS */
+  /* ========================================
+     SPORTS
+  ======================================== */
 
   if (
-    /\bsport\b|\bsports\b|cricket|football|soccer|tennis|wwe|f1|espn|star sports|sony sports|ten sports|t sports|dd sports/
-      .test(name)
+    /\bsport\b|
+     \bsports\b|
+     cricket|
+     football|
+     soccer|
+     tennis|
+     badminton|
+     basketball|
+     volleyball|
+     wrestling|
+     wwe|
+     formula 1|
+     f1|
+     espn|
+     star sports|
+     sony sports|
+     sony ten|
+     ten sports|
+     t sports|
+     tsports|
+     dd sports|
+     eurosport
+    /ix.test(rawText)
   ) {
 
     return "Sports";
 
   }
 
-  /* COMEDY */
+  /* ========================================
+     MOVIES
+  ======================================== */
 
   if (
-    /comedy|comedian|funny|humor|laugh|stand.?up/
-      .test(name)
-  ) {
-
-    return "Comedy";
-
-  }
-
-  /* MOVIES */
-
-  if (
-    /movie|movies|cinema|film|films|zee cinema|sony max|star gold|colors cineplex/
-      .test(name)
+    /\bmovie\b|
+     \bmovies\b|
+     cinema|
+     film|
+     films|
+     zee cinema|
+     sony max|
+     star gold|
+     colors cineplex|
+     &pictures|
+     movies now|
+     b4u movies|
+     max 2|
+     goldmines
+    /ix.test(rawText)
   ) {
 
     return "Movies";
 
   }
 
-  /* MUSIC */
+  /* ========================================
+     MUSIC
+  ======================================== */
 
   if (
-    /music|mtv|9xm|9x music|zoom|sound|songs|song/
-      .test(name)
+    /\bmusic\b|
+     mtv|
+     9xm|
+     9x music|
+     zoom|
+     songs|
+     song|
+     music india|
+     music bangla|
+     music hd|
+     sound
+    /ix.test(rawText)
   ) {
 
     return "Music";
 
   }
 
-  /* KIDS */
+  /* ========================================
+     KIDS
+  ======================================== */
 
   if (
-    /kids|kid|cartoon|nick|nickelodeon|pogo|disney|baby|junior|hungama/
-      .test(name)
+    /\bkids\b|
+     \bkid\b|
+     cartoon|
+     nickelodeon|
+     nick|
+     pogo|
+     disney|
+     disney junior|
+     disney xd|
+     baby|
+     junior|
+     hungama
+    /ix.test(rawText)
   ) {
 
     return "Kids";
 
   }
 
-  /* ENTERTAINMENT */
+  /* ========================================
+     ANIMATION
+  ======================================== */
 
   if (
-    /entertainment|zee tv|star plus|star jalsha|colors|sony sab|sony entertainment|sab tv|&tv|colors bangla/
-      .test(name)
+    /animation|
+     anime|
+     animax|
+     cartoon network
+    /ix.test(rawText)
+  ) {
+
+    return "Animation";
+
+  }
+
+  /* ========================================
+     COMEDY
+  ======================================== */
+
+  if (
+    /comedy|
+     comedian|
+     funny|
+     humor|
+     humour|
+     laugh|
+     stand.?up
+    /ix.test(rawText)
+  ) {
+
+    return "Comedy";
+
+  }
+
+  /* ========================================
+     ENTERTAINMENT
+  ======================================== */
+
+  if (
+    /entertainment|
+     star plus|
+     star jalsha|
+     colors|
+     colors bangla|
+     zee tv|
+     zee bangla|
+     sony sab|
+     sony entertainment|
+     sab tv|
+     &tv|
+     atn bangla|
+     ntv|
+     rtv|
+     channel i|
+     maasranga|
+     ekushey tv|
+     banglavision
+    /ix.test(rawText)
   ) {
 
     return "Entertainment";
 
   }
 
-  /* RELIGIOUS */
+  /* ========================================
+     DOCUMENTARY
+  ======================================== */
 
   if (
-    /religion|religious|islam|islamic|quran|allah|christian|church|gospel|hindu|temple|spiritual|waaz|madina|mecca/
-      .test(name)
-  ) {
-
-    return "Religious";
-
-  }
-
-  /* DOCUMENTARY */
-
-  if (
-    /documentary|history|discovery|national geographic|nat geo|animal planet|science|wild|wildlife|nature/
-      .test(name)
+    /documentary|
+     discovery|
+     national geographic|
+     nat geo|
+     history|
+     animal planet|
+     science|
+     wildlife|
+     nature|
+     discovery science|
+     discovery world
+    /ix.test(rawText)
   ) {
 
     return "Documentary";
 
   }
 
-  /* LIFESTYLE */
+  /* ========================================
+     BUSINESS
+  ======================================== */
 
   if (
-    /lifestyle|food|cooking|travel|fashion|health|home|recipe/
-      .test(name)
-  ) {
-
-    return "Lifestyle";
-
-  }
-
-  /* BUSINESS */
-
-  if (
-    /business|market|finance|money|economy|stock|bloomberg|cnbc/
-      .test(name)
+    /business|
+     finance|
+     financial|
+     market|
+     markets|
+     economy|
+     economic|
+     stock|
+     stocks|
+     money|
+     cnbc|
+     bloomberg|
+     business news
+    /ix.test(rawText)
   ) {
 
     return "Business";
 
   }
 
-  /* TECHNOLOGY */
+  /* ========================================
+     TECHNOLOGY
+  ======================================== */
 
   if (
-    /tech|technology|gadget|computer|digital/
-      .test(name)
+    /technology|
+     technology news|
+     tech|
+     gadgets|
+     gadget|
+     computer|
+     digital|
+     innovation|
+     startup|
+     software|
+     hardware
+    /ix.test(rawText)
   ) {
 
     return "Technology";
 
   }
+
+  /* ========================================
+     EDUCATION
+  ======================================== */
+
+  if (
+    /education|
+     educational|
+     learning|
+     university|
+     school|
+     academic|
+     knowledge
+    /ix.test(rawText)
+  ) {
+
+    return "Education";
+
+  }
+
+  /* ========================================
+     COOKING
+  ======================================== */
+
+  if (
+    /cooking|
+     cook|
+     food|
+     recipe|
+     recipes|
+     kitchen|
+     chef|
+     culinary
+    /ix.test(rawText)
+  ) {
+
+    return "Cooking";
+
+  }
+
+  /* ========================================
+     LIFESTYLE
+  ======================================== */
+
+  if (
+    /lifestyle|
+     travel|
+     fashion|
+     health|
+     fitness|
+     home|
+     tourism|
+     beauty
+    /ix.test(rawText)
+  ) {
+
+    return "Lifestyle";
+
+  }
+
+  /* ========================================
+     CULTURE
+  ======================================== */
+
+  if (
+    /culture|
+     cultural|
+     arts|
+     art|
+     heritage|
+     literature|
+     theatre|
+     theater
+    /ix.test(rawText)
+  ) {
+
+    return "Culture";
+
+  }
+
+  /* ========================================
+     CLASSIC
+  ======================================== */
+
+  if (
+    /classic|
+     retro|
+     oldies|
+     vintage
+    /ix.test(rawText)
+  ) {
+
+    return "Classic";
+
+  }
+
+  /* ========================================
+     GENERAL
+  ======================================== */
+
+  if (
+    categories.some(
+      x =>
+        clean(x)
+          .toLowerCase() ===
+        "general"
+    )
+  ) {
+
+    return "General";
+
+  }
+
+  /* ========================================
+     FINAL
+  ======================================== */
 
   return "IPTV";
 
 }
 
 /* ==========================================
-   CATEGORY FORMAT
+   QUALITY SCORE
 ========================================== */
 
-function formatCategory(value) {
-
-  const text =
-    clean(value).toLowerCase();
-
-  if (/news/.test(text))
-    return "News";
-
-  if (/sport/.test(text))
-    return "Sports";
-
-  if (/comedy|funny/.test(text))
-    return "Comedy";
-
-  if (/movie|cinema|film/.test(text))
-    return "Movies";
-
-  if (/music/.test(text))
-    return "Music";
-
-  if (/kid|cartoon/.test(text))
-    return "Kids";
-
-  if (/entertainment/.test(text))
-    return "Entertainment";
-
-  if (
-    /relig|islam|christian|hindu|spiritual/
-      .test(text)
-  )
-    return "Religious";
-
-  if (
-    /document|history|discovery|nature|wildlife/
-      .test(text)
-  )
-    return "Documentary";
-
-  if (
-    /lifestyle|food|travel|fashion|health/
-      .test(text)
-  )
-    return "Lifestyle";
-
-  if (
-    /business|finance|market/
-      .test(text)
-  )
-    return "Business";
-
-  if (
-    /tech|technology/
-      .test(text)
-  )
-    return "Technology";
-
-  return clean(value);
-
-}
-
-/* ==========================================
-   QUALITY
-========================================== */
-
-function qualityScore(stream) {
+function qualityScore(
+  stream
+) {
 
   const quality =
     clean(stream?.quality)
       .toLowerCase();
 
   const match =
-    quality.match(/(\d{3,4})p/);
+    quality.match(
+      /(\d{3,4})p/
+    );
 
   if (match) {
 
-    return Number(match[1]);
+    return Number(
+      match[1]
+    );
 
   }
 
@@ -419,10 +708,12 @@ function qualityScore(stream) {
 }
 
 /* ==========================================
-   BAD STREAM
+   BAD STREAM FILTER
 ========================================== */
 
-function isBad(stream) {
+function isBad(
+  stream
+) {
 
   const text = [
 
@@ -448,7 +739,7 @@ function isBad(stream) {
 }
 
 /* ==========================================
-   POPULAR
+   POPULAR CHANNELS
 ========================================== */
 
 const POPULAR = {
@@ -459,23 +750,31 @@ const POPULAR = {
     "Star Sports 2",
     "Star Sports 3",
     "Star Sports HD",
+
     "Sony Sports Ten 1",
     "Sony Sports Ten 2",
     "Sony Sports Ten 3",
     "Sony Sports Ten 4",
     "Sony Sports Ten 5",
+
     "Zee Cinema",
     "Zee TV",
     "Zee Bangla",
+
     "Star Plus",
     "Star Jalsha",
+
     "Colors",
     "Colors Bangla",
+
     "Sony SAB",
+
     "Sun TV",
     "Sun Music",
+
     "Asianet",
     "Asianet News",
+
     "News18 India",
     "Aaj Tak",
     "ABP News",
@@ -484,6 +783,7 @@ const POPULAR = {
     "Times Now",
     "CNN-News18",
     "Republic TV",
+
     "DD National",
     "DD News",
     "DD Sports"
@@ -495,22 +795,31 @@ const POPULAR = {
     "BTV",
     "BTV World",
     "BTV Chattogram",
+
     "ATN Bangla",
     "ATN News",
+
     "Channel i",
+
     "NTV",
     "RTV",
+
     "Somoy TV",
     "Jamuna TV",
     "Ekattor",
     "DBC News",
+
     "Independent TV",
     "News24",
+
     "Banglavision",
     "Desh TV",
+
     "Maasranga TV",
+
     "GTV",
     "T Sports",
+
     "Ekushey TV"
 
   ]
@@ -521,11 +830,16 @@ const POPULAR = {
    NORMALIZE
 ========================================== */
 
-function normalizeName(value) {
+function normalizeName(
+  value
+) {
 
   return clean(value)
     .toLowerCase()
-    .replace(/[^a-z0-9]+/g, " ")
+    .replace(
+      /[^a-z0-9]+/g,
+      " "
+    )
     .trim();
 
 }
@@ -551,7 +865,9 @@ function popularScore(
 
   let score = 0;
 
-  for (const country of countries) {
+  for (
+    const country of countries
+  ) {
 
     const list =
       POPULAR[country] || [];
@@ -564,7 +880,9 @@ function popularScore(
 
       if (
         name ===
-        normalizeName(list[i])
+        normalizeName(
+          list[i]
+        )
       ) {
 
         score = Math.max(
@@ -586,11 +904,16 @@ function popularScore(
    LOGO MAP
 ========================================== */
 
-function makeLogoMap(logos) {
+function makeLogoMap(
+  logos
+) {
 
-  const map = new Map();
+  const map =
+    new Map();
 
-  for (const logo of logos) {
+  for (
+    const logo of logos
+  ) {
 
     if (
       !logo.channel ||
@@ -602,7 +925,9 @@ function makeLogoMap(logos) {
     }
 
     const old =
-      map.get(logo.channel);
+      map.get(
+        logo.channel
+      );
 
     if (
       !old ||
@@ -635,7 +960,9 @@ function selectBest(
   const channelMap =
     new Map();
 
-  for (const channel of channels) {
+  for (
+    const channel of channels
+  ) {
 
     if (
       countries.includes(
@@ -655,7 +982,9 @@ function selectBest(
   const best =
     new Map();
 
-  for (const stream of streams) {
+  for (
+    const stream of streams
+  ) {
 
     const url =
       clean(stream?.url);
@@ -671,8 +1000,13 @@ function selectBest(
 
     }
 
-    if (isBad(stream))
+    if (
+      isBad(stream)
+    ) {
+
       continue;
+
+    }
 
     const channel =
       channelMap.get(
@@ -683,7 +1017,9 @@ function selectBest(
       continue;
 
     const current =
-      best.get(channel.id);
+      best.get(
+        channel.id
+      );
 
     if (!current) {
 
@@ -714,7 +1050,8 @@ function selectBest(
       );
 
     if (
-      newPopular > oldPopular
+      newPopular >
+      oldPopular
     ) {
 
       best.set(
@@ -730,7 +1067,8 @@ function selectBest(
     }
 
     if (
-      newPopular < oldPopular
+      newPopular <
+      oldPopular
     ) {
 
       continue;
@@ -738,7 +1076,9 @@ function selectBest(
     }
 
     const newQuality =
-      qualityScore(stream);
+      qualityScore(
+        stream
+      );
 
     const oldQuality =
       qualityScore(
@@ -746,7 +1086,8 @@ function selectBest(
       );
 
     if (
-      newQuality > oldQuality
+      newQuality >
+      oldQuality
     ) {
 
       best.set(
@@ -761,7 +1102,9 @@ function selectBest(
 
   }
 
-  return [...best.values()];
+  return [
+    ...best.values()
+  ];
 
 }
 
@@ -774,57 +1117,69 @@ function sortChannels(
   countries
 ) {
 
-  return list.sort((a, b) => {
+  return list.sort(
+    (a, b) => {
 
-    const popularA =
-      popularScore(
+      const popularA =
+        popularScore(
+          a.channel,
+          a.stream,
+          countries
+        );
+
+      const popularB =
+        popularScore(
+          b.channel,
+          b.stream,
+          countries
+        );
+
+      if (
+        popularA !== popularB
+      ) {
+
+        return (
+          popularB -
+          popularA
+        );
+
+      }
+
+      const qualityA =
+        qualityScore(
+          a.stream
+        );
+
+      const qualityB =
+        qualityScore(
+          b.stream
+        );
+
+      if (
+        qualityA !== qualityB
+      ) {
+
+        return (
+          qualityB -
+          qualityA
+        );
+
+      }
+
+      return kbName(
         a.channel,
-        a.stream,
-        countries
+        a.stream
+      ).localeCompare(
+
+        kbName(
+          b.channel,
+          b.stream
+        )
+
       );
 
-    const popularB =
-      popularScore(
-        b.channel,
-        b.stream,
-        countries
-      );
-
-    if (
-      popularA !== popularB
-    ) {
-
-      return popularB - popularA;
-
     }
-
-    const qualityA =
-      qualityScore(a.stream);
-
-    const qualityB =
-      qualityScore(b.stream);
-
-    if (
-      qualityA !== qualityB
-    ) {
-
-      return qualityB - qualityA;
-
-    }
-
-    return kbName(
-      a.channel,
-      a.stream
-    ).localeCompare(
-
-      kbName(
-        b.channel,
-        b.stream
-      )
-
-    );
-
-  });
+  );
 
 }
 
@@ -849,7 +1204,7 @@ function createHeader(
 
     `# Updated: ${new Date().toISOString()}\n` +
 
-    "# Facebook: https://www.facebook.com/kallyan.biswas.29\n\n"
+    "# Facebook: https://www.facebook.com,kallyan.biswas.29\n\n"
 
   );
 
@@ -866,7 +1221,9 @@ function createM3U(
 ) {
 
   const logoMap =
-    makeLogoMap(logos);
+    makeLogoMap(
+      logos
+    );
 
   let output =
     createHeader(
@@ -874,7 +1231,9 @@ function createM3U(
       list.length
     );
 
-  for (const item of list) {
+  for (
+    const item of list
+  ) {
 
     const channel =
       item.channel;
@@ -898,13 +1257,16 @@ function createM3U(
       );
 
     const logo =
-      logoMap.get(id) || "";
+      logoMap.get(id) ||
+      "";
 
     const country =
       countryOf(channel);
 
     const quality =
-      clean(stream.quality);
+      clean(
+        stream.quality
+      );
 
     let info =
       "#EXTINF:-1";
@@ -941,22 +1303,38 @@ function createM3U(
     output +=
       `${info}\n`;
 
-    if (stream.user_agent) {
+    /* USER AGENT */
+
+    if (
+      stream.user_agent
+    ) {
 
       output +=
-        `#EXTVLCOPT:http-user-agent=${clean(stream.user_agent)}\n`;
+        `#EXTVLCOPT:http-user-agent=${clean(
+          stream.user_agent
+        )}\n`;
 
     }
 
-    if (stream.referrer) {
+    /* REFERRER */
+
+    if (
+      stream.referrer
+    ) {
 
       output +=
-        `#EXTVLCOPT:http-referrer=${clean(stream.referrer)}\n`;
+        `#EXTVLCOPT:http-referrer=${clean(
+          stream.referrer
+        )}\n`;
 
     }
+
+    /* URL */
 
     output +=
-      `${clean(stream.url)}\n\n`;
+      `${clean(
+        stream.url
+      )}\n\n`;
 
   }
 
@@ -992,64 +1370,88 @@ function savePlaylist(
 }
 
 /* ==========================================
-   API.JSON
+   API CHANNEL DATA
+========================================== */
+
+function makeChannelAPIData(
+  item,
+  logos
+) {
+
+  const channel =
+    item.channel;
+
+  const stream =
+    item.stream;
+
+  const logoMap =
+    makeLogoMap(
+      logos
+    );
+
+  const id =
+    clean(channel.id);
+
+  return {
+
+    id: id,
+
+    name:
+      kbName(
+        channel,
+        stream
+      ),
+
+    original_name:
+      clean(
+        channel.name
+      ),
+
+    country:
+      countryOf(channel),
+
+    category:
+      autoCategory(
+        channel,
+        stream
+      ),
+
+    logo:
+      logoMap.get(id) ||
+      "",
+
+    stream:
+      clean(stream.url),
+
+    quality:
+      clean(stream.quality) ||
+      null,
+
+    user_agent:
+      clean(stream.user_agent) ||
+      null,
+
+    referrer:
+      clean(stream.referrer) ||
+      null
+
+  };
+
+}
+
+/* ==========================================
+   CREATE API.JSON
 ========================================== */
 
 function createAPIFile(
   bd,
   india,
-  bdxi
+  bdxi,
+  logos
 ) {
 
   const updated =
     new Date().toISOString();
-
-  /*
-   * CHANNEL DATA
-   */
-
-  function channelData(
-    item,
-    country
-  ) {
-
-    const channel =
-      item.channel;
-
-    const stream =
-      item.stream;
-
-    const id =
-      clean(channel.id);
-
-    const name =
-      kbName(
-        channel,
-        stream
-      );
-
-    const category =
-      autoCategory(
-        channel,
-        stream
-      );
-
-    return {
-
-      id: id,
-
-      name: name,
-
-      country: country,
-
-      category: category,
-
-      logo:
-        `${RAW_BASE}/api/logo.json#${id}`
-
-    };
-
-  }
 
   const apiData = {
 
@@ -1060,16 +1462,9 @@ function createAPIFile(
     description:
       "BEST FAST PLAYLIST",
 
-    updated: updated,
-
     version: "1.0",
 
-    limits: {
-
-      india:
-        INDIA_LIMIT
-
-    },
+    updated: updated,
 
     total: {
 
@@ -1083,6 +1478,29 @@ function createAPIFile(
         bdxi.length
 
     },
+
+    categories: [
+
+      "News",
+      "Sports",
+      "Movies",
+      "Music",
+      "Kids",
+      "Entertainment",
+      "Comedy",
+      "Documentary",
+      "Lifestyle",
+      "Business",
+      "Technology",
+      "Education",
+      "Culture",
+      "Cooking",
+      "Animation",
+      "Classic",
+      "General",
+      "IPTV"
+
+    ],
 
     playlists: {
 
@@ -1147,29 +1565,27 @@ function createAPIFile(
       Bangladesh:
         bd.map(
           item =>
-            channelData(
+            makeChannelAPIData(
               item,
-              "BD"
+              logos
             )
         ),
 
       India:
         india.map(
           item =>
-            channelData(
+            makeChannelAPIData(
               item,
-              "IN"
+              logos
             )
         ),
 
       BDXI:
         bdxi.map(
           item =>
-            channelData(
+            makeChannelAPIData(
               item,
-              countryOf(
-                item.channel
-              )
+              logos
             )
         )
 
@@ -1177,7 +1593,13 @@ function createAPIFile(
 
     api: {
 
-      self:
+      name:
+        "KB IPTV API",
+
+      format:
+        "JSON",
+
+      url:
         `${RAW_BASE}/api/api.json`
 
     },
@@ -1217,22 +1639,12 @@ async function main() {
 
   console.log("");
   console.log(
-    "======================================"
+    "Downloading IPTV API data..."
   );
 
-  console.log(
-    "KB IPTV - BDXI_KB"
-  );
-
-  console.log(
-    "======================================"
-  );
-
-  /* DOWNLOAD */
-
-  console.log(
-    "Downloading API data..."
-  );
+  /* ========================================
+     DOWNLOAD ALL API
+  ======================================== */
 
   const [
     channels,
@@ -1266,8 +1678,11 @@ async function main() {
     `Logos   : ${logos.length}`
   );
 
-  /* BANGLADESH */
+  /* ========================================
+     BANGLADESH
+  ======================================== */
 
+  console.log("");
   console.log(
     "Generating Bangladesh..."
   );
@@ -1293,8 +1708,11 @@ async function main() {
     )
   );
 
-  /* INDIA */
+  /* ========================================
+     INDIA
+  ======================================== */
 
+  console.log("");
   console.log(
     "Generating India..."
   );
@@ -1326,8 +1744,11 @@ async function main() {
     )
   );
 
-  /* BDXI */
+  /* ========================================
+     BDXI
+  ======================================== */
 
+  console.log("");
   console.log(
     "Generating BDXI..."
   );
@@ -1353,8 +1774,11 @@ async function main() {
     )
   );
 
-  /* API */
+  /* ========================================
+     API.JSON
+  ======================================== */
 
+  console.log("");
   console.log(
     "Generating API..."
   );
@@ -1362,10 +1786,13 @@ async function main() {
   createAPIFile(
     bd,
     india,
-    bdxi
+    bdxi,
+    logos
   );
 
-  /* RESULT */
+  /* ========================================
+     SUMMARY
+  ======================================== */
 
   console.log("");
   console.log(
@@ -1373,7 +1800,7 @@ async function main() {
   );
 
   console.log(
-    "BUILD SUCCESS"
+    "           BUILD SUCCESS"
   );
 
   console.log(
@@ -1385,11 +1812,41 @@ async function main() {
   );
 
   console.log(
-    `India      : ${india.length} / ${INDIA_LIMIT}`
+    `India      : ${india.length}/${INDIA_LIMIT}`
   );
 
   console.log(
     `BDXI       : ${bdxi.length}`
+  );
+
+  console.log("");
+  console.log(
+    "Categories:"
+  );
+
+  console.log(
+    "News | Sports | Movies | Music | Kids"
+  );
+
+  console.log(
+    "Entertainment | Comedy | Documentary"
+  );
+
+  console.log(
+    "Lifestyle | Business | Technology"
+  );
+
+  console.log(
+    "Education | Culture | Cooking"
+  );
+
+  console.log(
+    "Animation | Classic | General | IPTV"
+  );
+
+  console.log("");
+  console.log(
+    "Religion category: REMOVED"
   );
 
   console.log("");
@@ -1403,43 +1860,29 @@ async function main() {
 
   console.log("");
   console.log(
-    "PLAYLISTS:"
-  );
-
-  console.log(
-    `${RAW_BASE}/playlists/Bangladesh.m3u8`
-  );
-
-  console.log(
-    `${RAW_BASE}/playlists/India.m3u8`
-  );
-
-  console.log(
-    `${RAW_BASE}/playlists/BDXI.m3u8`
-  );
-
-  console.log(
     "======================================"
   );
 
 }
 
 /* ==========================================
-   ERROR
+   ERROR HANDLER
 ========================================== */
 
-main().catch(error => {
+main().catch(
+  error => {
 
-  console.error("");
-  console.error(
-    "BUILD ERROR:"
-  );
+    console.error("");
+    console.error(
+      "BUILD ERROR:"
+    );
 
-  console.error(
-    error.stack ||
-    error.message
-  );
+    console.error(
+      error.stack ||
+      error.message
+    );
 
-  process.exit(1);
+    process.exit(1);
 
-});
+  }
+);
