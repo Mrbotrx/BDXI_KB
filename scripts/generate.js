@@ -1,24 +1,13 @@
 const fs = require("fs");
 const path = require("path");
 
-console.log("======================================");
-console.log("       KB IPTV AUTO GENERATOR");
-console.log("          BDXI_KB / MAIN");
-console.log("======================================");
-
-/* ==========================================
-   SECURE API
-========================================== */
+console.log("KB IPTV - Secure API Generator");
 
 const API = {
   channels: process.env.CHANNELS_API,
   streams: process.env.STREAMS_API,
   logos: process.env.LOGOS_API
 };
-
-/* ==========================================
-   PATH
-========================================== */
 
 const ROOT_DIR = path.join(__dirname, "..");
 
@@ -34,21 +23,13 @@ const API_DIR = path.join(
 
 const INDIA_LIMIT = 250;
 
-/* ==========================================
-   GITHUB
-========================================== */
-
 const GITHUB_OWNER = "Mrbotrx";
-const GITHUB_REPO = "BDXI_KB";
+const GITHUB_REPO = "KB-IPTV";
 const GITHUB_BRANCH = "main";
 
 const RAW_BASE =
   `https://raw.githubusercontent.com/` +
   `${GITHUB_OWNER}/${GITHUB_REPO}/${GITHUB_BRANCH}`;
-
-/* ==========================================
-   CHECK SECRETS
-========================================== */
 
 for (const [name, url] of Object.entries(API)) {
 
@@ -61,10 +42,6 @@ for (const [name, url] of Object.entries(API)) {
   }
 
 }
-
-/* ==========================================
-   CREATE DIRECTORIES
-========================================== */
 
 fs.mkdirSync(
   OUT_DIR,
@@ -80,10 +57,6 @@ fs.mkdirSync(
   }
 );
 
-/* ==========================================
-   CLEAN TEXT
-========================================== */
-
 function clean(value) {
 
   return String(value || "")
@@ -92,10 +65,6 @@ function clean(value) {
     .trim();
 
 }
-
-/* ==========================================
-   FETCH JSON
-========================================== */
 
 async function getJSON(url) {
 
@@ -117,13 +86,20 @@ async function getJSON(url) {
 
   }
 
-  return response.json();
+  const data =
+    await response.json();
+
+  if (!Array.isArray(data)) {
+
+    throw new Error(
+      `API response is not an array: ${url}`
+    );
+
+  }
+
+  return data;
 
 }
-
-/* ==========================================
-   COUNTRY
-========================================== */
 
 function countryOf(channel) {
 
@@ -132,10 +108,6 @@ function countryOf(channel) {
   ).toUpperCase();
 
 }
-
-/* ==========================================
-   KB CHANNEL NAME
-========================================== */
 
 function kbName(
   channel,
@@ -156,537 +128,354 @@ function kbName(
 
 }
 
-/* ==========================================
-   AUTO CATEGORY
-   RELIGION REMOVED
-========================================== */
+function categoryText(value) {
+
+  return clean(value)
+    .toLowerCase()
+    .replace(/\s+/g, " ")
+    .trim();
+
+}
+
+function formatCategory(value) {
+
+  const text =
+    categoryText(value);
+
+  if (!text) {
+    return "IPTV";
+  }
+
+  if (
+    /\bnews\b|news24|news 24|aaj tak|ndtv|cnn|bbc|republic|times now|abp news|dbc|somoy|jamuna tv|ekattor|independent|সংবাদ|নিউজ|বার্তা|খবর/.test(text)
+  ) {
+    return "News";
+  }
+
+  if (
+    /\bsport\b|\bsports\b|cricket|football|soccer|tennis|wwe|f1|formula 1|espn|star sports|sony sports|ten sports|t sports|dd sports|খেলা|স্পোর্টস|ক্রিকেট|ফুটবল/.test(text)
+  ) {
+    return "Sports";
+  }
+
+  if (
+    /movie|movies|cinema|film|films|zee cinema|sony max|star gold|colors cineplex|&pictures|and pictures|মুভি|সিনেমা|চলচ্চিত্র/.test(text)
+  ) {
+    return "Movies";
+  }
+
+  if (
+    /music|mtv|9xm|9x music|zoom|sound|songs|song|musica|vh1|গান|সংগীত|মিউজিক/.test(text)
+  ) {
+    return "Music";
+  }
+
+  if (
+    /animation|animated|animax|anime|toonami|cartoon network/.test(text)
+  ) {
+    return "Animation";
+  }
+
+  if (
+    /kids|kid|cartoon|nick|nickelodeon|pogo|disney|baby|junior|hungama|cbeebies|baby tv|শিশু|কার্টুন|কিডস/.test(text)
+  ) {
+    return "Kids";
+  }
+
+  if (
+    /comedy|comedian|funny|humor|laugh|stand.?up|কমেডি|কৌতুক|হাসির/.test(text)
+  ) {
+    return "Comedy";
+  }
+
+  if (
+    /entertainment|zee tv|star plus|star jalsha|colors|sony sab|sony entertainment|sab tv|&tv|and tv|colors bangla|zee bangla|maasranga|বিনোদন|এন্টারটেইনমেন্ট/.test(text)
+  ) {
+    return "Entertainment";
+  }
+
+  if (
+    /documentary|history|discovery|national geographic|nat geo|animal planet|science|wild|wildlife|nature|ডকুমেন্টারি|ইতিহাস|বন্যপ্রাণী|প্রকৃতি|বিজ্ঞান/.test(text)
+  ) {
+    return "Documentary";
+  }
+
+  if (
+    /business|market|finance|money|economy|stock|bloomberg|cnbc|ব্যবসা|অর্থনীতি|বাজার|শেয়ার|ফাইন্যান্স/.test(text)
+  ) {
+    return "Business";
+  }
+
+  if (
+    /technology|tech|gadget|computer|digital|technology news|প্রযুক্তি|টেক|কম্পিউটার|ডিজিটাল/.test(text)
+  ) {
+    return "Technology";
+  }
+
+  if (
+    /education|educational|learning|school|college|university|শিক্ষা|শিক্ষামূলক|পড়াশোনা/.test(text)
+  ) {
+    return "Education";
+  }
+
+  if (
+    /cooking|recipe|food|kitchen|chef|cuisine|রান্না|রেসিপি|খাবার|রন্ধন/.test(text)
+  ) {
+    return "Cooking";
+  }
+
+  if (
+    /lifestyle|travel|fashion|health|home|fitness|beauty|লাইফস্টাইল|ভ্রমণ|ফ্যাশন|স্বাস্থ্য|ফিটনেস/.test(text)
+  ) {
+    return "Lifestyle";
+  }
+
+  if (
+    /culture|cultural|heritage|arts|art|সংস্কৃতি|ঐতিহ্য|শিল্প/.test(text)
+  ) {
+    return "Culture";
+  }
+
+  if (
+    /classic|classics|retro|oldies|golden oldies|ক্লাসিক|পুরনো গান/.test(text)
+  ) {
+    return "Classic";
+  }
+
+  if (
+    /bangla|bengali|বাংলা|বাংলাদেশ|bangladesh|bd tv/.test(text)
+  ) {
+    return "Bangla";
+  }
+
+  return "IPTV";
+
+}
 
 function autoCategory(
   channel,
   stream
 ) {
 
-  const channelName = clean(
-    channel?.name ||
-    channel?.id ||
-    ""
-  );
+  const metadata = [
 
-  const streamName = clean(
-    stream?.title ||
-    ""
-  );
-
-  const network = clean(
-    channel?.network ||
-    ""
-  );
-
-  const categories = Array.isArray(
+    stream?.category,
+    stream?.group,
+    stream?.group_title,
+    channel?.category,
     channel?.categories
-  )
-    ? channel.categories
-    : [];
 
-  const rawText = [
-    channelName,
-    streamName,
-    network,
-    ...categories
-  ]
-    .join(" ")
-    .toLowerCase();
-
-  /* ========================================
-     OFFICIAL CATEGORY MAP
-  ======================================== */
-
-  const officialMap = {
-
-    news: "News",
-
-    sport: "Sports",
-    sports: "Sports",
-
-    movie: "Movies",
-    movies: "Movies",
-
-    music: "Music",
-
-    kids: "Kids",
-
-    animation: "Animation",
-
-    entertainment: "Entertainment",
-
-    comedy: "Comedy",
-
-    documentary: "Documentary",
-
-    lifestyle: "Lifestyle",
-
-    business: "Business",
-
-    technology: "Technology",
-    tech: "Technology",
-
-    education: "Education",
-
-    culture: "Culture",
-
-    cooking: "Cooking",
-
-    classic: "Classic",
-
-    general: "General"
-
-  };
-
-  /* ========================================
-     OFFICIAL CATEGORY FIRST
-  ======================================== */
+  ];
 
   for (
-    const category of categories
+    const value of metadata
   ) {
 
-    const key = clean(category)
-      .toLowerCase()
-      .trim();
-
-    /*
-      IMPORTANT:
-      Religion intentionally ignored.
-    */
-
     if (
-      key === "religion" ||
-      key === "religious"
+      Array.isArray(value)
     ) {
 
-      continue;
+      for (
+        const item of value
+      ) {
+
+        const result =
+          formatCategory(item);
+
+        if (
+          result !== "IPTV"
+        ) {
+
+          return result;
+
+        }
+
+      }
 
     }
 
     if (
-      officialMap[key]
+      typeof value === "string" &&
+      value.trim()
     ) {
 
-      return officialMap[key];
+      const result =
+        formatCategory(value);
+
+      if (
+        result !== "IPTV"
+      ) {
+
+        return result;
+
+      }
 
     }
 
   }
 
-  /* ========================================
-     NEWS
-  ======================================== */
+  const name = clean(
+
+    [
+      stream?.title,
+      channel?.name,
+      channel?.id
+    ]
+      .filter(Boolean)
+      .join(" ")
+
+  ).toLowerCase();
+
+  if (!name) {
+    return "IPTV";
+  }
 
   if (
-    /\bnews\b|
-     news24|
-     news 24|
-     aaj tak|
-     ndtv|
-     cnn|
-     bbc|
-     republic|
-     times now|
-     abp|
-     news18|
-     india tv|
-     dbc|
-     somoy|
-     jamuna tv|
-     ekattor|
-     independent|
-     channel i news|
-     banglavision news|
-     desh tv|
-     ntv news|
-     atn news|
-     bloomberg
-    /ix.test(rawText)
+    /\bnews\b|news24|news 24|aaj tak|ndtv|cnn|bbc|republic|times now|abp news|dbc|somoy|jamuna tv|ekattor|independent|channel i news|ntv news|atn news|সংবাদ|নিউজ|বার্তা|খবর/.test(name)
   ) {
 
     return "News";
 
   }
 
-  /* ========================================
-     SPORTS
-  ======================================== */
-
   if (
-    /\bsport\b|
-     \bsports\b|
-     cricket|
-     football|
-     soccer|
-     tennis|
-     badminton|
-     basketball|
-     volleyball|
-     wrestling|
-     wwe|
-     formula 1|
-     f1|
-     espn|
-     star sports|
-     sony sports|
-     sony ten|
-     ten sports|
-     t sports|
-     tsports|
-     dd sports|
-     eurosport
-    /ix.test(rawText)
+    /\bsport\b|\bsports\b|cricket|football|soccer|tennis|wwe|f1|formula 1|espn|star sports|sony sports|ten sports|t sports|dd sports|খেলা|স্পোর্টস|ক্রিকেট|ফুটবল/.test(name)
   ) {
 
     return "Sports";
 
   }
 
-  /* ========================================
-     MOVIES
-  ======================================== */
-
   if (
-    /\bmovie\b|
-     \bmovies\b|
-     cinema|
-     film|
-     films|
-     zee cinema|
-     sony max|
-     star gold|
-     colors cineplex|
-     &pictures|
-     movies now|
-     b4u movies|
-     max 2|
-     goldmines
-    /ix.test(rawText)
+    /movie|movies|cinema|film|films|zee cinema|sony max|star gold|colors cineplex|cinemax|&pictures|and pictures|মুভি|সিনেমা|চলচ্চিত্র/.test(name)
   ) {
 
     return "Movies";
 
   }
 
-  /* ========================================
-     MUSIC
-  ======================================== */
-
   if (
-    /\bmusic\b|
-     mtv|
-     9xm|
-     9x music|
-     zoom|
-     songs|
-     song|
-     music india|
-     music bangla|
-     music hd|
-     sound
-    /ix.test(rawText)
+    /music|mtv|9xm|9x music|zoom|sound|songs|song|musica|vh1|গান|সংগীত|মিউজিক/.test(name)
   ) {
 
     return "Music";
 
   }
 
-  /* ========================================
-     KIDS
-  ======================================== */
-
   if (
-    /\bkids\b|
-     \bkid\b|
-     cartoon|
-     nickelodeon|
-     nick|
-     pogo|
-     disney|
-     disney junior|
-     disney xd|
-     baby|
-     junior|
-     hungama
-    /ix.test(rawText)
-  ) {
-
-    return "Kids";
-
-  }
-
-  /* ========================================
-     ANIMATION
-  ======================================== */
-
-  if (
-    /animation|
-     anime|
-     animax|
-     cartoon network
-    /ix.test(rawText)
+    /animation|animated|animax|anime|toonami|cartoon network/.test(name)
   ) {
 
     return "Animation";
 
   }
 
-  /* ========================================
-     COMEDY
-  ======================================== */
+  if (
+    /kids|kid|cartoon|nick|nickelodeon|pogo|disney|baby|junior|hungama|cbeebies|baby tv|শিশু|কার্টুন|কিডস/.test(name)
+  ) {
+
+    return "Kids";
+
+  }
 
   if (
-    /comedy|
-     comedian|
-     funny|
-     humor|
-     humour|
-     laugh|
-     stand.?up
-    /ix.test(rawText)
+    /comedy|comedian|funny|humor|laugh|stand.?up|কমেডি|কৌতুক|হাসির/.test(name)
   ) {
 
     return "Comedy";
 
   }
 
-  /* ========================================
-     ENTERTAINMENT
-  ======================================== */
-
   if (
-    /entertainment|
-     star plus|
-     star jalsha|
-     colors|
-     colors bangla|
-     zee tv|
-     zee bangla|
-     sony sab|
-     sony entertainment|
-     sab tv|
-     &tv|
-     atn bangla|
-     ntv|
-     rtv|
-     channel i|
-     maasranga|
-     ekushey tv|
-     banglavision
-    /ix.test(rawText)
+    /entertainment|zee tv|star plus|star jalsha|colors|sony sab|sony entertainment|sab tv|&tv|and tv|colors bangla|zee bangla|maasranga|বিনোদন|এন্টারটেইনমেন্ট/.test(name)
   ) {
 
     return "Entertainment";
 
   }
 
-  /* ========================================
-     DOCUMENTARY
-  ======================================== */
-
   if (
-    /documentary|
-     discovery|
-     national geographic|
-     nat geo|
-     history|
-     animal planet|
-     science|
-     wildlife|
-     nature|
-     discovery science|
-     discovery world
-    /ix.test(rawText)
+    /documentary|history|discovery|national geographic|nat geo|animal planet|science|wild|wildlife|nature|ডকুমেন্টারি|ইতিহাস|বন্যপ্রাণী|প্রকৃতি|বিজ্ঞান/.test(name)
   ) {
 
     return "Documentary";
 
   }
 
-  /* ========================================
-     BUSINESS
-  ======================================== */
-
   if (
-    /business|
-     finance|
-     financial|
-     market|
-     markets|
-     economy|
-     economic|
-     stock|
-     stocks|
-     money|
-     cnbc|
-     bloomberg|
-     business news
-    /ix.test(rawText)
+    /business|market|finance|money|economy|stock|bloomberg|cnbc|ব্যবসা|অর্থনীতি|বাজার|শেয়ার|ফাইন্যান্স/.test(name)
   ) {
 
     return "Business";
 
   }
 
-  /* ========================================
-     TECHNOLOGY
-  ======================================== */
-
   if (
-    /technology|
-     technology news|
-     tech|
-     gadgets|
-     gadget|
-     computer|
-     digital|
-     innovation|
-     startup|
-     software|
-     hardware
-    /ix.test(rawText)
+    /technology|tech|gadget|computer|digital|প্রযুক্তি|টেক|কম্পিউটার|ডিজিটাল/.test(name)
   ) {
 
     return "Technology";
 
   }
 
-  /* ========================================
-     EDUCATION
-  ======================================== */
-
   if (
-    /education|
-     educational|
-     learning|
-     university|
-     school|
-     academic|
-     knowledge
-    /ix.test(rawText)
+    /education|educational|learning|school|college|university|শিক্ষা|শিক্ষামূলক|পড়াশোনা/.test(name)
   ) {
 
     return "Education";
 
   }
 
-  /* ========================================
-     COOKING
-  ======================================== */
-
   if (
-    /cooking|
-     cook|
-     food|
-     recipe|
-     recipes|
-     kitchen|
-     chef|
-     culinary
-    /ix.test(rawText)
+    /cooking|recipe|food|kitchen|chef|cuisine|রান্না|রেসিপি|খাবার|রন্ধন/.test(name)
   ) {
 
     return "Cooking";
 
   }
 
-  /* ========================================
-     LIFESTYLE
-  ======================================== */
-
   if (
-    /lifestyle|
-     travel|
-     fashion|
-     health|
-     fitness|
-     home|
-     tourism|
-     beauty
-    /ix.test(rawText)
+    /lifestyle|travel|fashion|health|home|fitness|beauty|লাইফস্টাইল|ভ্রমণ|ফ্যাশন|স্বাস্থ্য|ফিটনেস/.test(name)
   ) {
 
     return "Lifestyle";
 
   }
 
-  /* ========================================
-     CULTURE
-  ======================================== */
-
   if (
-    /culture|
-     cultural|
-     arts|
-     art|
-     heritage|
-     literature|
-     theatre|
-     theater
-    /ix.test(rawText)
+    /culture|cultural|heritage|arts|art|সংস্কৃতি|ঐতিহ্য|শিল্প/.test(name)
   ) {
 
     return "Culture";
 
   }
 
-  /* ========================================
-     CLASSIC
-  ======================================== */
-
   if (
-    /classic|
-     retro|
-     oldies|
-     vintage
-    /ix.test(rawText)
+    /classic|classics|retro|oldies|golden oldies|ক্লাসিক|পুরনো গান/.test(name)
   ) {
 
     return "Classic";
 
   }
 
-  /* ========================================
-     GENERAL
-  ======================================== */
-
   if (
-    categories.some(
-      x =>
-        clean(x)
-          .toLowerCase() ===
-        "general"
-    )
+    /bangla|bengali|বাংলা|বাংলাদেশ|bangladesh|bd tv/.test(name)
   ) {
 
-    return "General";
+    return "Bangla";
 
   }
-
-  /* ========================================
-     FINAL
-  ======================================== */
 
   return "IPTV";
 
 }
 
-/* ==========================================
-   QUALITY SCORE
-========================================== */
-
-function qualityScore(
-  stream
-) {
+function qualityScore(stream) {
 
   const quality =
-    clean(stream?.quality)
-      .toLowerCase();
+    clean(
+      stream?.quality
+    ).toLowerCase();
 
   const match =
     quality.match(
@@ -707,13 +496,7 @@ function qualityScore(
 
 }
 
-/* ==========================================
-   BAD STREAM FILTER
-========================================== */
-
-function isBad(
-  stream
-) {
+function isBad(stream) {
 
   const text = [
 
@@ -738,10 +521,6 @@ function isBad(
 
 }
 
-/* ==========================================
-   POPULAR CHANNELS
-========================================== */
-
 const POPULAR = {
 
   IN: [
@@ -750,31 +529,23 @@ const POPULAR = {
     "Star Sports 2",
     "Star Sports 3",
     "Star Sports HD",
-
     "Sony Sports Ten 1",
     "Sony Sports Ten 2",
     "Sony Sports Ten 3",
     "Sony Sports Ten 4",
     "Sony Sports Ten 5",
-
     "Zee Cinema",
     "Zee TV",
     "Zee Bangla",
-
     "Star Plus",
     "Star Jalsha",
-
     "Colors",
     "Colors Bangla",
-
     "Sony SAB",
-
     "Sun TV",
     "Sun Music",
-
     "Asianet",
     "Asianet News",
-
     "News18 India",
     "Aaj Tak",
     "ABP News",
@@ -783,7 +554,6 @@ const POPULAR = {
     "Times Now",
     "CNN-News18",
     "Republic TV",
-
     "DD National",
     "DD News",
     "DD Sports"
@@ -795,58 +565,39 @@ const POPULAR = {
     "BTV",
     "BTV World",
     "BTV Chattogram",
-
     "ATN Bangla",
     "ATN News",
-
     "Channel i",
-
     "NTV",
     "RTV",
-
     "Somoy TV",
     "Jamuna TV",
     "Ekattor",
     "DBC News",
-
     "Independent TV",
     "News24",
-
     "Banglavision",
     "Desh TV",
-
     "Maasranga TV",
-
     "GTV",
     "T Sports",
-
     "Ekushey TV"
 
   ]
 
 };
 
-/* ==========================================
-   NORMALIZE
-========================================== */
-
-function normalizeName(
-  value
-) {
+function normalizeName(value) {
 
   return clean(value)
     .toLowerCase()
     .replace(
-      /[^a-z0-9]+/g,
+      /[^\p{L}\p{N}]+/gu,
       " "
     )
     .trim();
 
 }
-
-/* ==========================================
-   POPULAR SCORE
-========================================== */
 
 function popularScore(
   channel,
@@ -885,10 +636,11 @@ function popularScore(
         )
       ) {
 
-        score = Math.max(
-          score,
-          100000 - i
-        );
+        score =
+          Math.max(
+            score,
+            100000 - i
+          );
 
       }
 
@@ -900,13 +652,7 @@ function popularScore(
 
 }
 
-/* ==========================================
-   LOGO MAP
-========================================== */
-
-function makeLogoMap(
-  logos
-) {
+function makeLogoMap(logos) {
 
   const map =
     new Map();
@@ -919,9 +665,7 @@ function makeLogoMap(
       !logo.channel ||
       !logo.url
     ) {
-
       continue;
-
     }
 
     const old =
@@ -946,10 +690,6 @@ function makeLogoMap(
   return map;
 
 }
-
-/* ==========================================
-   BEST STREAM
-========================================== */
 
 function selectBest(
   streams,
@@ -989,23 +729,20 @@ function selectBest(
     const url =
       clean(stream?.url);
 
-    if (!url)
+    if (!url) {
       continue;
+    }
 
     if (
       !/^https?:\/\//i.test(url)
     ) {
-
       continue;
-
     }
 
     if (
       isBad(stream)
     ) {
-
       continue;
-
     }
 
     const channel =
@@ -1013,8 +750,9 @@ function selectBest(
         stream.channel
       );
 
-    if (!channel)
+    if (!channel) {
       continue;
+    }
 
     const current =
       best.get(
@@ -1032,7 +770,6 @@ function selectBest(
       );
 
       continue;
-
     }
 
     const newPopular =
@@ -1050,8 +787,7 @@ function selectBest(
       );
 
     if (
-      newPopular >
-      oldPopular
+      newPopular > oldPopular
     ) {
 
       best.set(
@@ -1063,12 +799,10 @@ function selectBest(
       );
 
       continue;
-
     }
 
     if (
-      newPopular <
-      oldPopular
+      newPopular < oldPopular
     ) {
 
       continue;
@@ -1086,8 +820,7 @@ function selectBest(
       );
 
     if (
-      newQuality >
-      oldQuality
+      newQuality > oldQuality
     ) {
 
       best.set(
@@ -1107,10 +840,6 @@ function selectBest(
   ];
 
 }
-
-/* ==========================================
-   SORT
-========================================== */
 
 function sortChannels(
   list,
@@ -1183,10 +912,6 @@ function sortChannels(
 
 }
 
-/* ==========================================
-   HEADER
-========================================== */
-
 function createHeader(
   groupName,
   count
@@ -1210,10 +935,6 @@ function createHeader(
 
 }
 
-/* ==========================================
-   CREATE M3U8
-========================================== */
-
 function createM3U(
   list,
   logos,
@@ -1221,9 +942,7 @@ function createM3U(
 ) {
 
   const logoMap =
-    makeLogoMap(
-      logos
-    );
+    makeLogoMap(logos);
 
   let output =
     createHeader(
@@ -1242,7 +961,9 @@ function createM3U(
       item.stream;
 
     const id =
-      clean(channel.id);
+      clean(
+        channel.id
+      );
 
     const name =
       kbName(
@@ -1257,8 +978,7 @@ function createM3U(
       );
 
     const logo =
-      logoMap.get(id) ||
-      "";
+      logoMap.get(id) || "";
 
     const country =
       countryOf(channel);
@@ -1303,48 +1023,32 @@ function createM3U(
     output +=
       `${info}\n`;
 
-    /* USER AGENT */
-
     if (
       stream.user_agent
     ) {
 
       output +=
-        `#EXTVLCOPT:http-user-agent=${clean(
-          stream.user_agent
-        )}\n`;
+        `#EXTVLCOPT:http-user-agent=${clean(stream.user_agent)}\n`;
 
     }
-
-    /* REFERRER */
 
     if (
       stream.referrer
     ) {
 
       output +=
-        `#EXTVLCOPT:http-referrer=${clean(
-          stream.referrer
-        )}\n`;
+        `#EXTVLCOPT:http-referrer=${clean(stream.referrer)}\n`;
 
     }
 
-    /* URL */
-
     output +=
-      `${clean(
-        stream.url
-      )}\n\n`;
+      `${clean(stream.url)}\n\n`;
 
   }
 
   return output;
 
 }
-
-/* ==========================================
-   SAVE PLAYLIST
-========================================== */
 
 function savePlaylist(
   filename,
@@ -1364,90 +1068,15 @@ function savePlaylist(
   );
 
   console.log(
-    `Created: playlists/${filename}`
+    `Created: ${filename}`
   );
 
 }
 
-/* ==========================================
-   API CHANNEL DATA
-========================================== */
-
-function makeChannelAPIData(
-  item,
-  logos
-) {
-
-  const channel =
-    item.channel;
-
-  const stream =
-    item.stream;
-
-  const logoMap =
-    makeLogoMap(
-      logos
-    );
-
-  const id =
-    clean(channel.id);
-
-  return {
-
-    id: id,
-
-    name:
-      kbName(
-        channel,
-        stream
-      ),
-
-    original_name:
-      clean(
-        channel.name
-      ),
-
-    country:
-      countryOf(channel),
-
-    category:
-      autoCategory(
-        channel,
-        stream
-      ),
-
-    logo:
-      logoMap.get(id) ||
-      "",
-
-    stream:
-      clean(stream.url),
-
-    quality:
-      clean(stream.quality) ||
-      null,
-
-    user_agent:
-      clean(stream.user_agent) ||
-      null,
-
-    referrer:
-      clean(stream.referrer) ||
-      null
-
-  };
-
-}
-
-/* ==========================================
-   CREATE API.JSON
-========================================== */
-
 function createAPIFile(
   bd,
   india,
-  bdxi,
-  logos
+  bdxi
 ) {
 
   const updated =
@@ -1462,49 +1091,24 @@ function createAPIFile(
     description:
       "BEST FAST PLAYLIST",
 
-    version: "1.0",
-
-    updated: updated,
+    updated,
 
     total: {
 
-      Bangladesh:
+      bangladesh:
         bd.length,
 
-      India:
+      india:
         india.length,
 
-      BDXI:
+      bdxi:
         bdxi.length
 
     },
 
-    categories: [
-
-      "News",
-      "Sports",
-      "Movies",
-      "Music",
-      "Kids",
-      "Entertainment",
-      "Comedy",
-      "Documentary",
-      "Lifestyle",
-      "Business",
-      "Technology",
-      "Education",
-      "Culture",
-      "Cooking",
-      "Animation",
-      "Classic",
-      "General",
-      "IPTV"
-
-    ],
-
     playlists: {
 
-      Bangladesh: {
+      bangladesh: {
 
         name: "Bangladesh",
 
@@ -1520,7 +1124,7 @@ function createAPIFile(
 
       },
 
-      India: {
+      india: {
 
         name: "India",
 
@@ -1539,7 +1143,7 @@ function createAPIFile(
 
       },
 
-      BDXI: {
+      bdxi: {
 
         name: "BDXI",
 
@@ -1560,37 +1164,6 @@ function createAPIFile(
 
     },
 
-    channels: {
-
-      Bangladesh:
-        bd.map(
-          item =>
-            makeChannelAPIData(
-              item,
-              logos
-            )
-        ),
-
-      India:
-        india.map(
-          item =>
-            makeChannelAPIData(
-              item,
-              logos
-            )
-        ),
-
-      BDXI:
-        bdxi.map(
-          item =>
-            makeChannelAPIData(
-              item,
-              logos
-            )
-        )
-
-    },
-
     api: {
 
       name:
@@ -1605,82 +1178,90 @@ function createAPIFile(
     },
 
     facebook:
-      "https://www.facebook.com/kallyan.biswas.29"
+      "https://www.facebook.com,kallyan.biswas.29"
 
   };
 
-  const file =
+  const apiFile =
     path.join(
       API_DIR,
       "api.json"
     );
 
   fs.writeFileSync(
-    file,
+
+    apiFile,
+
     JSON.stringify(
       apiData,
       null,
       2
     ),
+
     "utf8"
+
   );
 
   console.log(
     "Created: api/api.json"
   );
 
-}
+  return apiData;
 
-/* ==========================================
-   MAIN
-========================================== */
+}
 
 async function main() {
 
   console.log("");
+
   console.log(
-    "Downloading IPTV API data..."
+    "======================================"
   );
 
-  /* ========================================
-     DOWNLOAD ALL API
-  ======================================== */
+  console.log(
+    " KB IPTV - BUILD START"
+  );
+
+  console.log(
+    "======================================"
+  );
+
+  console.log(
+    "Downloading API data..."
+  );
 
   const [
     channels,
     streams,
     logos
-  ] = await Promise.all([
+  ] =
+    await Promise.all([
 
-    getJSON(
-      API.channels
-    ),
+      getJSON(
+        API.channels
+      ),
 
-    getJSON(
-      API.streams
-    ),
+      getJSON(
+        API.streams
+      ),
 
-    getJSON(
-      API.logos
-    )
+      getJSON(
+        API.logos
+      )
 
-  ]);
+    ]);
 
   console.log(
-    `Channels: ${channels.length}`
+    `Channels : ${channels.length}`
   );
 
   console.log(
-    `Streams : ${streams.length}`
+    `Streams  : ${streams.length}`
   );
 
   console.log(
-    `Logos   : ${logos.length}`
+    `Logos    : ${logos.length}`
   );
-
-  /* ========================================
-     BANGLADESH
-  ======================================== */
 
   console.log("");
   console.log(
@@ -1707,10 +1288,6 @@ async function main() {
       "Bangladesh"
     )
   );
-
-  /* ========================================
-     INDIA
-  ======================================== */
 
   console.log("");
   console.log(
@@ -1744,10 +1321,6 @@ async function main() {
     )
   );
 
-  /* ========================================
-     BDXI
-  ======================================== */
-
   console.log("");
   console.log(
     "Generating BDXI..."
@@ -1774,33 +1347,25 @@ async function main() {
     )
   );
 
-  /* ========================================
-     API.JSON
-  ======================================== */
-
   console.log("");
   console.log(
-    "Generating API..."
+    "Generating API JSON..."
   );
 
   createAPIFile(
     bd,
     india,
-    bdxi,
-    logos
+    bdxi
   );
 
-  /* ========================================
-     SUMMARY
-  ======================================== */
-
   console.log("");
+
   console.log(
     "======================================"
   );
 
   console.log(
-    "           BUILD SUCCESS"
+    " KB IPTV - BUILD SUCCESS"
   );
 
   console.log(
@@ -1812,7 +1377,7 @@ async function main() {
   );
 
   console.log(
-    `India      : ${india.length}/${INDIA_LIMIT}`
+    `India      : ${india.length} / ${INDIA_LIMIT}`
   );
 
   console.log(
@@ -1821,37 +1386,7 @@ async function main() {
 
   console.log("");
   console.log(
-    "Categories:"
-  );
-
-  console.log(
-    "News | Sports | Movies | Music | Kids"
-  );
-
-  console.log(
-    "Entertainment | Comedy | Documentary"
-  );
-
-  console.log(
-    "Lifestyle | Business | Technology"
-  );
-
-  console.log(
-    "Education | Culture | Cooking"
-  );
-
-  console.log(
-    "Animation | Classic | General | IPTV"
-  );
-
-  console.log("");
-  console.log(
-    "Religion category: REMOVED"
-  );
-
-  console.log("");
-  console.log(
-    "API:"
+    "API FILE:"
   );
 
   console.log(
@@ -1860,19 +1395,32 @@ async function main() {
 
   console.log("");
   console.log(
+    "PLAYLIST API:"
+  );
+
+  console.log(
+    `BD      : ${RAW_BASE}/playlists/Bangladesh.m3u8`
+  );
+
+  console.log(
+    `INDIA   : ${RAW_BASE}/playlists/India.m3u8`
+  );
+
+  console.log(
+    `BDXI    : ${RAW_BASE}/playlists/BDXI.m3u8`
+  );
+
+  console.log(
     "======================================"
   );
 
 }
 
-/* ==========================================
-   ERROR HANDLER
-========================================== */
-
 main().catch(
   error => {
 
     console.error("");
+
     console.error(
       "BUILD ERROR:"
     );
