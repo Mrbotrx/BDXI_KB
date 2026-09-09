@@ -2,7 +2,7 @@
   "name": "KB IPTV",
   "brand": "KB",
   "description": "BEST FAST PLAYLIST",
-  "updated": "2026-09-09T04:57:02.659Z",
+  "updated": "2026-09-09T09:24:15.549Z",
   "version": "1.0",
   "limits": {
     "india": 250
@@ -10,7 +10,7 @@
   "total": {
     "Bangladesh": 25,
     "India": 250,
-    "BDXI": 720
+    "BDXI": 718
   },
   "playlists": {
     "Bangladesh": {
@@ -34,7 +34,7 @@
         "BD",
         "IN"
       ],
-      "total": 720,
+      "total": 718,
       "format": "M3U8",
       "url": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/playlists/BDXI.m3u8"
     }
@@ -877,13 +877,6 @@
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#ManoramaNews.in"
       },
       {
-        "id": "MazhavilManorama.in",
-        "name": "Mazhavil Manorama HD KB",
-        "country": "IN",
-        "category": "Entertainment",
-        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#MazhavilManorama.in"
-      },
-      {
         "id": "MercyTV.in",
         "name": "Mercy TV KB",
         "country": "IN",
@@ -1486,20 +1479,6 @@
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#StarGoldSelect.in"
       },
       {
-        "id": "StarMovies.in",
-        "name": "Star Movies HD KB",
-        "country": "IN",
-        "category": "Movies",
-        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#StarMovies.in"
-      },
-      {
-        "id": "StarMoviesSelect.in",
-        "name": "Star Movies Select HD KB",
-        "country": "IN",
-        "category": "Movies",
-        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#StarMoviesSelect.in"
-      },
-      {
         "id": "StarSports2Hindi.in",
         "name": "Star Sports 2 Hindi HD KB",
         "country": "IN",
@@ -1967,6 +1946,27 @@
         "country": "IN",
         "category": "News",
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#BIGTV.in"
+      },
+      {
+        "id": "BRKNews.in",
+        "name": "BRK News KB",
+        "country": "IN",
+        "category": "News",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#BRKNews.in"
+      },
+      {
+        "id": "BTTV.in",
+        "name": "BT TV KB",
+        "country": "IN",
+        "category": "News",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#BTTV.in"
+      },
+      {
+        "id": "ChannelWIN.in",
+        "name": "Channel WIN KB",
+        "country": "IN",
+        "category": "Religious",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#ChannelWIN.in"
       }
     ],
     "BDXI": [
@@ -2706,13 +2706,6 @@
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#ManoramaNews.in"
       },
       {
-        "id": "MazhavilManorama.in",
-        "name": "Mazhavil Manorama HD KB",
-        "country": "IN",
-        "category": "Entertainment",
-        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#MazhavilManorama.in"
-      },
-      {
         "id": "MercyTV.in",
         "name": "Mercy TV KB",
         "country": "IN",
@@ -3322,20 +3315,6 @@
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#StarGoldSelect.in"
       },
       {
-        "id": "StarMovies.in",
-        "name": "Star Movies HD KB",
-        "country": "IN",
-        "category": "Movies",
-        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#StarMovies.in"
-      },
-      {
-        "id": "StarMoviesSelect.in",
-        "name": "Star Movies Select HD KB",
-        "country": "IN",
-        "category": "Movies",
-        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#StarMoviesSelect.in"
-      },
-      {
         "id": "StarSports2Hindi.in",
         "name": "Star Sports 2 Hindi HD KB",
         "country": "IN",
@@ -3838,6 +3817,13 @@
         "country": "IN",
         "category": "News",
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#CnewsBharat.in"
+      },
+      {
+        "id": "ColorsMarathi.in",
+        "name": "Colors Marathi HD KB",
+        "country": "IN",
+        "category": "Entertainment",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#ColorsMarathi.in"
       },
       {
         "id": "ColorsMENA.in",
@@ -5485,6 +5471,13 @@
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#MathrubhumiNews.in"
       },
       {
+        "id": "MazhavilManorama.in",
+        "name": "Mazhavil Manorama HD KB",
+        "country": "IN",
+        "category": "Entertainment",
+        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#MazhavilManorama.in"
+      },
+      {
         "id": "MeiAlaiTV.in",
         "name": "Mei Alai TV KB",
         "country": "IN",
@@ -5616,13 +5609,6 @@
         "country": "IN",
         "category": "News",
         "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#NewsLive.in"
-      },
-      {
-        "id": "NewsMalayalam24x7.in",
-        "name": "News Malayalam 24x7 KB",
-        "country": "IN",
-        "category": "News",
-        "logo": "https://raw.githubusercontent.com/Mrbotrx/BDXI_KB/main/api/logo.json#NewsMalayalam24x7.in"
       },
       {
         "id": "NewsTamil24x7.in",
