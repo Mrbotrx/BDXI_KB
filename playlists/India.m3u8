@@ -2,7 +2,7 @@
 # KB IPTV - India
 # BEST FAST PLAYLIST
 # Total Channels: 250
-# Updated: 2026-09-10T22:42:02.061Z
+# Updated: 2026-09-11T00:45:54.292Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="SonySportsTen1.in" tvg-name="Sony Sports Ten 1 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_SPORTS_TEN_1_HD/images/LOGO_HD/image.png" tvg-country="IN" group-title="Sports" tvg-quality="1080p",Sony Sports Ten 1 KB
@@ -652,9 +652,6 @@ https://server.zillarbarta.com/zbcatun/video.m3u8
 #EXTINF:-1 tvg-id="ZeeBollymovies.in" tvg-name="Zee Bollymovies Australia KB" tvg-logo="https://framerusercontent.com/images/mqfJ18x4jYe0GbZUbxSHsbnWU.png?scale-down-to=512" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Zee Bollymovies Australia KB
 https://amg17931-zee-amg17931c8-samsung-au-8871.playouts.now.amagi.tv/playlist.m3u8
 
-#EXTINF:-1 tvg-id="ZeeCafe.in" tvg-name="Zee Cafe HD KB" tvg-logo="https://i.imgur.com/9eX5dN3.png" tvg-country="IN" group-title="IPTV" tvg-quality="1080p",Zee Cafe HD KB
-http://103.72.101.252:8080/live/1319.m3u8
-
 #EXTINF:-1 tvg-id="ZeeCineClassic.in" tvg-name="Zee Cine Classic KB" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN21000014R_20260325T012324SQUARE.png" tvg-country="IN" group-title="Classic" tvg-quality="1080p",Zee Cine Classic KB
 https://amg00862-amg00862c8-amgplt0173.playout.now3.amagi.tv/playlist/amg00862-amg00862c8-amgplt0173/playlist.m3u8
 
@@ -759,4 +756,7 @@ https://feeds.intoday.in/bttv/itgd.m3u8
 
 #EXTINF:-1 tvg-id="ChannelWIN.in" tvg-name="Channel WIN KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_CHANNEL_WIN/images/LOGO_HD/image.png" tvg-country="IN" group-title="IPTV" tvg-quality="720p",Channel WIN KB
 https://cdn-4.pishow.tv/live/229/master.m3u8
+
+#EXTINF:-1 tvg-id="CnewsBharat.in" tvg-name="Cnews Bharat KB" tvg-logo="https://raw.githubusercontent.com/satish-kumar07/iptv-channel-logos/refs/heads/main/Cnews%20Bharat.png" tvg-country="IN" group-title="News" tvg-quality="720p",Cnews Bharat KB
+https://legitpro.co.in/cnews/cnews/index.fmp4.m3u8
 
