@@ -2,11 +2,11 @@
   "name": "KB IPTV",
   "brand": "KB",
   "description": "BEST FAST PLAYLIST",
-  "updated": "2026-09-11T23:25:14.862Z",
+  "updated": "2026-09-12T01:19:26.344Z",
   "total": {
     "bangladesh": 25,
     "india": 250,
-    "bdxi": 721
+    "bdxi": 726
   },
   "playlists": {
     "bangladesh": {
@@ -30,7 +30,7 @@
         "BD",
         "IN"
       ],
-      "total": 721,
+      "total": 726,
       "format": "M3U8",
       "url": "https://raw.githubusercontent.com/Mrbotrx/KB-IPTV/main/playlists/BDXI.m3u8"
     }
