@@ -2,7 +2,7 @@
 # KB IPTV - India
 # BEST FAST PLAYLIST
 # Total Channels: 250
-# Updated: 2026-09-14T23:39:16.875Z
+# Updated: 2026-09-15T02:55:26.768Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="SonySportsTen1.in" tvg-name="Sony Sports Ten 1 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_SPORTS_TEN_1_HD/images/LOGO_HD/image.png" tvg-country="IN" group-title="Sports" tvg-quality="1080p",Sony Sports Ten 1 KB
@@ -55,7 +55,7 @@ http://107.167.16.138/ddnational/index.m3u8?token=test
 https://streams.tangotv.in/DDNEWS/ORIGIN/index.m3u8
 
 #EXTINF:-1 tvg-id="DDSports.in" tvg-name="DD Sports KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_SPORTS/images/LOGO_HD/image.png" tvg-country="IN" group-title="Sports" tvg-quality="720p",DD Sports KB
-https://cdn-6.pishow.tv/live/13/master.m3u8
+https://cdn.pishow.tv/ott/live/13/master.m3u8
 
 #EXTINF:-1 tvg-id="Travelxp.in" tvg-name="Travelxp 4K HDR KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_TRAVELXP/images/LOGO_HD/image.png" tvg-country="IN" group-title="Lifestyle" tvg-quality="2160p",Travelxp 4K HDR KB
 https://deltatesttatasky.akamaized.net/out/i/968284.m3u8
@@ -104,6 +104,9 @@ https://amarujala.ottlive.co.in/amarujala/index.m3u8
 
 #EXTINF:-1 tvg-id="AnandTV.in" tvg-name="Anand TV KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Anand_TV.png" tvg-country="IN" group-title="News" tvg-quality="1080p",Anand TV KB
 https://live.legitpro.co.in/anandtv/index.m3u8
+
+#EXTINF:-1 tvg-id="AsianNews.in" tvg-name="Asian News KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Asian_News.png" tvg-country="IN" group-title="News" tvg-quality="1080p",Asian News KB
+https://stream.ottlive.co.in/asiannews/index.m3u8
 
 #EXTINF:-1 tvg-id="AsianetSuvarnaNews.in" tvg-name="Asianet Suvarna News KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ASIANET_SUVARNA_NEWS/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="1080p",Asianet Suvarna News KB
 https://asianetnews.vgcdn.net/vglive-sk-335835/playlist.m3u8
@@ -363,6 +366,9 @@ https://n18syndication.akamaized.net/bpk-tv/News18_UP_Uttarakhand_NW18_MOB/outpu
 #EXTINF:-1 tvg-id="News9Live.in" tvg-name="News9Live KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/DISTROTV/LIVECHANNEL/66698950bac4421ebc5336a5/images/logo_20240725_192216_70.png" tvg-country="IN" group-title="News" tvg-quality="1080p",News9Live KB
 https://amg01106-amg01106c3-amgplt0844.playout.now3.amagi.tv/ts-ap-s1-n1/playlist/amg01106-amg01106c3-amgplt0844/playlist.m3u8
 
+#EXTINF:-1 tvg-id="NHTamilGold.in" tvg-name="NH Tamil Gold KB" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400061DB_20260623T015348SQUARE.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",NH Tamil Gold KB
+https://d3arbp6l7f096k.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/pb-gv6wgpbb4mgwk/playlist.m3u8?ads.ads_cdn=cf&ads.app_domain=APP_DOMAIN&ads.cdn=cf
+
 #EXTINF:-1 tvg-id="NickHDPlus.in" tvg-name="Nick HD+ KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NICK_HDSYMPLUS/images/LOGO_HD/image.png" tvg-country="IN" group-title="Kids" tvg-quality="1080p",Nick HD+ KB
 http://103.72.101.252:8080/live/1226.m3u8
 
@@ -538,9 +544,6 @@ http://103.157.248.140:8000/play/a01m/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
 http://103.175.73.12:8080/live/151/151_0.m3u8
 
-#EXTINF:-1 tvg-id="StarVijay.in" tvg-name="Star Vijay HD KB" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/2/23/Vijay_tv.png/revision/latest?cb=20170719104859" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Star Vijay HD KB
-http://149.71.34.166:8000/play/a06i/index.m3u8
-
 #EXTINF:-1 tvg-id="StarPlus.in" tvg-name="StarPlus HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_PLUS/images/LOGO_HD/image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",StarPlus HD KB
 http://41.205.93.154/STAR-PLUS/index.m3u8
 
@@ -580,6 +583,9 @@ https://cc-4bhi5osabejc9.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da6
 #EXTINF:-1 tvg-id="TheMovieClub.in" tvg-name="The Movie Club KB" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN40000100Y_20260204T004058SQUARE.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",The Movie Club KB
 https://sis-global.prod.samsungtv.plus/v1/tvpprd/sc-mp2ar4ca425xo.m3u8
 
+#EXTINF:-1 tvg-id="TheVoiceTV.in" tvg-name="The Voice TV KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/thevoicetv.png" tvg-country="IN" group-title="News" tvg-quality="1080p",The Voice TV KB
+https://legitpro.co.in/thevoicetv/thevoicetv/index.m3u8
+
 #EXTINF:-1 tvg-id="TimesNowNavbharat.in" tvg-name="Times Now Navbharat HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/TIMESPLAY/LIVECHANNEL/6904ba4339f3b175376a61e0/images/LOGO_HD/LOGO_HD_asIWhlk80_TimesNowBharat1_1.png" tvg-country="IN" group-title="News" tvg-quality="1080p",Times Now Navbharat HD KB
 https://yupprestreamliveus.akamaized.net/v1/vglive-sk-717514/main.m3u8
 
@@ -595,11 +601,23 @@ https://live.sli.ke/live/npnhm84gz9/master.m3u8
 #EXTINF:-1 tvg-id="TollyTV.in" tvg-name="Tolly TV KB" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/aumnrs.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Tolly TV KB
 https://streams2.sofast.tv/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/13b5735d-52c3-4be0-853d-e0ec0127e708/manifest.m3u8
 
+#EXTINF:-1 tvg-id="TopNewsMarathi.in" tvg-name="Top News Marathi KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/topnewsmarathi.png" tvg-country="IN" group-title="News" tvg-quality="1080p",Top News Marathi KB
+https://live1.ottlive.co.in/topnewsmarathi/topnewsmarathi/index.m3u8
+
 #EXTINF:-1 tvg-id="TotalBhakti.in" tvg-name="Total Bhakti KB" tvg-logo="https://i.imgur.com/LPwRdmF.png" tvg-country="IN" group-title="IPTV" tvg-quality="1080p",Total Bhakti KB
 https://d34z4embz0hjf6.cloudfront.net/out/v1/d55b3323a9f142638f897378f0b526fe/index.m3u8
 
 #EXTINF:-1 tvg-id="TVBRICSEnglish.in" tvg-name="TV BRICS English KB" tvg-logo="https://i.imgur.com/8rKNuS6.png" tvg-country="IN" group-title="IPTV" tvg-quality="1080p",TV BRICS English KB
 https://engbrics.mediacdn.ru/cdn/brics/english/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TV30India.in" tvg-name="TV30 India KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV30India.png" tvg-country="IN" group-title="News" tvg-quality="1080p",TV30 India KB
+https://stream.tv30bharat.com/hls/shree/bhattji.m3u8
+
+#EXTINF:-1 tvg-id="TV45.in" tvg-name="TV45 KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV45.png" tvg-country="IN" group-title="News" tvg-quality="1080p",TV45 KB
+https://server.livelegitpro.in/bnews24/bnews24/video.m3u8
+
+#EXTINF:-1 tvg-id="UBangla.in" tvg-name="U Bangla KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/U_Bangla.png" tvg-country="IN" group-title="Bangla" tvg-quality="1080p",U Bangla KB
+https://stream.ottlive.co.in/ubangla/index.m3u8
 
 #EXTINF:-1 tvg-id="UltimateTV.in" tvg-name="Ultimate TV KB" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/U-Tv-logo_2000_X_1125_Transpharent.png" tvg-country="IN" group-title="Music" tvg-quality="1080p",Ultimate TV KB
 https://stream.ottlive.co.in/utvtamil/index.m3u8
@@ -612,6 +630,9 @@ https://tglmp01.akamaized.net/out/v1/c1071012b73f4f189b202e1529e8f802/manifest.m
 
 #EXTINF:-1 tvg-id="VillageTV.in" tvg-name="Village TV KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/VillageTV.png" tvg-country="IN" group-title="IPTV" tvg-quality="1080p",Village TV KB
 https://live.villagetv.net/villagetv/hd/index.m3u8
+
+#EXTINF:-1 tvg-id="VistaarNews.in" tvg-name="Vistaar News KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_VISTAAR_NEWS/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="1080p",Vistaar News KB
+https://stream.ottlive.co.in/vistaartv/index.m3u8
 
 #EXTINF:-1 tvg-id="VTU.in" tvg-name="VTU KB" tvg-logo="https://i.imgur.com/zMwZRGJ.png" tvg-country="IN" group-title="IPTV" tvg-quality="1080p",VTU KB
 https://lbgo.bozztv.com/ssh101/ssh101/afghantheatretv/playlist.m3u8
@@ -662,13 +683,13 @@ https://ranacable.duckdns.org/ZodiakTv/index.m3u8
 https://thelegitpro.in/pntv/rplusnews24x7/index.m3u8
 
 #EXTINF:-1 tvg-id="PeppersTV.in" tvg-name="Peppers TV KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Peppers_TV.png" tvg-country="IN" group-title="Music" tvg-quality="751p",Peppers TV KB
-https://cdn-2.pishow.tv/live/1383/master.m3u8
+https://cdn.pishow.tv/ott/live/1383/master.m3u8
 
 #EXTINF:-1 tvg-id="10TV.in" tvg-name="10 TV KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_10TV/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="720p",10 TV KB
 https://mumbai-edge.smartplaytv.in/10TV/index.m3u8
 
 #EXTINF:-1 tvg-id="99TV.in" tvg-name="99TV KB" tvg-logo="https://i.imgur.com/dZA4gel.png" tvg-country="IN" group-title="News" tvg-quality="720p",99TV KB
-https://cdn-1.pishow.tv/live/1211/master.m3u8
+https://cdn.pishow.tv/ott/live/1211/master.m3u8
 
 #EXTINF:-1 tvg-id="AamarBangla.in" tvg-name="Aamar Bangla KB" tvg-logo="https://www.jagobd.com/wp-content/uploads/2022/07/Aamar-Bangla.jpg" tvg-country="IN" group-title="Entertainment" tvg-quality="720p",Aamar Bangla KB
 https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcGVMZEJCTEFWeVN3PTOmdFsaWRtaW51aiPhnPTI/amarbanglatv.stream/playlist.m3u8
@@ -716,7 +737,7 @@ https://mcncdndigital.com/balleballetv/index.m3u8
 https://8yzmq2gbdvax-hls-live.wmncdn.net/bansalnewstv1/live1.stream/playlist.m3u8
 
 #EXTINF:-1 tvg-id="BhakthiTV.in" tvg-name="Bhakthi TV KB" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/61/Bhakthi_TV_logo.jpg" tvg-country="IN" group-title="IPTV" tvg-quality="720p",Bhakthi TV KB
-https://cdn-1.pishow.tv/live/397/master.m3u8
+https://cdn.pishow.tv/ott/live/397/master.m3u8
 
 #EXTINF:-1 tvg-id="Bharat24.in" tvg-name="Bharat24 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_BHARAT_24/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="720p",Bharat24 KB
 https://cdn.ottlive.co.in/bharat24/index.m3u8
@@ -725,7 +746,7 @@ https://cdn.ottlive.co.in/bharat24/index.m3u8
 https://live-bhojpuri.akamaized.net/liveabr/playlist.m3u8
 
 #EXTINF:-1 tvg-id="BIGTV.in" tvg-name="BIG TV KB" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/4f/BiG_TV_%28Stacked%29.svg/revision/latest/scale-to-width-down/250?cb=20180316124023" tvg-country="IN" group-title="News" tvg-quality="720p",BIG TV KB
-https://cdn-1.pishow.tv/live/1059/master.m3u8
+https://cdn.pishow.tv/ott/live/1059/master.m3u8
 
 #EXTINF:-1 tvg-id="BRKNews.in" tvg-name="BRK News KB" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/brk-news.png" tvg-country="IN" group-title="News" tvg-quality="720p",BRK News KB
 https://mumbai-edge.smartplaytv.in/BRKNEWS/index.m3u8
@@ -734,29 +755,8 @@ https://mumbai-edge.smartplaytv.in/BRKNEWS/index.m3u8
 https://feeds.intoday.in/bttv/itgd.m3u8
 
 #EXTINF:-1 tvg-id="ChannelWIN.in" tvg-name="Channel WIN KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_CHANNEL_WIN/images/LOGO_HD/image.png" tvg-country="IN" group-title="IPTV" tvg-quality="720p",Channel WIN KB
-https://cdn-4.pishow.tv/live/229/master.m3u8
+https://cdn.pishow.tv/ott/live/229/master.m3u8
 
 #EXTINF:-1 tvg-id="CnewsBharat.in" tvg-name="Cnews Bharat KB" tvg-logo="https://raw.githubusercontent.com/satish-kumar07/iptv-channel-logos/refs/heads/main/Cnews%20Bharat.png" tvg-country="IN" group-title="News" tvg-quality="720p",Cnews Bharat KB
 https://legitpro.co.in/cnews/cnews/index.fmp4.m3u8
-
-#EXTINF:-1 tvg-id="ColorsMarathi.in" tvg-name="Colors Marathi HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS_MARATHI/images/LOGO_HD/image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="720p",Colors Marathi HD KB
-https://da86m1sqpm3o0.cloudfront.net/28072023/smil:colorsmarathihd.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="ColorsMENA.in" tvg-name="Colors MENA HD KB" tvg-logo="https://i.imgur.com/LjNFTdC.png" tvg-country="IN" group-title="Entertainment" tvg-quality="720p",Colors MENA HD KB
-https://da86m1sqpm3o0.cloudfront.net/28072023/smil:colorsme.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="ColorsTamil.in" tvg-name="Colors Tamil HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS_TAMIL/images/LOGO_HD/image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="720p",Colors Tamil HD KB
-https://da86m1sqpm3o0.cloudfront.net/28072023/smil:colorstamilhd11.smil/playlist.m3u8
-
-#EXTINF:-1 tvg-id="CVREnglish.in" tvg-name="CVR English KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/CVR_English.png" tvg-country="IN" group-title="News" tvg-quality="720p",CVR English KB
-https://cdn-2.pishow.tv/live/425/master.m3u8
-
-#EXTINF:-1 tvg-id="Dangal2.in" tvg-name="Dangal 2 KB" tvg-logo="https://i.imgur.com/BEr1r7L.png" tvg-country="IN" group-title="Entertainment" tvg-quality="720p",Dangal 2 KB
-https://live-dangal2.akamaized.net/liveabr/playlist.m3u8
-
-#EXTINF:-1 tvg-id="DangalTV.in" tvg-name="Dangal TV KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DANGAL/images/LOGO_HD/image.png" tvg-country="IN" group-title="IPTV" tvg-quality="720p",Dangal TV KB
-https://live-dangal.akamaized.net/liveabr/playlist.m3u8
-
-#EXTINF:-1 tvg-id="DDBharati.in" tvg-name="DD Bharati KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_BHARATI/images/LOGO_HD/image.png" tvg-country="IN" group-title="Culture" tvg-quality="720p",DD Bharati KB
-https://cdn-1.pishow.tv/live/10/master.m3u8
 
