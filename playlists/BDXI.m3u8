@@ -2,7 +2,7 @@
 # KB IPTV - BDXI
 # BEST FAST PLAYLIST
 # Total Channels: 733
-# Updated: 2026-09-15T20:45:03.187Z
+# Updated: 2026-09-15T23:21:28.461Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="ATNBangla.bd" tvg-name="ATN Bangla KB" tvg-logo="https://i.imgur.com/K1HmMRz.png" tvg-country="BD" group-title="Bangla" tvg-quality="720p",ATN Bangla KB
@@ -132,7 +132,7 @@ https://stream.ottlive.co.in/asiannews/index.m3u8
 #EXTINF:-1 tvg-id="AsianetSuvarnaNews.in" tvg-name="Asianet Suvarna News KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ASIANET_SUVARNA_NEWS/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="1080p",Asianet Suvarna News KB
 https://asianetnews.vgcdn.net/vglive-sk-335835/playlist.m3u8
 
-#EXTINF:-1 tvg-id="B4UBhojpuri.in" tvg-name="B4U Bhojpuri KB" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/B4U-BHOJPURI-LOGO-transparent.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",B4U Bhojpuri KB
+#EXTINF:-1 tvg-id="B4UBhojpuri.in" tvg-name="B4U Bhojpuri KB" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN39000307N_20260623T013644SQUARE.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",B4U Bhojpuri KB
 https://cdnb4u.wiseplayout.com/B4U_Bhojpuri/master.m3u8
 
 #EXTINF:-1 tvg-id="ChannelDivya.in" tvg-name="Channel Divya KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Divya_TV.png" tvg-country="IN" group-title="IPTV" tvg-quality="1080p",Channel Divya KB
@@ -2145,7 +2145,7 @@ https://segment.yuppcdn.net/050522/murasu/playlist.m3u8
 #EXTVLCOPT:http-referrer=https://bhoomtv.me/
 https://maamusic.keralive.workers.dev/out/v1/a797c00cba954265ba781f92a57e2cf5/index.m3u8
 
-#EXTINF:-1 tvg-id="StarVijay.in" tvg-name="Star Vijay KB" tvg-logo="https://vignette.wikia.nocookie.net/logopedia/images/2/23/Vijay_tv.png/revision/latest?cb=20170719104859" tvg-country="IN" group-title="Entertainment" tvg-quality="396p",Star Vijay KB
+#EXTINF:-1 tvg-id="StarVijay.in" tvg-name="Star Vijay KB" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yupptvnew/content/common/logos/channel/logos/iuxvzu.png" tvg-country="IN" group-title="Entertainment" tvg-quality="396p",Star Vijay KB
 https://da86m1sqpm3o0.cloudfront.net/28072023/smil:starvijayuk.smil/playlist.m3u8
 
 #EXTINF:-1 tvg-id="ABPMajha.in" tvg-name="ABP Majha KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ABP_MAJHA/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="360p",ABP Majha KB
