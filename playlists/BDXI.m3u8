@@ -1,8 +1,8 @@
 #EXTM3U
 # KB IPTV - BDXI
 # BEST FAST PLAYLIST
-# Total Channels: 781
-# Updated: 2026-09-18T15:37:30.979Z
+# Total Channels: 782
+# Updated: 2026-09-18T18:47:40.460Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="ATNBangla.bd" tvg-name="ATN Bangla KB" tvg-logo="https://i.imgur.com/K1HmMRz.png" tvg-country="BD" group-title="Bangla" tvg-quality="720p",ATN Bangla KB
@@ -977,6 +977,9 @@ https://cdn.pishow.tv/ott/live/280/master.m3u8
 #EXTINF:-1 tvg-id="HosannaTV.in" tvg-name="Hosanna TV Hindi KB" tvg-logo="https://i.imgur.com/VYorU1L.png" tvg-country="IN" group-title="IPTV" tvg-quality="720p",Hosanna TV Hindi KB
 https://mumbai-edge.smartplaytv.in/HosannaTV/index.m3u8
 
+#EXTINF:-1 tvg-id="HSTV.in" tvg-name="HSTV KB" tvg-logo="https://ibb.co/Ng5nkX6F" tvg-country="IN" group-title="IPTV" tvg-quality="720p",HSTV KB
+https://live.castmaxcloud.com/live/hstv.m3u8
+
 #EXTINF:-1 tvg-id="IndiaToday.in" tvg-name="India Today KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_INDIA_TODAY/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="720p",India Today KB
 https://amg00644-amg00644c1-ondemandkorea-amesia-10266.playouts.now.amagi.tv/playlist/amg00644-tvtodaynetworkltdfast-indiatoday-ondemandkoreaamesia/playlist.m3u8
 
@@ -1162,6 +1165,9 @@ https://cdn.pishow.tv/ott/live/1143/master.m3u8
 
 #EXTINF:-1 tvg-id="SangeetMarathi.in" tvg-name="Sangeet Marathi KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SANGEET_MARATHI/images/LOGO_HD/image.png" tvg-country="IN" group-title="Music" tvg-quality="720p",Sangeet Marathi KB
 https://cdn.pishow.tv/ott/live/1229/master.m3u8
+
+#EXTINF:-1 tvg-id="SarvDharamSangam.in" tvg-name="Sarv Dharam Sangam KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SARV_DHARAM_SANGAM/images/LOGO_HD/image.png" tvg-country="IN" group-title="IPTV" tvg-quality="720p",Sarv Dharam Sangam KB
+https://live.castmaxcloud.com/live/sdsangam2.m3u8
 
 #EXTINF:-1 tvg-id="ShemarooJosh.in" tvg-name="Shemaroo Josh KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_CHUMBAK_TV/images/LOGO_HD/image.png" tvg-country="IN" group-title="Movies" tvg-quality="720p",Shemaroo Josh KB
 https://airtelapp.shemaroo.com/shemarooChumbakTV/smil:shemarooChumbakTVadp.smil/playlist.m3u8
@@ -1928,9 +1934,6 @@ https://mumt05.tangotv.in/87NeALx2SRISANKARA/index.m3u8
 
 #EXTINF:-1 tvg-id="SantvaniChannel.in" tvg-name="Santvani Channel KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SANTVANI/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="IPTV" tvg-quality="576p",Santvani Channel KB
 https://cdn.pishow.tv/ott/live/475/master.m3u8
-
-#EXTINF:-1 tvg-id="SarvDharamSangam.in" tvg-name="Sarv Dharam Sangam KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SARV_DHARAM_SANGAM/images/LOGO_HD/image.png" tvg-country="IN" group-title="IPTV" tvg-quality="576p",Sarv Dharam Sangam KB
-http://103.72.101.252:8080/live/972.m3u8
 
 #EXTINF:-1 tvg-id="SarvDharmSangam.in" tvg-name="Sarv Dharm Sangam KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/channel/cacbd93588fb35c8a65c86fcf4310dc0.png" tvg-country="IN" group-title="IPTV" tvg-quality="576p",Sarv Dharm Sangam KB
 https://mumt01.tangotv.in/O5aw8Zn3SARAVDHARAMSANGAM/index.m3u8
