@@ -1,8 +1,8 @@
 #EXTM3U
 # KB IPTV - BDXI
 # BEST FAST PLAYLIST
-# Total Channels: 782
-# Updated: 2026-09-18T23:26:00.166Z
+# Total Channels: 783
+# Updated: 2026-09-19T01:22:28.282Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="ATNBangla.bd" tvg-name="ATN Bangla KB" tvg-logo="https://i.imgur.com/K1HmMRz.png" tvg-country="BD" group-title="Bangla" tvg-quality="720p",ATN Bangla KB
@@ -828,6 +828,9 @@ https://mumbai-edge.smartplaytv.in/ABNAJ/index.m3u8
 
 #EXTINF:-1 tvg-id="AdhyatmTV.in" tvg-name="Adhyatm TV KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Adhyatam_TV.png" tvg-country="IN" group-title="Music" tvg-quality="720p",Adhyatm TV KB
 https://mumbai-edge.smartplaytv.in/AdhyatmTV/index.m3u8
+
+#EXTINF:-1 tvg-id="AlankarTV.in" tvg-name="Alankar TV KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ALANKAR/images/LOGO_HD/image.png" tvg-country="IN" group-title="Movies" tvg-quality="720p",Alankar TV KB
+https://livetv.tarangplus.in/alankar-origin/live/playlist.m3u8
 
 #EXTINF:-1 tvg-id="AmritaTV.in" tvg-name="Amrita TV KB" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Amrita%20TV.png" tvg-country="IN" group-title="Entertainment" tvg-quality="720p",Amrita TV KB
 https://ddash74r36xqp.cloudfront.net/master.m3u8
