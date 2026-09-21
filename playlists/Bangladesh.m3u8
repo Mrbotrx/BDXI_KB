@@ -1,8 +1,8 @@
 #EXTM3U
 # KB IPTV - Bangladesh
 # BEST FAST PLAYLIST
-# Total Channels: 25
-# Updated: 2026-09-21T00:21:59.069Z
+# Total Channels: 26
+# Updated: 2026-09-21T05:13:17.823Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="ATNBangla.bd" tvg-name="ATN Bangla KB" tvg-logo="https://i.imgur.com/K1HmMRz.png" tvg-country="BD" group-title="Bangla" tvg-quality="720p",ATN Bangla KB
@@ -46,6 +46,9 @@ https://tvsen5.aynaott.com/banglavision/index.m3u8
 
 #EXTINF:-1 tvg-id="DurontoTV.bd" tvg-name="Duronto TV KB" tvg-logo="https://i.imgur.com/gXsddRK.png" tvg-country="BD" group-title="Kids" tvg-quality="720p",Duronto TV KB
 https://tvsen6.aynaott.com/6xyZ3N4oHv2KBJdB6W4p/index.m3u8
+
+#EXTINF:-1 tvg-id="MatribhumiTV.bd" tvg-name="Matribhumi TV KB" tvg-logo="https://www.jagobd.com/wp-content/uploads/2024/10/matribhumi.jpg" tvg-country="BD" group-title="IPTV" tvg-quality="720p",Matribhumi TV KB
+http://live.playmax.live/matribhumi/index.m3u8
 
 #EXTINF:-1 tvg-id="RupashiBanglaTV.bd" tvg-name="Rupashi Bangla TV KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Rupashi_Bangla.png" tvg-country="BD" group-title="Entertainment" tvg-quality="720p",Rupashi Bangla TV KB
 https://app24.jagobd.com.bd/c3VydmVyX8RpbEU9Mi8xNy8yMFDEEHGcfRgzQ6NTAgdEoaeFzbF92YWxIZTO0U0ezN1IzMyfvcEdsEfeDeKiNkVN3PTOmdFseWRtaW51aiPhnPTI2/ruposhibangla.stream/playlist.m3u8
