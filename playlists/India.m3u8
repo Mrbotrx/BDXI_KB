@@ -2,7 +2,7 @@
 # KB IPTV - India
 # BEST FAST PLAYLIST
 # Total Channels: 250
-# Updated: 2026-10-04T00:17:33.686Z
+# Updated: 2026-10-04T06:08:21.009Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="StarSports1.in" tvg-name="Star Sports 1 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_SPORTS_1/images/LOGO_HD/image.png" tvg-country="IN" group-title="Sports" tvg-quality="576p",Star Sports 1 KB
@@ -200,9 +200,6 @@ https://cdn.pishow.tv/ott/live/1737/master.m3u8
 
 #EXTINF:-1 tvg-id="DisneyChannel.in" tvg-name="Disney Channel HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DISNEY_CHANNEL/images/LOGO_HD/image.png" tvg-country="IN" group-title="Kids" tvg-quality="1080p",Disney Channel HD KB
 http://66.102.126.10:8000/play/a013/index.m3u8
-
-#EXTINF:-1 tvg-id="DisneyInternationalHD.in" tvg-name="Disney International HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DISNEY_INTERNATIONAL_HD/images/LOGO_HD/image.png" tvg-country="IN" group-title="Kids" tvg-quality="1080p",Disney International HD KB
-http://202.70.146.135:8000/play/a04p/index.m3u8
 
 #EXTINF:-1 tvg-id="DocuBayTV.in" tvg-name="DocuBay TV KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/DocuBay.png" tvg-country="IN" group-title="Documentary" tvg-quality="1080p",DocuBay TV KB
 https://cc-mgr91yrk4pehy.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-mgr91yrk4pehy/playlist.m3u8
@@ -597,9 +594,6 @@ https://d2g1vdc6ozl2o8.cloudfront.net/out/v1/0a0dc7d7911b4fddbb4dfc963fdd4b9e/in
 #EXTINF:-1 tvg-id="SonyAath.in" tvg-name="Sony Aath KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_8/images/LOGO_HD/image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Sony Aath KB
 https://cloudplay-sonyliv.pages.dev/aath.m3u8
 
-#EXTINF:-1 tvg-id="SonyBBCEarth.in" tvg-name="Sony BBC Earth HD KB" tvg-logo="https://dtil.tmsimg.com/assets/s143799_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="Documentary" tvg-quality="1080p",Sony BBC Earth HD KB
-https://cloudplay-sonyliv.pages.dev/bbcearthhd.m3u8
-
 #EXTINF:-1 tvg-id="SonyEntertainmentTelevision.in" tvg-name="Sony Entertainment Television HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SET/images/LOGO_HD/image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Sony Entertainment Television HD KB
 http://38.96.178.205/SONYHD/index.m3u8
 
@@ -610,10 +604,7 @@ https://cloudplay-sonyliv.pages.dev/marathi.m3u8
 https://cloudplay-sonyliv.pages.dev/pal.m3u8
 
 #EXTINF:-1 tvg-id="SonyPix.in" tvg-name="Sony Pix HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_PIX/images/LOGO_HD/image.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Sony Pix HD KB
-https://sl.vodep39240327.workers.dev/channel/SONY+PIX+HD.m3u8
-
-#EXTINF:-1 tvg-id="SonySAB.in" tvg-name="Sony SAB HD KB" tvg-logo="https://www.sonypicturesnetworks.com/images/logos/SONY%20SAB%20SD.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Sony SAB HD KB
-https://cloudplay-sonyliv.pages.dev/sabhd.m3u8
+https://cloudplay-sonyliv.pages.dev/pixhd.m3u8
 
 #EXTINF:-1 tvg-id="SonySportsTen3Hindi.in" tvg-name="Sony Sports Ten 3 Hindi HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_SPORTS_TEN_3_HD/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="Sports" tvg-quality="1080p",Sony Sports Ten 3 Hindi HD KB
 https://cloudplay-sonyliv.pages.dev/ten3hd.m3u8
@@ -758,4 +749,13 @@ http://51.75.127.199:3141/zeebanglahd/index.m3u8
 
 #EXTINF:-1 tvg-id="ZeeCineClassic.in" tvg-name="Zee Cine Classic KB" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN21000014R_20260325T012324SQUARE.png" tvg-country="IN" group-title="Classic" tvg-quality="1080p",Zee Cine Classic KB
 https://amg00862-amg00862c8-amgplt0173.playout.now3.amagi.tv/playlist/amg00862-amg00862c8-amgplt0173/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ZeeCinemalu.in" tvg-name="Zee Cinemalu HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_CINEMALU/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Zee Cinemalu HD KB
+http://51.75.127.199:3141/zeecinemaluhd/index.m3u8
+
+#EXTINF:-1 tvg-id="ZeeComedyNation.in" tvg-name="Zee Comedy Nation KB" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN2100002GD_20260325T012327SQUARE.png" tvg-country="IN" group-title="Comedy" tvg-quality="1080p",Zee Comedy Nation KB
+https://amg00862-amg00862c5-amgplt0173.playout.now3.amagi.tv/playlist/amg00862-amg00862c5-amgplt0173/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ZeeDilSe.in" tvg-name="Zee Dil Se KB" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN2100003OJ_20260325T012331SQUARE.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Zee Dil Se KB
+https://amg00862-amg00862c6-amgplt0173.playout.now3.amagi.tv/playlist/amg00862-amg00862c6-amgplt0173/playlist.m3u8
 
