@@ -2,7 +2,7 @@
 # KB IPTV - India
 # BEST FAST PLAYLIST
 # Total Channels: 250
-# Updated: 2026-10-07T02:39:01.645Z
+# Updated: 2026-10-07T09:38:47.609Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="StarSports1.in" tvg-name="Star Sports 1 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_SPORTS_1/images/LOGO_HD/image.png" tvg-country="IN" group-title="Sports" tvg-quality="576p",Star Sports 1 KB
@@ -480,7 +480,7 @@ https://jmp2.uk/stvp-IN460001373
 #EXTINF:-1 tvg-id="NHTamilGold.in" tvg-name="NH Tamil Gold KB" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400061DB_20260623T015348SQUARE.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",NH Tamil Gold KB
 https://d3arbp6l7f096k.cloudfront.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/pb-gv6wgpbb4mgwk/playlist.m3u8?ads.ads_cdn=cf&ads.app_domain=APP_DOMAIN&ads.cdn=cf
 
-#EXTINF:-1 tvg-id="NickHDPlus.in" tvg-name="Nick HD+ KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NICK_HDSYMPLUS/images/LOGO_HD/image.png" tvg-country="IN" group-title="Kids" tvg-quality="1080p",Nick HD+ KB
+#EXTINF:-1 tvg-id="NickHDPlus.in" tvg-name="Nick HD+ KB" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/8/8c/Nickelodeon_HD%2B_Logo_2024.png" tvg-country="IN" group-title="Kids" tvg-quality="1080p",Nick HD+ KB
 http://51.75.127.199:3141/nickhd/index.m3u8
 
 #EXTINF:-1 tvg-id="NKTV24x7.in" tvg-name="NK TV 24x7 KB" tvg-logo="https://www.nktv.in/wp-content/uploads/2023/01/NEW-LOGO-NEW.png" tvg-country="IN" group-title="News" tvg-quality="1080p",NK TV 24x7 KB
@@ -621,7 +621,7 @@ http://38.96.178.205/SONYHD/index.m3u8
 #EXTINF:-1 tvg-id="SonyMarathi.in" tvg-name="Sony Marathi KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/SonyMarathi.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Sony Marathi KB
 https://cloudplay-sonyliv.pages.dev/marathi.m3u8
 
-#EXTINF:-1 tvg-id="SonyMax.in" tvg-name="Sony Max HD KB" tvg-logo="https://i.imgur.com/LBICKI5.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Sony Max HD KB
+#EXTINF:-1 tvg-id="SonyMax.in" tvg-name="Sony Max HD KB" tvg-logo="https://dtil.tmsimg.com/assets/s159098_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Sony Max HD KB
 http://103.185.24.134:3001/SonyMAX/index.m3u8
 
 #EXTINF:-1 tvg-id="SonyPal.in" tvg-name="Sony Pal KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/SonyPAL.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Sony Pal KB
@@ -669,7 +669,7 @@ http://103.151.60.162:2122/play/a026/index.m3u8?hls
 #EXTINF:-1 tvg-id="StarSportsSelect2.in" tvg-name="Star Sports Select 2 HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_SPORTS_SELECT_2/images/LOGO_HD/image.png" tvg-country="IN" group-title="Sports" tvg-quality="1080p",Star Sports Select 2 HD KB
 http://103.151.60.162:2122/play/a027/index.m3u8?hls
 
-#EXTINF:-1 tvg-id="StarPlus.in" tvg-name="StarPlus HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_PLUS/images/LOGO_HD/image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",StarPlus HD KB
+#EXTINF:-1 tvg-id="StarPlus.in" tvg-name="StarPlus HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/HOTSTARLIVETV/LIVECHANNEL/6729deffe5b96c58f0401085/images/LANDSCAPE_169/LANDSCAPE_169_YPiKWyPKh_STAR-PLUS.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",StarPlus HD KB
 http://41.205.93.154/STAR-PLUS/index.m3u8
 
 #EXTINF:-1 tvg-id="SubinTV.in" tvg-name="Subin TV KB" tvg-logo="https://www.subintv.in/SUBINLOGO.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Subin TV KB
