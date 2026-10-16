@@ -1,8 +1,8 @@
 #EXTM3U
 # KB IPTV - BDXI
 # BEST FAST PLAYLIST
-# Total Channels: 751
-# Updated: 2026-10-16T00:00:13.198Z
+# Total Channels: 752
+# Updated: 2026-10-16T04:47:13.033Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="StarSports1.in" tvg-name="Star Sports 1 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_SPORTS_1/images/LOGO_HD/image.png" tvg-country="IN" group-title="Sports" tvg-quality="576p",Star Sports 1 KB
@@ -2261,6 +2261,9 @@ https://vglivessai.akamaized.net/sg/v1/manifest/611d79b11b77e2f571934fd80ca14134
 
 #EXTINF:-1 tvg-id="SaamTV.in" tvg-name="Saam TV KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SAAM_TV/images/LOGO_HD/image.png" tvg-country="IN" group-title="Music",Saam TV KB
 https://cdn.pishow.tv/ott/live/437/master.m3u8
+
+#EXTINF:-1 tvg-id="SonyMax1.in" tvg-name="Sony Max 1 KB" tvg-logo="https://dtil.tmsimg.com/assets/s179440_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="Movies",Sony Max 1 KB
+http://27.116.22.53:5001/live/3418.m3u8
 
 #EXTINF:-1 tvg-id="WeatherSpy.in" tvg-name="Weatherspy KB" tvg-logo="https://i.imgur.com/KIEKOt1.png" tvg-country="IN" group-title="IPTV",Weatherspy KB
 https://jukin-weatherspy-2-in.samsung.wurl.tv/playlist.m3u8
