@@ -3,7 +3,7 @@
 # ============================================
 # KBCT M3U8
 # MAKE BY: www.Facebook.com/kallyan.biswas.29
-# Updated: 2026-10-19 22:28 | 15 channels
+# Updated: 2026-10-20 04:21 | 18 channels
 # ============================================
 #EXTINF:-1 tvg-id="EkusheyTV.bd@SD" tvg-name="Ekushey TV KBCT" tvg-logo="https://i.imgur.com/lRpkGHj.png" group-title="BD | News",Ekushey TV KBCT
 https://ekusheyserver.com/etvlivesn.m3u8
@@ -13,6 +13,12 @@ https://app.ncare.live/c3VydmVyX8RpbEU9Mi8xNy8yMDE0GIDU6RgzQ6NTAgdEoaeFzbF92YWxI
 http://103.190.133.68:1935/news21live/live/playlist.m3u8
 #EXTINF:-1 tvg-id="NTV.bd@SD" tvg-name="NTV (Bangladesh) KBCT" tvg-logo="https://i.imgur.com/l75bDTx.png" group-title="BD | Entertainment",NTV (Bangladesh) KBCT
 https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8
+#EXTINF:-1 tvg-id="RTV.bd@SD" tvg-name="RTV (Bangladesh) KBCT" tvg-logo="https://i.imgur.com/yu8ugqt.png" group-title="BD | Entertainment",RTV (Bangladesh) KBCT
+http://tvsen5.aynascope.net/RtvHD/index.m3u8
+#EXTINF:-1 tvg-id="ATNBangla.bd@SD" tvg-name="ATN Bangla KBCT" tvg-logo="https://i.imgur.com/K1HmMRz.png" group-title="BD | Entertainment",ATN Bangla KBCT
+http://tvsen5.aynascope.net/atnbangla/index.m3u8
+#EXTINF:-1 tvg-id="MaasrangaTV.bd@SD" tvg-name="Maasranga TV KBCT" tvg-logo="https://i.imgur.com/uVZJMed.png" group-title="BD | Entertainment",Maasranga TV KBCT
+http://tvsen5.aynascope.net/maasrangatv/index.m3u8
 #EXTINF:-1 tvg-id="BoishakhiTV.bd@SD" tvg-name="Boishakhi TV KBCT" tvg-logo="https://i.imgur.com/gxL05Y4.png" group-title="BD | Entertainment",Boishakhi TV KBCT
 https://boishakhi.sonarbanglatv.com/boishakhi/boishakhitv/index.m3u8
 #EXTINF:-1 tvg-id="MyTV.bd@SD" tvg-name="My TV (Bangladesh) KBCT" tvg-logo="https://i.imgur.com/475qK5T.png" group-title="BD | Entertainment",My TV (Bangladesh) KBCT
