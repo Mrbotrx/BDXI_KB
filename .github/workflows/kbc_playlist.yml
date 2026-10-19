@@ -1,83 +1,168 @@
-name: KBCT Playlist Auto Update
+name: "📺 IPTV LINKS BY KBCT"
+
+run-name: "IPTV LINKS BY KBCT • ${{ inputs.mode || 'fast' }} build"
 
 on:
   schedule:
-    # Every 3 hours (UTC). Minute 17 avoids GitHub's busy top-of-the-hour queue.
-    # In Bangladesh time (UTC+6): 06:17, 09:17, 12:17, 15:17, 18:17, 21:17, 00:17, 03:17
     - cron: "17 */3 * * *"
-  workflow_dispatch:                 # "Run workflow" button
+
+  workflow_dispatch:
     inputs:
       mode:
-        description: "fast = alive check only | full = alive + real speed test"
+        description: "Select playlist build mode"
         type: choice
         options:
           - fast
           - full
         default: fast
+        required: true
 
 permissions:
-  contents: write                    # needed to push the updated playlist
+  contents: write
 
 concurrency:
-  group: kbc-playlist                # never run two builds at the same time
+  group: kbc-playlist
   cancel-in-progress: false
 
 jobs:
   build:
-    name: Build KBCT playlist
-    # Default: GitHub's runner. Optional: Settings > Secrets and variables > Actions > Variables
-    #   KBC_RUNNER = self-hosted   (your own PC/VPS in Bangladesh)
-    #   KBC_MODE   = full          (real speed test, accurate only from a BD connection)
+    name: "📡 IPTV LINKS BY KBCT — Build Playlist"
     runs-on: ${{ vars.KBC_RUNNER || 'ubuntu-latest' }}
     timeout-minutes: 30
+
     env:
-      TZ: Asia/Dhaka                 # header "Updated:" shows Bangladesh time
+      TZ: Asia/Dhaka
+      BOT_NAME: "IPTV LINKS BY KBCT"
+      LOGO_URL: "https://raw.githubusercontent.com/Mrbotrx/Mrbotrx/refs/heads/main/IPTV_LINKS_LOGO.jpg"
       MODE: ${{ inputs.mode || vars.KBC_MODE || 'fast' }}
 
     steps:
-      - name: Checkout
+      - name: "📥 Checkout Repository"
         uses: actions/checkout@v5
 
-      - name: Build playlist
+      - name: "🐍 Setup Python"
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+
+      - name: "📺 Display Bot Information"
         run: |
-          python3 --version
+          echo "=================================="
+          echo "$BOT_NAME"
           echo "Mode: $MODE"
-          ARGS="--no-cache --no-report --split --min-channels 20"
-          if [ "$MODE" = "full" ]; then
-            ARGS="$ARGS --timeout 10"
-          else
-            ARGS="$ARGS --fast --timeout 12"
-          fi
-          python3 KBC_playlist.py $ARGS
+          echo "Logo: $LOGO_URL"
+          echo "=================================="
+          python3 --version
 
-      - name: Commit and push
+      - name: "⚙️ Build Playlist"
+        shell: bash
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add KBC/
-          if git diff --cached --quiet; then
-            echo "No changes to commit."
-            exit 0
-          fi
-          git commit -m "Update KBCT playlist $(date '+%Y-%m-%d %H:%M') BD"
-          for i in 1 2 3; do
-            if git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME"; then
-              exit 0
-            fi
-            echo "Push failed (attempt $i), retrying..."
-            sleep 5
-          done
-          echo "Could not push after 3 attempts."
-          exit 1
+          set -euo pipefail
 
-      - name: Job summary
+          ARGS=(--no-cache --no-report --split)
+
+          if [[ "$MODE" == "full" ]]; then
+            ARGS+=(--timeout 10)
+          else
+            ARGS+=(--fast --timeout 12)
+          fi
+
+          # Use the actual script filename in your repository.
+          if [[ -f KBC_playlist.py ]]; then
+            SCRIPT="KBC_playlist.py"
+          elif [[ -f kbc_iptv.py ]]; then
+            SCRIPT="kbc_iptv.py"
+          else
+            echo "ERROR: Playlist Python script not found."
+            ls -la
+            exit 1
+          fi
+
+          echo "Running: $SCRIPT"
+          python3 "$SCRIPT" "${ARGS[@]}"
+
+      - name: "🔎 Verify Playlist"
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          PLAYLIST="KBC/KBC_playlist.m3u"
+
+          if [[ ! -f "$PLAYLIST" ]]; then
+            echo "ERROR: $PLAYLIST was not created."
+            find . -maxdepth 3 -type f
+            exit 1
+          fi
+
+          CHANNELS=$(grep -c '^#EXTINF' "$PLAYLIST" || true)
+
+          if [[ "$CHANNELS" -eq 0 ]]; then
+            echo "ERROR: Playlist has no channels."
+            exit 1
+          fi
+
+          echo "Playlist verified."
+          echo "Channel count: $CHANNELS"
+
+      - name: "📝 Add Logo and Bot Information to Summary"
         if: always()
+        shell: bash
         run: |
           {
-            echo "### KBCT playlist"
-            echo "- Mode: \`$MODE\`"
-            if [ -f KBC/KBC_playlist.m3u ]; then
-              echo "- Channels: $(grep -c '^#EXTINF' KBC/KBC_playlist.m3u)"
-              echo "- $(grep -m1 '^# Updated' KBC/KBC_playlist.m3u)"
+            echo "# 📺 IPTV LINKS BY KBCT"
+            echo
+            echo "![IPTV LINKS BY KBCT]($LOGO_URL)"
+            echo
+            echo "**Bot:** $BOT_NAME"
+            echo
+            echo "**Mode:** $MODE"
+            echo
+            echo "**Updated:** $(date '+%Y-%m-%d %H:%M:%S %Z')"
+            echo
+
+            if [[ -f KBC/KBC_playlist.m3u ]]; then
+              CHANNELS=$(grep -c '^#EXTINF' KBC/KBC_playlist.m3u || true)
+              echo "**Channels:** $CHANNELS"
+              echo
+              UPDATED=$(grep -m1 '^# Updated' KBC/KBC_playlist.m3u || true)
+
+              if [[ -n "$UPDATED" ]]; then
+                echo "$UPDATED"
+              fi
+            else
+              echo "Playlist output not found."
             fi
           } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: "🚀 Commit and Push Playlist"
+        if: success()
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          git config user.name "github-actions[bot]"
+          git config user.email \
+            "41898282+github-actions[bot]@users.noreply.github.com"
+
+          git add KBC/
+
+          if git diff --cached --quiet; then
+            echo "No playlist changes to commit."
+            exit 0
+          fi
+
+          git commit -m "Update IPTV LINKS BY KBCT playlist $(date '+%Y-%m-%d %H:%M') BD"
+
+          for i in 1 2 3; do
+            if git pull --rebase origin "$GITHUB_REF_NAME" &&
+               git push origin "HEAD:$GITHUB_REF_NAME"; then
+              echo "Playlist pushed successfully."
+              exit 0
+            fi
+
+            echo "Push failed: attempt $i"
+            sleep 5
+          done
+
+          echo "ERROR: Could not push changes."
+          exit 1
