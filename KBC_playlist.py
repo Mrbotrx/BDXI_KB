@@ -5,7 +5,8 @@ KBCT IPTV Builder v2  -  Bangladesh + India, working & fast only, no duplicates
 ===============================================================================
 
 
-Output : KBC_playlist.m3u  (+ KBC_playlist_report.json)
+Output : KBC/KBC_playlist.m3u  (+ KBC/KBC_playlist_report.json)
+         The KBC folder is created automatically (next to where you run the script).
 
 No third-party packages needed (pure Python 3.8+ standard library),
 so it also runs on Termux / phones / Windows / Linux / macOS.
@@ -13,8 +14,9 @@ so it also runs on Termux / phones / Windows / Linux / macOS.
 Quick start
     python kbc_iptv.py                  # full test: alive + real speed test
     python kbc_iptv.py --fast           # alive check only (much faster)
-    python kbc_iptv.py --split          # also write KBC_playlist_BD.m3u / _IN.m3u
-    python kbc_iptv.py --backups 2      # also write KBC_playlist_backup.m3u
+    python kbc_iptv.py --split          # also write KBC/KBC_playlist_BD.m3u / _IN.m3u
+    python kbc_iptv.py --backups 2      # also write KBC/KBC_playlist_backup.m3u
+    python kbc_iptv.py -o MyFolder/my.m3u   # choose another output path
     python kbc_iptv.py --min-height 480 # drop streams known to be below 480p
     python kbc_iptv.py --no-cache       # ignore the 3-hour result cache
     python kbc_iptv.py --local old.m3u  # re-test an existing playlist
@@ -47,7 +49,9 @@ from urllib.parse import urljoin, urlparse
 # ============================ CONFIG (defaults) ============================
 _SOURCE_B64 = "aHR0cHM6Ly9pcHR2LW9yZy5naXRodWIuaW8vaXB0di9pbmRleC5tM3U="   # encoded source URL
 SOURCE_URL = base64.b64decode(_SOURCE_B64).decode("utf-8")                  # decoded when the script starts
-OUTPUT_FILE = "KBC_playlist.m3u"
+OUTPUT_FILE = "KBC/KBC_playlist.m3u"   # folder is created automatically
+PLAYLIST_TITLE = "KBCT M3U8"                          # playlist header title
+MADE_BY = "www.Facebook.com/kallyan.biswas.29"        # credit line in the header
 SUFFIX = "KBCT"                    # appended to the end of every channel name
 DEFAULT_COUNTRIES = "bd,in"        # also: pk,np,lk ... or "all"
 EXCLUDE_CATEGORIES = {"xxx"}       # adult content is dropped by default
@@ -60,7 +64,7 @@ SPEED_MAX_SEC = 10                 # max seconds to download one HLS segment
 MIN_REALTIME = 1.2                 # segment must download 1.2x faster than it plays
 RAW_MIN_KBPS = 150                 # direct (non-HLS) streams: minimum KB/s
 RETRIES = 1                        # retries for timeouts / resets / 429 / 503
-CACHE_FILE = ".kbc_cache.json"
+CACHE_FILE = "KBC/.kbc_cache.json"
 CACHE_HOURS = 3                    # working streams are trusted for this long
 
 UA = ("Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
@@ -667,7 +671,14 @@ def atomic_write(path: str, text: str):
 
 def build_m3u(chs: list, epg: str = "") -> str:
     head = "#EXTM3U" + (f' x-tvg-url="{epg}"' if epg else "")
-    lines = [head, f"# KBCT build {datetime.now():%Y-%m-%d %H:%M} | {len(chs)} channels"]
+    bar = "# " + "=" * 44
+    lines = [head,
+             f"#PLAYLIST:{PLAYLIST_TITLE}",
+             bar,
+             f"# {PLAYLIST_TITLE}",
+             f"# MAKE BY: {MADE_BY}",
+             f"# Updated: {datetime.now():%Y-%m-%d %H:%M} | {len(chs)} channels",
+             bar]
     for c in chs:
         logo = c.logo.replace('"', "")
         lines.append(f'#EXTINF:-1 tvg-id="{c.tvg_id}" tvg-name="{c.display}" '
@@ -842,7 +853,7 @@ def main(argv=None) -> int:
         reasons[c.error or "unknown"] = reasons.get(c.error or "unknown", 0) + 1
 
     if not o.no_report:
-        rp = with_suffix_path(o.output, "_report").replace(".m3u", ".json")
+        rp = os.path.splitext(o.output)[0] + "_report.json"
         report = {
             "generated": datetime.now().isoformat(timespec="seconds"),
             "source": o.local or o.source,
