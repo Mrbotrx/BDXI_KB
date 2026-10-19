@@ -1,0 +1,83 @@
+name: KBCT Playlist Auto Update
+
+on:
+  schedule:
+    # Every 3 hours (UTC). Minute 17 avoids GitHub's busy top-of-the-hour queue.
+    # In Bangladesh time (UTC+6): 06:17, 09:17, 12:17, 15:17, 18:17, 21:17, 00:17, 03:17
+    - cron: "17 */3 * * *"
+  workflow_dispatch:                 # "Run workflow" button
+    inputs:
+      mode:
+        description: "fast = alive check only | full = alive + real speed test"
+        type: choice
+        options:
+          - fast
+          - full
+        default: fast
+
+permissions:
+  contents: write                    # needed to push the updated playlist
+
+concurrency:
+  group: kbc-playlist                # never run two builds at the same time
+  cancel-in-progress: false
+
+jobs:
+  build:
+    name: Build KBCT playlist
+    # Default: GitHub's runner. Optional: Settings > Secrets and variables > Actions > Variables
+    #   KBC_RUNNER = self-hosted   (your own PC/VPS in Bangladesh)
+    #   KBC_MODE   = full          (real speed test, accurate only from a BD connection)
+    runs-on: ${{ vars.KBC_RUNNER || 'ubuntu-latest' }}
+    timeout-minutes: 30
+    env:
+      TZ: Asia/Dhaka                 # header "Updated:" shows Bangladesh time
+      MODE: ${{ inputs.mode || vars.KBC_MODE || 'fast' }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Build playlist
+        run: |
+          python3 --version
+          echo "Mode: $MODE"
+          ARGS="--no-cache --no-report --split --min-channels 20"
+          if [ "$MODE" = "full" ]; then
+            ARGS="$ARGS --timeout 10"
+          else
+            ARGS="$ARGS --fast --timeout 12"
+          fi
+          python3 KBC_playlist.py $ARGS
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add KBC/
+          if git diff --cached --quiet; then
+            echo "No changes to commit."
+            exit 0
+          fi
+          git commit -m "Update KBCT playlist $(date '+%Y-%m-%d %H:%M') BD"
+          for i in 1 2 3; do
+            if git pull --rebase origin "$GITHUB_REF_NAME" && git push origin "HEAD:$GITHUB_REF_NAME"; then
+              exit 0
+            fi
+            echo "Push failed (attempt $i), retrying..."
+            sleep 5
+          done
+          echo "Could not push after 3 attempts."
+          exit 1
+
+      - name: Job summary
+        if: always()
+        run: |
+          {
+            echo "### KBCT playlist"
+            echo "- Mode: \`$MODE\`"
+            if [ -f KBC/KBC_playlist.m3u ]; then
+              echo "- Channels: $(grep -c '^#EXTINF' KBC/KBC_playlist.m3u)"
+              echo "- $(grep -m1 '^# Updated' KBC/KBC_playlist.m3u)"
+            fi
+          } >> "$GITHUB_STEP_SUMMARY"
