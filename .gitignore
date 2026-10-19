@@ -1,0 +1,4 @@
+# local cache and temp files (not needed on GitHub)
+KBC/.kbc_cache.json
+*.tmp
+__pycache__/
