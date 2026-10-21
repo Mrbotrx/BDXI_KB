@@ -2,11 +2,8 @@
 # KB IPTV - India
 # BEST FAST PLAYLIST
 # Total Channels: 250
-# Updated: 2026-10-20T21:46:34.943Z
+# Updated: 2026-10-21T00:19:19.915Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
-
-#EXTINF:-1 tvg-id="StarSports1.in" tvg-name="Star Sports 1 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_SPORTS_1/images/LOGO_HD/image.png" tvg-country="IN" group-title="Sports" tvg-quality="576p",Star Sports 1 KB
-http://103.151.60.162:2122/play/a01a/index.m3u8?hls
 
 #EXTINF:-1 tvg-id="StarSports2.in" tvg-name="Star Sports 2 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_SPORTS_2/images/LOGO_HD/image.png" tvg-country="IN" group-title="Sports" tvg-quality="576p",Star Sports 2 KB
 http://103.151.60.162:2122/play/a00v/index.m3u8?hls
@@ -758,4 +755,7 @@ https://dknttpxmr0dwf.cloudfront.net/index_57.m3u8
 
 #EXTINF:-1 tvg-id="ZeeSouthFlix.in" tvg-name="Zee South Flix KB" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN2100005T2_20260325T012340SQUARE.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Zee South Flix KB
 https://amg00862-amg00862c9-amgplt0173.playout.now3.amagi.tv/playlist/amg00862-amg00862c9-amgplt0173/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ZeeTamil.in" tvg-name="Zee Tamil HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_TAMIZH/images/LOGO_HD/image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Zee Tamil HD KB
+https://d2o8pibksxtln6.cloudfront.net/live/media/Zee_Tamil_HD/hls/Zee_Tamil_HD.m3u8
 
