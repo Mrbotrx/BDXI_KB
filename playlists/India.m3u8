@@ -2,7 +2,7 @@
 # KB IPTV - India
 # BEST FAST PLAYLIST
 # Total Channels: 250
-# Updated: 2026-10-22T23:48:43.109Z
+# Updated: 2026-10-23T02:55:55.888Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="StarSports2.in" tvg-name="Star Sports 2 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_SPORTS_2/images/LOGO_HD/image.png" tvg-country="IN" group-title="Sports" tvg-quality="576p",Star Sports 2 KB
@@ -63,9 +63,6 @@ https://dztlhgid9me95.cloudfront.net/live-tv/Vidgyor/timesnow/timesnow_master.m3
 #EXTINF:-1 tvg-id="RepublicTV.in" tvg-name="Republic TV KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_REPUBLIC_TV/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="1080p",Republic TV KB
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/2e31d831f08640ff92f65003bdc89991/index.m3u8
 
-#EXTINF:-1 tvg-id="DDNational.in" tvg-name="DD National KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_NATIONAL/images/LOGO_HD/image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="576p",DD National KB
-http://107.167.16.138/ddnational/index.m3u8?token=test
-
 #EXTINF:-1 tvg-id="DDNews.in" tvg-name="DD News KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_NEWS_HD/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="News" tvg-quality="1080p",DD News KB
 https://mumbai-edge.smartplaytv.in/DDNews/index.m3u8
 
@@ -101,6 +98,9 @@ https://amg01281-9xmediapvtltd-9xtashan-samsungin-xz1sd.amagi.tv/playlist/amg012
 
 #EXTINF:-1 tvg-id="9XM.in" tvg-name="9XM KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_9XM/images/LOGO_HD/image.png" tvg-country="IN" group-title="Music" tvg-quality="1080p",9XM KB
 https://9xjio.wiseplayout.com/9XM/master.m3u8
+
+#EXTINF:-1 tvg-id="AagaazTimes.in" tvg-name="Aagaaz Times KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/aagaaztimes.png" tvg-country="IN" group-title="News" tvg-quality="1080p",Aagaaz Times KB
+https://live1.ottlive.co.in/aagaaztimes/index.m3u8
 
 #EXTINF:-1 tvg-id="AajKiKhabar.in" tvg-name="Aaj Ki Khabar KB" tvg-logo="https://m.media-amazon.com/images/I/71q8sOMPwHL.png" tvg-country="IN" group-title="News" tvg-quality="1080p",Aaj Ki Khabar KB
 https://stream.ottlive.co.in/aajkikhabar/index.m3u8
@@ -197,6 +197,9 @@ https://mumbai-edge.smartplaytv.in/DDIndia/index.m3u8
 
 #EXTINF:-1 tvg-id="DDKisan.in" tvg-name="DD Kisan KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_KISAN/images/LOGO_HD/image.png" tvg-country="IN" group-title="Education" tvg-quality="1080p",DD Kisan KB
 https://mumbai-edge.smartplaytv.in/DDKisan/index.m3u8
+
+#EXTINF:-1 tvg-id="DDNational.in" tvg-name="DD National HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_NATIONAL/images/LOGO_HD/image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",DD National HD KB
+https://mumbai-edge.smartplaytv.in/DDNational/index.m3u8
 
 #EXTINF:-1 tvg-id="DDTamil.in" tvg-name="DD Tamil HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_TAMIL/images/LOGO_HD/image.png" tvg-country="IN" group-title="IPTV" tvg-quality="1080p",DD Tamil HD KB
 https://cdn.pishow.tv/ott/live/1737/master.m3u8
@@ -755,7 +758,4 @@ https://dknttpxmr0dwf.cloudfront.net/index_57.m3u8
 
 #EXTINF:-1 tvg-id="ZeeSouthFlix.in" tvg-name="Zee South Flix KB" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN2100005T2_20260325T012340SQUARE.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Zee South Flix KB
 https://amg00862-amg00862c9-amgplt0173.playout.now3.amagi.tv/playlist/amg00862-amg00862c9-amgplt0173/playlist.m3u8
-
-#EXTINF:-1 tvg-id="ZeeTalkies.in" tvg-name="Zee Talkies HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_TALKIES_HD/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Zee Talkies HD KB
-http://107.167.16.138/zeetalkies/index.m3u8?token=test
 
