@@ -1,8 +1,8 @@
 #EXTM3U
 # KB IPTV - BDXI
 # BEST FAST PLAYLIST
-# Total Channels: 790
-# Updated: 2026-10-24T23:55:34.797Z
+# Total Channels: 788
+# Updated: 2026-10-25T02:52:31.012Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="StarSports2.in" tvg-name="Star Sports 2 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_SPORTS_2/images/LOGO_HD/image.png" tvg-country="IN" group-title="Sports" tvg-quality="576p",Star Sports 2 KB
@@ -264,6 +264,9 @@ https://cc-3cyxq80qusspd.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da6
 #EXTINF:-1 tvg-id="EpicTV.in" tvg-name="Epic TV Digital KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_EPIC/images/LOGO_HD/image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Epic TV Digital KB
 https://cc-czbq30x55knit.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-czbq30x55knit/DIYC/PMSL/IN10/Epic_TV_IN_B/Epic_TV_IN_B.m3u8
 
+#EXTINF:-1 tvg-id="ETNowSwadesh.in" tvg-name="ET Now Swadesh KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/TIMESPLAY/LIVECHANNEL/6904ba4639f3b175376a61e1/images/LOGO_HD/LOGO_HD_X3wkpp-9M_ET-swadesh1_1.png" tvg-country="IN" group-title="Business" tvg-quality="1080p",ET Now Swadesh KB
+https://dztlhgid9me95.cloudfront.net/live-tv/Vidgyor/etswadesh/etswadesh_master.m3u8
+
 #EXTINF:-1 tvg-id="ETVAndhraPradesh.in" tvg-name="ETV Andhra Pradesh KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ETV_ANDHRA_PRADESH/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="1080p",ETV Andhra Pradesh KB
 https://d1g35elx8qnif3.cloudfront.net/v1/master/9d43eacaed199f8d5883927e7aef514a8a08e108/ETV_AP_H264_cloud_in/index.m3u8
 
@@ -422,12 +425,6 @@ https://mntv.livebox.co.in/mntvhls/live.m3u8
 
 #EXTINF:-1 tvg-id="MoviesNow.in" tvg-name="Movies Now HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/TIMESPLAY/LIVECHANNEL/6904ba4839f3b175376a61e2/images/LOGO_HD/LOGO_HD_hAgaZac_j_MoviesNow1_1.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Movies Now HD KB
 http://103.151.60.162:2122/play/a02w/index.m3u8?hls
-
-#EXTINF:-1 tvg-id="NationalGeographic.in" tvg-name="National Geographic HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NATIONAL_GEOGRAPHIC_CHANNEL/images/LOGO_HD/image.png" tvg-country="IN" group-title="Documentary" tvg-quality="1080p",National Geographic HD KB
-http://103.185.24.134:3001/NATGEO-HD/index.m3u8
-
-#EXTINF:-1 tvg-id="NationalGeographicWild.in" tvg-name="National Geographic Wild HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NAT_GEO_WILD/images/LOGO_HD/image.png" tvg-country="IN" group-title="Documentary" tvg-quality="1080p",National Geographic Wild HD KB
-http://103.185.24.134:3001/NATGEO-WILD-HD/index.m3u8
 
 #EXTINF:-1 tvg-id="NDTVGoodTimes.in" tvg-name="NDTV Good Times KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_GOOD_TIMES/images/LOGO_HD/image.png" tvg-country="IN" group-title="Lifestyle" tvg-quality="1080p",NDTV Good Times KB
 https://amg01448-samsungin-ndtvgoodtimes-samsungin-ad-gp.amagi.tv/playlist/amg01448-samsungin-ndtvgoodtimes-samsungin/playlist.m3u8
@@ -658,7 +655,7 @@ http://103.185.24.134:3001/SONY-BBC/index.m3u8
 http://38.96.178.205/SONYHD/index.m3u8
 
 #EXTINF:-1 tvg-id="SonyMax.in" tvg-name="Sony Max HD KB" tvg-logo="https://dtil.tmsimg.com/assets/s159098_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Sony Max HD KB
-http://103.185.24.134:3001/SonyMAX/index.m3u8
+http://103.151.60.162:2122/play/a014/index.m3u8?hls
 
 #EXTINF:-1 tvg-id="SonyPix.in" tvg-name="Sony Pix HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_PIX/images/LOGO_HD/image.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Sony Pix HD KB
 http://103.151.60.162:2122/play/a01d/index.m3u8?hls
@@ -2375,9 +2372,6 @@ https://vglivessai.akamaized.net/sg/v1/manifest/611d79b11b77e2f571934fd80ca14134
 
 #EXTINF:-1 tvg-id="SaamTV.in" tvg-name="Saam TV KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SAAM_TV/images/LOGO_HD/image.png" tvg-country="IN" group-title="Music",Saam TV KB
 https://cdn.pishow.tv/ott/live/437/master.m3u8
-
-#EXTINF:-1 tvg-id="SonyMax1.in" tvg-name="Sony Max 1 KB" tvg-logo="https://dtil.tmsimg.com/assets/s179440_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="Movies",Sony Max 1 KB
-http://27.116.22.53:5001/live/3418.m3u8
 
 #EXTINF:-1 tvg-id="WeatherSpy.in" tvg-name="Weatherspy KB" tvg-logo="https://i.imgur.com/KIEKOt1.png" tvg-country="IN" group-title="IPTV",Weatherspy KB
 https://jukin-weatherspy-2-in.samsung.wurl.tv/playlist.m3u8
