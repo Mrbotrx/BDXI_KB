@@ -2,7 +2,7 @@
 # KB IPTV - India
 # BEST FAST PLAYLIST
 # Total Channels: 250
-# Updated: 2026-10-27T22:48:29.932Z
+# Updated: 2026-10-28T01:57:58.040Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="StarSports2.in" tvg-name="Star Sports 2 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_SPORTS_2/images/LOGO_HD/image.png" tvg-country="IN" group-title="Sports" tvg-quality="576p",Star Sports 2 KB
@@ -75,9 +75,6 @@ https://deltatesttatasky.akamaized.net/out/i/968284.m3u8
 #EXTINF:-1 tvg-id="AndTV.in" tvg-name="&TV International KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SYMANDTV/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",&TV International KB
 https://amg01117-amg01117c1-amgplt0029.playout.now3.amagi.tv/playlist/amg01117-amg01117c1-amgplt0029/playlist.m3u8
 
-#EXTINF:-1 tvg-id="AndxplorHD.in" tvg-name="&xplor HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SYMANDXPLOR_HD/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",&xplor HD KB
-http://dksmedia.tv/play/live.php?mac=00:1A:79:B6:60:3D&stream=209743&extension=ts&play_token=mR7FwO88sY
-
 #EXTINF:-1 tvg-id="22ScopeNews.in" tvg-name="22Scope News KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/22Scope_News.png" tvg-country="IN" group-title="News" tvg-quality="1080p",22Scope News KB
 https://thelegitpro.in/HDlive/22scope/index.fmp4.m3u8
 
@@ -129,6 +126,9 @@ https://amarujala.ottlive.co.in/amarujala/index.m3u8
 #EXTINF:-1 tvg-id="AnandTV.in" tvg-name="Anand TV KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Anand_TV.png" tvg-country="IN" group-title="News" tvg-quality="1080p",Anand TV KB
 https://live.legitpro.co.in/anandtv/index.m3u8
 
+#EXTINF:-1 tvg-id="AngelTV.in" tvg-name="Angel TV KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ANGEL_TV/images/LOGO_HD/image.png" tvg-country="IN" group-title="IPTV" tvg-quality="1080p",Angel TV KB
+https://cdn.pishow.tv/ott/live/453/master.m3u8
+
 #EXTINF:-1 tvg-id="AsianNews.in" tvg-name="Asian News KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Asian_News.png" tvg-country="IN" group-title="News" tvg-quality="1080p",Asian News KB
 https://stream.ottlive.co.in/asiannews/index.m3u8
 
@@ -147,11 +147,17 @@ https://cc-t2mudtkmuz4wb.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da6
 #EXTINF:-1 tvg-id="B4UMusic.in" tvg-name="B4U Music KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/B4U_Music.png" tvg-country="IN" group-title="Music" tvg-quality="1080p",B4U Music KB
 https://amg01408-amg01408c5-amgplt0747.playout.now3.amagi.tv/b4um001/playlist.m3u8
 
+#EXTINF:-1 tvg-id="BalleBalle.in" tvg-name="Balle Balle KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Balle_Balle_TV.png" tvg-country="IN" group-title="Music" tvg-quality="1080p",Balle Balle KB
+https://mcncdndigital.com/worldpunjabitv/index.m3u8
+
 #EXTINF:-1 tvg-id="BhagyamTV.in" tvg-name="Bhagyam TV KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/aanadhamtvtamil.png" tvg-country="IN" group-title="Music" tvg-quality="1080p",Bhagyam TV KB
 https://ott.bhagyam.net/hls/bhagyamweb/index-1409148900-now.m3u8
 
 #EXTINF:-1 tvg-id="BigTV24x7.in" tvg-name="Big TV 24x7 KB" tvg-logo="https://i.postimg.cc/rpHrRxR5/big_tv_malayalam.png" tvg-country="IN" group-title="News" tvg-quality="1080p",Big TV 24x7 KB
 https://stream.ottlive.co.in/bigtvmalayalam/index.m3u8
+
+#EXTINF:-1 tvg-id="BIGTV.in" tvg-name="BIG TV KB" tvg-logo="https://static.wikia.nocookie.net/logopedia/images/4/4f/BiG_TV_%28Stacked%29.svg/revision/latest/scale-to-width-down/250?cb=20180316124023" tvg-country="IN" group-title="News" tvg-quality="1080p",BIG TV KB
+https://stream.ottlive.co.in/bigtv/index.m3u8
 
 #EXTINF:-1 tvg-id="Bollygold.in" tvg-name="Bollygold KB" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN4000600Q_20260805T003941SQUARE.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Bollygold KB
 https://jmp2.uk/stvp-IN4000600Q
@@ -510,6 +516,9 @@ https://mumbai-edge.smartplaytv.in/NTVTelugu/index.m3u8
 #EXTINF:-1 tvg-id="OliTV.in" tvg-name="Oli TV KB" tvg-logo="https://i.ibb.co/XfvTQyJn/main-removebg-preview.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Oli TV KB
 https://live.olidigital.in/olitv/olitv/index.m3u8
 
+#EXTINF:-1 tvg-id="Pitaara.in" tvg-name="Pitaara KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PITAARA/images/LOGO_HD/image.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Pitaara KB
+https://d2lk5u59tns74c.cloudfront.net/out/v1/500a6b45f5ae41dda445d912b59eaa09/index.m3u8
+
 #EXTINF:-1 tvg-id="PMCTelugu.in" tvg-name="PMC Telugu KB" tvg-logo="https://www.pmconlinetv.com/wp-content/uploads/2023/03/PMC-Telugu-Logo-85x85.png" tvg-country="IN" group-title="IPTV" tvg-quality="1080p",PMC Telugu KB
 https://mumbai-edge.smartplaytv.in/PMC/index.m3u8
 
@@ -640,7 +649,7 @@ http://103.151.60.162:2122/play/a01v/index.m3u8?hls
 http://103.185.24.134:3001/Star-Gold/index.m3u8
 
 #EXTINF:-1 tvg-id="StarMovies.in" tvg-name="Star Movies HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_MOVIES/images/LOGO_HD/image.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Star Movies HD KB
-http://103.185.24.134:3001/Star-Movies/index.m3u8
+http://103.151.60.162:2122/play/a02k/index.m3u8?hls
 
 #EXTINF:-1 tvg-id="StarSportsSelect1.in" tvg-name="Star Sports Select 1 HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_SPORTS_SELECT_1/images/LOGO_HD/image.png" tvg-country="IN" group-title="Sports" tvg-quality="1080p",Star Sports Select 1 HD KB
 http://103.151.60.162:2122/play/a026/index.m3u8?hls
@@ -749,13 +758,4 @@ http://vg-zeefta.akamaized.net/ptnr-yupptv/title-wion/v1/master/611d79b11b77e2f5
 
 #EXTINF:-1 tvg-id="WorldPunjabiTV.in" tvg-name="World Punjabi TV KB" tvg-logo="https://papaji.freetvindia.com/media/World_Punjabi_TV.png" tvg-country="IN" group-title="News" tvg-quality="1080p",World Punjabi TV KB
 https://live1.ottlive.co.in/worldpunjabitv/worldpunjabitv/index.m3u8
-
-#EXTINF:-1 tvg-id="YRFMusic.in" tvg-name="YRF Music KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/YRF_Music.png" tvg-country="IN" group-title="Music" tvg-quality="1080p",YRF Music KB
-https://cdn-uw2-prod.tsv2.amagi.tv/linear/amg01412-xiaomiasia-yrfmusic-xiaomi/playlist.m3u8
-
-#EXTINF:-1 tvg-id="ZBCartoon.in" tvg-name="ZB Cartoon KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/zbcatun.png" tvg-country="IN" group-title="Kids" tvg-quality="1080p",ZB Cartoon KB
-https://server.zillarbarta.com/zbcatun/video.m3u8
-
-#EXTINF:-1 tvg-id="ZBCinema.in" tvg-name="ZB Cinema KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/ZBCINEMA.png" tvg-country="IN" group-title="Classic" tvg-quality="1080p",ZB Cinema KB
-https://server.zillarbarta.com/ZBCINEMA/index.m3u8
 
