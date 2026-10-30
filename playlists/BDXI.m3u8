@@ -1,8 +1,8 @@
 #EXTM3U
 # KB IPTV - BDXI
 # BEST FAST PLAYLIST
-# Total Channels: 817
-# Updated: 2026-10-29T23:27:54.824Z
+# Total Channels: 815
+# Updated: 2026-10-30T02:47:47.753Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="StarSports2.in" tvg-name="Star Sports 2 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_SPORTS_2/images/LOGO_HD/image.png" tvg-country="IN" group-title="Sports" tvg-quality="576p",Star Sports 2 KB
@@ -1497,14 +1497,6 @@ https://mumt03.tangotv.in/Dsly5z3HANANDWARITV/index.m3u8
 
 #EXTINF:-1 tvg-id="AndyHaryana.in" tvg-name="Andy Haryana KB" tvg-logo="https://i.imgur.com/rmCBD3e.png" tvg-country="IN" group-title="Culture" tvg-quality="576p",Andy Haryana KB
 https://mumt03.tangotv.in/Dsly5z3HANDYHARYANA/index.m3u8
-
-#EXTINF:-1 tvg-id="AnmolCinema2.in" tvg-name="Anmol Cinema 2 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_ANMOL_CINEMA_2/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="Movies" tvg-quality="576p",Anmol Cinema 2 KB
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
-https://fta.ektv.in/live/257/master.m3u8
-
-#EXTINF:-1 tvg-id="AnmolCinema.in" tvg-name="Anmol Cinema KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_ANMOL_CINEMA/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="Movies" tvg-quality="576p",Anmol Cinema KB
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
-https://fta.ektv.in/live/271/master.m3u8
 
 #EXTINF:-1 tvg-id="APN.in" tvg-name="APN KB" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/APN.png" tvg-country="IN" group-title="News" tvg-quality="576p",APN KB
 https://mumt01.tangotv.in/O5aw8Zn3APN/index.m3u8
