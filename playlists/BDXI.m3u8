@@ -1,8 +1,8 @@
 #EXTM3U
 # KB IPTV - BDXI
 # BEST FAST PLAYLIST
-# Total Channels: 816
-# Updated: 2026-10-31T23:53:58.765Z
+# Total Channels: 812
+# Updated: 2026-11-01T03:47:31.724Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="StarSports2.in" tvg-name="Star Sports 2 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_SPORTS_2/images/LOGO_HD/image.png" tvg-country="IN" group-title="Sports" tvg-quality="576p",Star Sports 2 KB
@@ -362,9 +362,6 @@ https://amg01550-amg01550c6-samsung-in-4679.playouts.now.amagi.tv/playlist/amg01
 
 #EXTINF:-1 tvg-id="IndiaTVSpeedNews.in" tvg-name="India TV Speed News KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_INDIA_TV_SPEED_NEWS/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="1080p",India TV Speed News KB
 https://cc-lyf4c0hwzg5dd.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-lyf4c0hwzg5dd/v1/vglive-sk-479089/main.m3u8
-
-#EXTINF:-1 tvg-id="JalshaMovies.in" tvg-name="Jalsha Movies HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_JALSHA_MOVIES/images/LOGO_HD/image.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Jalsha Movies HD KB
-http://103.151.60.162:2122/play/a00x/index.m3u8?hls
 
 #EXTINF:-1 tvg-id="JantaTV.in" tvg-name="Janta TV KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_JANTA_TV/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="1080p",Janta TV KB
 https://live.jswk.online/IK_RTPM/live/index.m3u8
@@ -1774,9 +1771,6 @@ https://mumt01.tangotv.in/O5aw8Zn3HOPECHANNELINDIA/index.m3u8
 #EXTINF:-1 tvg-id="HornbillTV.in" tvg-name="Hornbill TV KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_HORNBILL/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="576p",Hornbill TV KB
 https://mumt01.tangotv.in/O5aw8Zn3HORNBILLTV/index.m3u8
 
-#EXTINF:-1 tvg-id="HungamaTV.in" tvg-name="Hungama TV KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_HUNGAMA/images/LOGO_HD/image.png" tvg-country="IN" group-title="Kids" tvg-quality="576p",Hungama TV KB
-http://66.102.126.10:8000/play/a023/index.m3u8
-
 #EXTINF:-1 tvg-id="IBC24.in" tvg-name="IBC 24 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/MWTV/LIVECHANNEL/67c6c102faa3273c5c389690/images/LOGO/LOGO_b_CWccs5n_IBC24-(2).png" tvg-country="IN" group-title="News" tvg-quality="576p",IBC 24 KB
 https://mumt05.tangotv.in/87NeALx2IBC24/index.m3u8
 
@@ -2232,9 +2226,6 @@ http://103.151.60.162:2122/play/a01t/index.m3u8?hls
 #EXTINF:-1 tvg-id="SonySportsTen4.in" tvg-name="Sony Sports Ten 4 Kannada KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_SPORTS_TEN_4_HD/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="Sports" tvg-quality="576p",Sony Sports Ten 4 Kannada KB
 http://103.151.60.162:2122/play/a021/index.m3u8?hls
 
-#EXTINF:-1 tvg-id="SonyYay.in" tvg-name="Sony Yay! KB" tvg-logo="https://i.imgur.com/MhlO1dB.png" tvg-country="IN" group-title="Animation" tvg-quality="576p",Sony Yay! KB
-http://103.165.93.31:8095/sonyYay/index.m3u8
-
 #EXTINF:-1 tvg-id="StarKiran.in" tvg-name="Star Kiran KB" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/a/a4/Star_Kiran_logo_2023.png" tvg-country="IN" group-title="Entertainment" tvg-quality="576p",Star Kiran KB
 http://103.151.60.162:2122/play/a032/index.m3u8?hls
 
@@ -2250,9 +2241,6 @@ https://fta.ektv.in/live/607/master.m3u8
 
 #EXTINF:-1 tvg-id="SunGemini.in" tvg-name="Sun Gemini KB" tvg-logo="https://sund-images.sunnxt.com/194396/300x300_SunGemini_194396_22c18c1e-7eb9-4855-9c4e-12e109911559.png" tvg-country="IN" group-title="IPTV" tvg-quality="576p",Sun Gemini KB
 http://ptuf.ridsys.in/riptv/live/GEMINI_TV/index.m3u8
-
-#EXTINF:-1 tvg-id="SuperHungama.in" tvg-name="Super Hungama KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SUPER_HUNGAMA/images/LOGO_HD/image.png" tvg-country="IN" group-title="Animation" tvg-quality="576p",Super Hungama KB
-http://103.185.24.134:3001/SUPER-HUNGAMA/index.m3u8
 
 #EXTINF:-1 tvg-id="Superhitz.in" tvg-name="Superhitz KB" tvg-logo="https://i.imgur.com/aRNBvTU.png" tvg-country="IN" group-title="IPTV" tvg-quality="576p",Superhitz KB
 http://103.151.60.162:2122/play/a02f/index.m3u8?hls
