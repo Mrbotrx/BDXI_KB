@@ -1,8 +1,8 @@
 #EXTM3U
 # KB IPTV - BDXI
 # BEST FAST PLAYLIST
-# Total Channels: 812
-# Updated: 2026-11-01T21:18:06.205Z
+# Total Channels: 815
+# Updated: 2026-11-02T00:56:19.212Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="StarSports2.in" tvg-name="Star Sports 2 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_SPORTS_2/images/LOGO_HD/image.png" tvg-country="IN" group-title="Sports" tvg-quality="576p",Star Sports 2 KB
@@ -1384,11 +1384,17 @@ http://cabletv.valamtv.in/hls/stream0.m3u8
 #EXTINF:-1 tvg-id="VCV.in" tvg-name="VCV KB" tvg-logo="https://i.imgur.com/KbU36xI.png" tvg-country="IN" group-title="IPTV" tvg-quality="720p",VCV KB
 https://5a1178b42cc03.streamlock.net/8210/8210/playlist.m3u8
 
+#EXTINF:-1 tvg-id="VisionBeats.in" tvg-name="Vision Beats KB" tvg-logo="https://i.imgur.com/xx5RQdi.png" tvg-country="IN" group-title="Music" tvg-quality="720p",Vision Beats KB
+http://a-edge.bliscdn.com/Visionbeats/index.m3u8
+
 #EXTINF:-1 tvg-id="VoktaTV.bd" tvg-name="Vokta TV KB" tvg-logo="https://i.imgur.com/szAGBCU.png" tvg-country="BD" group-title="IPTV" tvg-quality="720p",Vokta TV KB
 https://vokta.raytahost.com/live/voktatv/index.m3u8
 
 #EXTINF:-1 tvg-id="VRLive.in" tvg-name="VR Live KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/VRLive.png" tvg-country="IN" group-title="News" tvg-quality="720p",VR Live KB
 https://channel.vrlivegujarat.com/hls/vrchannel.m3u8
+
+#EXTINF:-1 tvg-id="WahPunjabi.in" tvg-name="Wah Punjabi KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Wah_Punjabi.png" tvg-country="IN" group-title="Music" tvg-quality="720p",Wah Punjabi KB
+https://yuppnimrestreammum.akamaized.net/181224/smil:wahpunjabi.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 
 #EXTINF:-1 tvg-id="WOWKidz.in" tvg-name="WOW Kidz KB" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yupptvnew/content/common/channel/logos/mjvezt.png" tvg-country="IN" group-title="Animation" tvg-quality="720p",WOW Kidz KB
 https://yuppparoriglin.akamaized.net/181224/smil:wowkidzhindi.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
@@ -2013,6 +2019,9 @@ https://mumt06.tangotv.in/qYyB8fXVINDRADHANU/index.m3u8
 
 #EXTINF:-1 tvg-id="NewsLive.in" tvg-name="News Live KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS_LIVE/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="576p",News Live KB
 https://prideeast.thelegitpro.in/newslive/newslive/index.m3u8
+
+#EXTINF:-1 tvg-id="NewsMalayalam24x7.in" tvg-name="News Malayalam 24x7 KB" tvg-logo="https://i.postimg.cc/5tYt2Yg1/channels4_profile_(4).jpg" tvg-country="IN" group-title="News" tvg-quality="576p",News Malayalam 24x7 KB
+https://cdn.pishow.tv/ott/live/1629/master.m3u8
 
 #EXTINF:-1 tvg-id="NewsTamil24x7.in" tvg-name="News Tamil 24x7 KB" tvg-logo="https://yt3.googleusercontent.com/d-MofvmhHigi2UYuoR6nhyMX7-uyihvi5gGtbmXs_ODw5nilAMPA-dRlCXUEM6ZEjk5P4OwJGw=s176-c-k-c0x00ffffff-no-rj-mo" tvg-country="IN" group-title="News" tvg-quality="576p",News Tamil 24x7 KB
 https://cdn.pishow.tv/ott/live/1433/master.m3u8
