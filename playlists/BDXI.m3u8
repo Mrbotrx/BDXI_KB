@@ -1,8 +1,8 @@
 #EXTM3U
 # KB IPTV - BDXI
 # BEST FAST PLAYLIST
-# Total Channels: 819
-# Updated: 2026-11-08T20:57:00.324Z
+# Total Channels: 816
+# Updated: 2026-11-09T00:32:50.505Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="ATNBangla.bd" tvg-name="ATN Bangla KB" tvg-logo="https://i.imgur.com/K1HmMRz.png" tvg-country="BD" group-title="Bangla" tvg-quality="720p",ATN Bangla KB
@@ -13,9 +13,6 @@ https://tvsen5.aynaott.com/xV4jEKf3D9zc/index.m3u8
 
 #EXTINF:-1 tvg-id="RTV.bd" tvg-name="RTV KB" tvg-logo="https://i.imgur.com/yu8ugqt.png" tvg-country="BD" group-title="IPTV" tvg-quality="720p",RTV KB
 http://tvsen5.aynascope.net/RtvHD/index.m3u8
-
-#EXTINF:-1 tvg-id="ZeeCinema.in" tvg-name="Zee Cinema KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_CINEMA_HD/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="Movies" tvg-quality="576p",Zee Cinema KB
-https://d1g8wgjurz8via.cloudfront.net/bpk-tv/NGCHD/default/NGCHD.m3u8
 
 #EXTINF:-1 tvg-id="DBCNews.bd" tvg-name="DBC News KB" tvg-logo="https://i.imgur.com/Qbt6q4z.png" tvg-country="BD" group-title="News" tvg-quality="480p",DBC News KB
 http://tvn3.chowdhury-shaheb.com/dbc/index.m3u8
@@ -708,9 +705,6 @@ https://prod-runn.cdn.runn.tv/shemaroo/stream/smrfgn/playlist.m3u8
 #EXTINF:-1 tvg-id="ShubhTV.in" tvg-name="Shubh TV KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SHUBH_TV/images/LOGO_HD/image.png" tvg-country="IN" group-title="IPTV" tvg-quality="1080p",Shubh TV KB
 https://d2g1vdc6ozl2o8.cloudfront.net/out/v1/0a0dc7d7911b4fddbb4dfc963fdd4b9e/index.m3u8
 
-#EXTINF:-1 tvg-id="SonyBBCEarth.in" tvg-name="Sony BBC Earth HD KB" tvg-logo="https://dtil.tmsimg.com/assets/s143799_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="Documentary" tvg-quality="1080p",Sony BBC Earth HD KB
-http://103.185.24.134:3001/SONY-BBC/index.m3u8
-
 #EXTINF:-1 tvg-id="SonyEntertainmentTelevision.in" tvg-name="Sony Entertainment Television HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SET/images/LOGO_HD/image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Sony Entertainment Television HD KB
 http://38.96.178.205/SONYHD/index.m3u8
 
@@ -733,16 +727,10 @@ https://srknowapp.ncare.live/srktvhlswodrm/srktv.stream/playlist.m3u8
 http://103.135.253.32:8080/STAR-BHARAT/index.m3u8
 
 #EXTINF:-1 tvg-id="StarGold.in" tvg-name="Star Gold HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_GOLD/images/LOGO_HD/image.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Star Gold HD KB
-http://103.185.24.134:3001/Star-Gold/index.m3u8
-
-#EXTINF:-1 tvg-id="StarGoldSelect.in" tvg-name="Star Gold Select KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_GOLD_SELECT/images/LOGO_HD/image.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Star Gold Select KB
-https://livetv.shamon-cable.net:8443/StarGoldSelect/index.m3u8
+http://103.135.253.32:8080/STAR-GOLD-HD/index.m3u8
 
 #EXTINF:-1 tvg-id="StarMovies.in" tvg-name="Star Movies HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_MOVIES/images/LOGO_HD/image.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Star Movies HD KB
 http://103.135.253.32:8080/STAR-MOVIES/index.m3u8
-
-#EXTINF:-1 tvg-id="StarMoviesSelect.in" tvg-name="Star Movies Select HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_MOVIES_SELECT/images/LOGO_HD/image.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Star Movies Select HD KB
-https://livetv.shamon-cable.net:8443/Star-movies-select/index.m3u8
 
 #EXTINF:-1 tvg-id="StarNews.bd" tvg-name="Star News KB" tvg-logo="https://upload.wikimedia.org/wikipedia/en/thumb/d/d5/Star_News_Bangladesh_Logo.svg/1280px-Star_News_Bangladesh_Logo.svg.png" tvg-country="BD" group-title="News" tvg-quality="1080p",Star News KB
 http://103.135.253.32:8080/Star-News/index.m3u8
@@ -872,6 +860,9 @@ https://vg-zeefta.akamaized.net/ptnr-yupptv/title-zee_business/v1/master/611d79b
 
 #EXTINF:-1 tvg-id="ZeeCineClassic.in" tvg-name="Zee Cine Classic KB" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN21000014R_20260325T012324SQUARE.png" tvg-country="IN" group-title="Classic" tvg-quality="1080p",Zee Cine Classic KB
 https://amg00862-amg00862c8-amgplt0173.playout.now3.amagi.tv/playlist/amg00862-amg00862c8-amgplt0173/playlist.m3u8
+
+#EXTINF:-1 tvg-id="ZeeCinema.in" tvg-name="Zee Cinema HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ZEE_CINEMA_HD/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Zee Cinema HD KB
+http://103.135.253.32:8080/ZEE-CINEMA/index.m3u8
 
 #EXTINF:-1 tvg-id="ZeeComedyNation.in" tvg-name="Zee Comedy Nation KB" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN2100002GD_20260325T012327SQUARE.png" tvg-country="IN" group-title="Comedy" tvg-quality="1080p",Zee Comedy Nation KB
 https://amg00862-amg00862c5-amgplt0173.playout.now3.amagi.tv/playlist/amg00862-amg00862c5-amgplt0173/playlist.m3u8
