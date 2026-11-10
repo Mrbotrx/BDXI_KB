@@ -1,8 +1,8 @@
 #EXTM3U
 # KB IPTV - BDXI
 # BEST FAST PLAYLIST
-# Total Channels: 816
-# Updated: 2026-11-10T01:41:38.278Z
+# Total Channels: 807
+# Updated: 2026-11-10T09:04:02.508Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="ATNBangla.bd" tvg-name="ATN Bangla KB" tvg-logo="https://i.imgur.com/K1HmMRz.png" tvg-country="BD" group-title="Bangla" tvg-quality="720p",ATN Bangla KB
@@ -1758,33 +1758,6 @@ https://mumt03.tangotv.in/Dsly5z3HDUKHNIWARAN/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
 https://fta.ektv.in/live/159/master.m3u8
 
-#EXTINF:-1 tvg-id="EVidya10.in" tvg-name="E-Vidya 10 KB" tvg-logo="https://i.imgur.com/0sz6t9F.png" tvg-country="IN" group-title="Education" tvg-quality="576p",E-Vidya 10 KB
-http://103.72.101.252:8080/live/411.m3u8
-
-#EXTINF:-1 tvg-id="EVidya11.in" tvg-name="E-Vidya 11 KB" tvg-logo="https://i.imgur.com/0sz6t9F.png" tvg-country="IN" group-title="Education" tvg-quality="576p",E-Vidya 11 KB
-http://103.72.101.252:8080/live/1410.m3u8
-
-#EXTINF:-1 tvg-id="EVidya12.in" tvg-name="E-Vidya 12 KB" tvg-logo="https://i.imgur.com/0sz6t9F.png" tvg-country="IN" group-title="Education" tvg-quality="576p",E-Vidya 12 KB
-http://103.72.101.252:8080/live/1532.m3u8
-
-#EXTINF:-1 tvg-id="EVidya4.in" tvg-name="E-Vidya 4 KB" tvg-logo="https://i.imgur.com/0sz6t9F.png" tvg-country="IN" group-title="Education" tvg-quality="576p",E-Vidya 4 KB
-http://103.72.101.252:8080/live/406.m3u8
-
-#EXTINF:-1 tvg-id="EVidya5.in" tvg-name="E-Vidya 5 KB" tvg-logo="https://i.imgur.com/0sz6t9F.png" tvg-country="IN" group-title="Education" tvg-quality="576p",E-Vidya 5 KB
-http://103.72.101.252:8080/live/407.m3u8
-
-#EXTINF:-1 tvg-id="EVidya6.in" tvg-name="E-Vidya 6 KB" tvg-logo="https://i.imgur.com/0sz6t9F.png" tvg-country="IN" group-title="Education" tvg-quality="576p",E-Vidya 6 KB
-http://103.72.101.252:8080/live/408.m3u8
-
-#EXTINF:-1 tvg-id="EVidya7.in" tvg-name="E-Vidya 7 KB" tvg-logo="https://i.imgur.com/0sz6t9F.png" tvg-country="IN" group-title="Education" tvg-quality="576p",E-Vidya 7 KB
-http://103.72.101.252:8080/live/404.m3u8
-
-#EXTINF:-1 tvg-id="EVidya8.in" tvg-name="E-Vidya 8 KB" tvg-logo="https://i.imgur.com/0sz6t9F.png" tvg-country="IN" group-title="Education" tvg-quality="576p",E-Vidya 8 KB
-http://103.72.101.252:8080/live/409.m3u8
-
-#EXTINF:-1 tvg-id="EVidya9.in" tvg-name="E-Vidya 9 KB" tvg-logo="https://i.imgur.com/0sz6t9F.png" tvg-country="IN" group-title="Education" tvg-quality="576p",E-Vidya 9 KB
-http://103.72.101.252:8080/live/410.m3u8
-
 #EXTINF:-1 tvg-id="FashionTV.in" tvg-name="FashionTV KB" tvg-logo="https://upload.wikimedia.org/wikipedia/commons/thumb/7/7a/Fashion_TV_logo.svg/960px-Fashion_TV_logo.svg.png" tvg-country="IN" group-title="Lifestyle" tvg-quality="576p",FashionTV KB
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
 https://fta.ektv.in/live/144/144_0.m3u8
@@ -1800,24 +1773,20 @@ https://fta.ektv.in/live/596/master.m3u8
 https://cdn.pishow.tv/ott/live/267/master.m3u8
 
 #EXTINF:-1 tvg-id="Goldmines2.in" tvg-name="Goldmines 2 KB" tvg-country="IN" group-title="Movies" tvg-quality="576p",Goldmines 2 KB
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
-https://fta.ektv.in/live/46/46_0.m3u8
+https://mumt03.tangotv.in/Dsly5z3HGOLDMINES2/index.m3u8
 
 #EXTINF:-1 tvg-id="GoldminesAction.in" tvg-name="Goldmines Action KB" tvg-logo="https://yt3.googleusercontent.com/_X6U6bMLF-pTu5wBMFwsSI6aubGrXk2B0kUKdGiLIMqFLyDIne4Ot4ro76BS1S8fX3pWcCwS=s900-c-k-c0x00ffffff-no-rj" tvg-country="IN" group-title="Movies" tvg-quality="576p",Goldmines Action KB
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
 https://fta.ektv.in/live/584/master.m3u8
 
 #EXTINF:-1 tvg-id="GoldminesBollywood.in" tvg-name="Goldmines Bollywood KB" tvg-logo="https://i.imgur.com/6mNQ9mM.png" tvg-country="IN" group-title="Movies" tvg-quality="576p",Goldmines Bollywood KB
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
-https://fta.ektv.in/live/52/52_0.m3u8
+https://mumt03.tangotv.in/Dsly5z3HGOLDMINESBOLLYWOOD/index.m3u8
 
 #EXTINF:-1 tvg-id="Goldmines.in" tvg-name="Goldmines KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_GOLDMINES/images/LOGO_HD/image.png" tvg-country="IN" group-title="Movies" tvg-quality="576p",Goldmines KB
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
-https://fta.ektv.in/live/53/53_0.m3u8
+https://mumt04.tangotv.in/m18aqlK4GOLDMINES/index.m3u8
 
 #EXTINF:-1 tvg-id="GoldminesMovies.in" tvg-name="Goldmines Movies KB" tvg-logo="https://dvdh7g0f0hwck.cloudfront.net/assets/images/channel/GoldminesMovies_Transparent_9b7db248-999e-4200-a459-6cc594650f3d.png" tvg-country="IN" group-title="Movies" tvg-quality="576p",Goldmines Movies KB
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
-http://103.175.73.12:8080/live/51/51_0.m3u8
+https://mumt04.tangotv.in/m18aqlK4GOLDMINEMOVIES/index.m3u8
 
 #EXTINF:-1 tvg-id="GoodnessTV.in" tvg-name="Goodness TV KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_GOODNESS_TV/images/LOGO_HD/image.png" tvg-country="IN" group-title="IPTV" tvg-quality="576p",Goodness TV KB
 #EXTVLCOPT:http-user-agent=#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
