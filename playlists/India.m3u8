@@ -2,7 +2,7 @@
 # KB IPTV - India
 # BEST FAST PLAYLIST
 # Total Channels: 250
-# Updated: 2026-11-10T22:26:41.353Z
+# Updated: 2026-11-11T02:03:50.972Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="StarJalsha.in" tvg-name="Star Jalsha KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_JALSHA/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Star Jalsha KB
@@ -10,9 +10,6 @@ http://cdn98.com/play/live.php?extension=ts&mac=00:1A:79:99:54:11&play_token=o1c
 
 #EXTINF:-1 tvg-id="Colors.in" tvg-name="Colors KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS/images/LOGO_HD/image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="576p",Colors KB
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/sg/YuppTV/ColorsAPAC.m3u8
-
-#EXTINF:-1 tvg-id="SonySAB.in" tvg-name="Sony SAB KB" tvg-logo="https://www.sonypicturesnetworks.com/images/logos/SONY%20SAB%20SD.png" tvg-country="IN" group-title="Entertainment" tvg-quality="720p",Sony SAB KB
-https://drk6xq0vhn.gpcdn.net/live/sub_hd_abr/index.m3u8
 
 #EXTINF:-1 tvg-id="AsianetNews.in" tvg-name="Asianet News KB" tvg-logo="https://i.postimg.cc/8PpPrn4Z/asianetnews.jpg" tvg-country="IN" group-title="News" tvg-quality="1080p",Asianet News KB
 https://amg13737-amg13737c1-amgplt0016.playout.now3.amagi.tv/playlist/amg13737-amg13737c1-amgplt0016/playlist.m3u8
@@ -758,4 +755,7 @@ https://d34z4embz0hjf6.cloudfront.net/out/v1/d55b3323a9f142638f897378f0b526fe/in
 
 #EXTINF:-1 tvg-id="TVBRICSEnglish.in" tvg-name="TV BRICS English KB" tvg-logo="https://i.imgur.com/8rKNuS6.png" tvg-country="IN" group-title="IPTV" tvg-quality="1080p",TV BRICS English KB
 https://engbrics.mediacdn.ru/cdn/brics/english/playlist.m3u8
+
+#EXTINF:-1 tvg-id="TV27News.in" tvg-name="TV27 News KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV27_News.png" tvg-country="IN" group-title="News" tvg-quality="1080p",TV27 News KB
+https://stream.ottlive.co.in/tv27/index.m3u8
 
