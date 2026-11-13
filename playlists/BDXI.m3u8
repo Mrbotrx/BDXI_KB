@@ -1,8 +1,8 @@
 #EXTM3U
 # KB IPTV - BDXI
 # BEST FAST PLAYLIST
-# Total Channels: 804
-# Updated: 2026-11-12T21:31:58.434Z
+# Total Channels: 807
+# Updated: 2026-11-13T02:19:28.653Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="ATNBangla.bd" tvg-name="ATN Bangla KB" tvg-logo="https://i.imgur.com/K1HmMRz.png" tvg-country="BD" group-title="Bangla" tvg-quality="720p",ATN Bangla KB
@@ -402,6 +402,9 @@ https://ktismaservers.in:3412/live/joytvlive.m3u8
 
 #EXTINF:-1 tvg-id="Kadak.in" tvg-name="Kadak KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Kadak.png" tvg-country="IN" group-title="News" tvg-quality="1080p",Kadak KB
 https://n18syndication.akamaized.net/bpk-tv/Kadak_NW18_MOB/output01/master.m3u8
+
+#EXTINF:-1 tvg-id="KarnatakaNewsBeat.in" tvg-name="Karnataka News Beat KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/newsbeatkarnataka.png" tvg-country="IN" group-title="News" tvg-quality="1080p",Karnataka News Beat KB
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/d0f1a078-3293-4f87-80ac-34cff3279b0d/index.m3u8
 
 #EXTINF:-1 tvg-id="KBCNews.in" tvg-name="KBC News KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/kbcnews.png" tvg-country="IN" group-title="News" tvg-quality="1080p",KBC News KB
 https://stream.ottlive.co.in/kbcnews/index.m3u8
@@ -854,6 +857,9 @@ https://stream.tv30bharat.com/hls/shree/bhattji.m3u8
 
 #EXTINF:-1 tvg-id="TV45.in" tvg-name="TV45 KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TV45.png" tvg-country="IN" group-title="News" tvg-quality="1080p",TV45 KB
 https://server.livelegitpro.in/bnews24/bnews24/video.m3u8
+
+#EXTINF:-1 tvg-id="TV7Bharat.in" tvg-name="TV7 Bharat KB" tvg-logo="https://tv7bharat.tv/wp-content/uploads/2023/07/Logo-Bharat.jpg" tvg-country="IN" group-title="News" tvg-quality="1080p",TV7 Bharat KB
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/797fcff8-10d6-4c9c-a409-8d0c4fa5c8dd/index.m3u8
 
 #EXTINF:-1 tvg-id="TV7National.in" tvg-name="TV7 National KB" tvg-logo="https://d3jnkp3lrs2hd5.cloudfront.net/images/100x100/52ac91e7-2c9d-415b-a63f-fb41413105ff.jpg" tvg-country="IN" group-title="News" tvg-quality="1080p",TV7 National KB
 https://stream.ottlive.co.in/tv7national/index.m3u8
@@ -1892,6 +1898,9 @@ https://mumbai-edge.smartplaytv.in/JayaPLus/index.m3u8
 #EXTINF:-1 tvg-id="JeevanTV.in" tvg-name="Jeevan TV KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Jeevan_TV.png" tvg-country="IN" group-title="IPTV" tvg-quality="576p",Jeevan TV KB
 https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main/streams/in/YuppTV/JeevanTV.m3u8
 
+#EXTINF:-1 tvg-id="JK24x7News.in" tvg-name="JK 24x7 News KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/JK_24x7_News.png" tvg-country="IN" group-title="News" tvg-quality="576p",JK 24x7 News KB
+https://samitaorigin.tangotv.in/JKL24X7NEWS/SAMITAORIGIN/index.m3u8
+
 #EXTINF:-1 tvg-id="Jonack.in" tvg-name="Jonack KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_JONACK/images/LOGO_HD/image.png" tvg-country="IN" group-title="IPTV" tvg-quality="576p",Jonack KB
 https://cdn.pishow.tv/ott/live/10006/master.m3u8
 
@@ -2095,6 +2104,9 @@ http://103.185.24.134:3001/NICK/index.m3u8
 #EXTINF:-1 tvg-id="NireekshanaTV.in" tvg-name="Nireekshana TV KB" tvg-logo="https://i.imgur.com/nGJv6QR.png" tvg-country="IN" group-title="IPTV" tvg-quality="576p",Nireekshana TV KB
 #EXTVLCOPT:http-user-agent=#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
 https://fta.ektv.in/live/706/master.m3u8
+
+#EXTINF:-1 tvg-id="NonStopBharat.in" tvg-name="Non Stop Bharat KB" tvg-logo="https://www.lyngsat.com/logo/tv/nn/nonstop-bharat-in.png" tvg-country="IN" group-title="News" tvg-quality="576p",Non Stop Bharat KB
+https://mumt07.tangotv.in/zHjX9OFlCHAUKASTV/index.m3u8
 
 #EXTINF:-1 tvg-id="OMTV.in" tvg-name="OM TV KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/OM_TV.png" tvg-country="IN" group-title="Music" tvg-quality="576p",OM TV KB
 https://mumt01.tangotv.in/O5aw8Zn3OMTV/index.m3u8
@@ -2337,9 +2349,6 @@ https://mumbai-edge.smartplaytv.in/tv5kannada/index.m3u8
 
 #EXTINF:-1 tvg-id="TV5News.in" tvg-name="TV5 News KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_TV5_TELUGU/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="576p",TV5 News KB
 https://cdn.pishow.tv/ott/live/387/master.m3u8
-
-#EXTINF:-1 tvg-id="TV7Bharat.in" tvg-name="TV7 Bharat KB" tvg-logo="https://tv7bharat.tv/wp-content/uploads/2023/07/Logo-Bharat.jpg" tvg-country="IN" group-title="News" tvg-quality="576p",TV7 Bharat KB
-https://stream.ottlive.co.in/tv7bharat/index.m3u8
 
 #EXTINF:-1 tvg-id="UniqueTV.in" tvg-name="Unique TV KB" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/UNIQUE-TV-logo_2000_X_1125_Transpharent.png" tvg-country="IN" group-title="Entertainment" tvg-quality="576p",Unique TV KB
 #EXTVLCOPT:http-user-agent=#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36

@@ -2,7 +2,7 @@
 # KB IPTV - India
 # BEST FAST PLAYLIST
 # Total Channels: 250
-# Updated: 2026-11-12T21:31:58.250Z
+# Updated: 2026-11-13T02:19:28.462Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="StarJalsha.in" tvg-name="Star Jalsha KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_JALSHA/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Star Jalsha KB
@@ -369,6 +369,9 @@ https://ktismaservers.in:3412/live/joytvlive.m3u8
 
 #EXTINF:-1 tvg-id="Kadak.in" tvg-name="Kadak KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Kadak.png" tvg-country="IN" group-title="News" tvg-quality="1080p",Kadak KB
 https://n18syndication.akamaized.net/bpk-tv/Kadak_NW18_MOB/output01/master.m3u8
+
+#EXTINF:-1 tvg-id="KarnatakaNewsBeat.in" tvg-name="Karnataka News Beat KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/newsbeatkarnataka.png" tvg-country="IN" group-title="News" tvg-quality="1080p",Karnataka News Beat KB
+https://vglivessai.akamaized.net/sg/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/d0f1a078-3293-4f87-80ac-34cff3279b0d/index.m3u8
 
 #EXTINF:-1 tvg-id="KBCNews.in" tvg-name="KBC News KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/kbcnews.png" tvg-country="IN" group-title="News" tvg-quality="1080p",KBC News KB
 https://stream.ottlive.co.in/kbcnews/index.m3u8
@@ -755,7 +758,4 @@ https://amg14122-amg14122c1-amgplt0835.playout.now3.amagi.tv/playout/amg14122/am
 
 #EXTINF:-1 tvg-id="SwatantraTV.in" tvg-name="Swatantra TV KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Swatantra_News.png" tvg-country="IN" group-title="News" tvg-quality="1080p",Swatantra TV KB
 https://mumbai-edge.smartplaytv.in/SwatantraTV/index.m3u8
-
-#EXTINF:-1 tvg-id="TabbarHits.in" tvg-name="Tabbar Hits KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_TABBAR_HITS/images/LOGO_HD/image.png" tvg-country="IN" group-title="Music" tvg-quality="1080p",Tabbar Hits KB
-https://livingindiaottlive.akamaized.net/tabbarhits/index.m3u8
 
