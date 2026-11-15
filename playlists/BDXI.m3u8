@@ -1,8 +1,8 @@
 #EXTM3U
 # KB IPTV - BDXI
 # BEST FAST PLAYLIST
-# Total Channels: 804
-# Updated: 2026-11-14T20:51:02.827Z
+# Total Channels: 802
+# Updated: 2026-11-15T00:36:43.109Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="ATNBangla.bd" tvg-name="ATN Bangla KB" tvg-logo="https://i.imgur.com/K1HmMRz.png" tvg-country="BD" group-title="Bangla" tvg-quality="720p",ATN Bangla KB
@@ -122,9 +122,6 @@ https://live.legitpro.co.in/cnnnews/index.m3u8
 
 #EXTINF:-1 tvg-id="AlrightTV.in" tvg-name="Alright! TV KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/alrght.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Alright! TV KB
 https://d3c7vdfq3tyeyw.cloudfront.net/v1/master/071c0467fcd02420cdf0d8a1ca3524b96c27a151/rusk_media/v1/channel/ruskmedia/germane.m3u8
-
-#EXTINF:-1 tvg-id="AmarUjala.in" tvg-name="AmarUjala KB" tvg-logo="https://i.imgur.com/ndQ8LZp.png" tvg-country="IN" group-title="News" tvg-quality="1080p",AmarUjala KB
-https://amarujala.ottlive.co.in/amarujala/index.m3u8
 
 #EXTINF:-1 tvg-id="AnandTV.in" tvg-name="Anand TV KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Anand_TV.png" tvg-country="IN" group-title="News" tvg-quality="1080p",Anand TV KB
 https://live.legitpro.co.in/anandtv/index.m3u8
@@ -1608,11 +1605,8 @@ https://mumt04.tangotv.in/m18aqlK4ARYANTVNATIONAL/index.m3u8
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
 https://fta.ektv.in/live/697/master.m3u8
 
-#EXTINF:-1 tvg-id="AsomLive24.in" tvg-name="Asom Live 24 KB" tvg-logo="https://papaji.freetvindia.com/media/channels/asom_live_24x7.png" tvg-country="IN" group-title="News" tvg-quality="576p",Asom Live 24 KB
-https://mumt06.tangotv.in/qYyB8fXVASHOMLIVE/index.m3u8
-
 #EXTINF:-1 tvg-id="AssamTalks.in" tvg-name="Assam Talks KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ASSAM_TALKS/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="576p",Assam Talks KB
-http://tvsen7.aynascope.net/AssamTalks/index.m3u8
+https://cdn.pishow.tv/ott/live/258/master.m3u8
 
 #EXTINF:-1 tvg-id="Astroscience.in" tvg-name="Astroscience KB" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yupptvnew/content/common/channel/logos/bvwquh.png" tvg-country="IN" group-title="Documentary" tvg-quality="576p",Astroscience KB
 https://yuppnimrestreammum.akamaized.net/181224/smil:astrotech.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b

@@ -2,7 +2,7 @@
 # KB IPTV - India
 # BEST FAST PLAYLIST
 # Total Channels: 250
-# Updated: 2026-11-14T20:51:02.687Z
+# Updated: 2026-11-15T00:36:42.961Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="StarJalsha.in" tvg-name="Star Jalsha KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_JALSHA/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Star Jalsha KB
@@ -101,9 +101,6 @@ https://live.legitpro.co.in/cnnnews/index.m3u8
 
 #EXTINF:-1 tvg-id="AlrightTV.in" tvg-name="Alright! TV KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/alrght.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Alright! TV KB
 https://d3c7vdfq3tyeyw.cloudfront.net/v1/master/071c0467fcd02420cdf0d8a1ca3524b96c27a151/rusk_media/v1/channel/ruskmedia/germane.m3u8
-
-#EXTINF:-1 tvg-id="AmarUjala.in" tvg-name="AmarUjala KB" tvg-logo="https://i.imgur.com/ndQ8LZp.png" tvg-country="IN" group-title="News" tvg-quality="1080p",AmarUjala KB
-https://amarujala.ottlive.co.in/amarujala/index.m3u8
 
 #EXTINF:-1 tvg-id="AnandTV.in" tvg-name="Anand TV KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Anand_TV.png" tvg-country="IN" group-title="News" tvg-quality="1080p",Anand TV KB
 https://live.legitpro.co.in/anandtv/index.m3u8
@@ -758,4 +755,7 @@ https://amg14122-amg14122c1-amgplt0835.playout.now3.amagi.tv/playout/amg14122/am
 
 #EXTINF:-1 tvg-id="SwatantraTV.in" tvg-name="Swatantra TV KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Swatantra_News.png" tvg-country="IN" group-title="News" tvg-quality="1080p",Swatantra TV KB
 https://mumbai-edge.smartplaytv.in/SwatantraTV/index.m3u8
+
+#EXTINF:-1 tvg-id="TabbarHits.in" tvg-name="Tabbar Hits KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_TABBAR_HITS/images/LOGO_HD/image.png" tvg-country="IN" group-title="Music" tvg-quality="1080p",Tabbar Hits KB
+https://livingindiaottlive.akamaized.net/tabbarhits/index.m3u8
 
