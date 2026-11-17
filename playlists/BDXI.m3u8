@@ -2,7 +2,7 @@
 # KB IPTV - BDXI
 # BEST FAST PLAYLIST
 # Total Channels: 802
-# Updated: 2026-11-16T16:50:58.765Z
+# Updated: 2026-11-17T00:36:33.036Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="ATNBangla.bd" tvg-name="ATN Bangla KB" tvg-logo="https://i.imgur.com/K1HmMRz.png" tvg-country="BD" group-title="Bangla" tvg-quality="720p",ATN Bangla KB
@@ -38,8 +38,8 @@ https://amg13737-amg13737c1-amgplt0016.playout.now3.amagi.tv/playlist/amg13737-a
 #EXTINF:-1 tvg-id="News18India.in" tvg-name="News18 India KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_NEWS18_INDIA/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="1080p",News18 India KB
 https://n18syndication.akamaized.net/bpk-tv/News18_India_NW18_MOB/output01/master.m3u8
 
-#EXTINF:-1 tvg-id="AajTak.in" tvg-name="Aaj Tak KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_AAJ_TAK/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="1080p",Aaj Tak KB
-http://103.213.31.109:90/AajtakHD/playlist.m3u8
+#EXTINF:-1 tvg-id="AajTak.in" tvg-name="Aaj Tak KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_AAJ_TAK/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="720p",Aaj Tak KB
+https://d1rc86nwwc9fag.cloudfront.net/vglive-sk-791258/master.m3u8
 
 #EXTINF:-1 tvg-id="ABPNews.in" tvg-name="ABP News KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_ABP_NEWS/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="1080p",ABP News KB
 https://d1rc86nwwc9fag.cloudfront.net/vglive-sk-472500/abpnews/master.m3u8
@@ -1554,7 +1554,7 @@ https://cdn.pishow.tv/ott/live/1257/master.m3u8
 https://cdn.pishow.tv/ott/live/252/master.m3u8
 
 #EXTINF:-1 tvg-id="AakaashAath.in" tvg-name="Aakaash Aath KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_AAKASH_AATH/images/LOGO_HD/image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="576p",Aakaash Aath KB
-http://tvsen5.aynascope.net/Wm9Lv2RjZGT6/index.m3u8
+https://cdn.pishow.tv/ott/live/969/master.m3u8
 
 #EXTINF:-1 tvg-id="AaseervathamTV.in" tvg-name="Aaseervatham TV KB" tvg-logo="https://i.imgur.com/GlfrYs7.png" tvg-country="IN" group-title="Music" tvg-quality="576p",Aaseervatham TV KB
 https://mumt04.tangotv.in/m18aqlK4AASEERVATHAMTV/index.m3u8
@@ -1627,8 +1627,7 @@ https://mumbai-edge.smartplaytv.in/Bhakthisiri/index.m3u8
 https://mumt05.tangotv.in/87NeALx2BHAKTISAGAR/index.m3u8
 
 #EXTINF:-1 tvg-id="BharatSamachar.in" tvg-name="Bharat Samachar KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_BHARAT_SAMACHAR/images/LOGO_HD/image.png" tvg-country="IN" group-title="News" tvg-quality="576p",Bharat Samachar KB
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
-https://fta.ektv.in/live/97/97_0.m3u8
+https://mumt03.tangotv.in/Dsly5z3HBHARATSAMACHAR/index.m3u8
 
 #EXTINF:-1 tvg-id="BVG.in" tvg-name="BVG KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/BVG.png" tvg-country="IN" group-title="Education" tvg-quality="576p",BVG KB
 https://mumt05.tangotv.in/87NeALx2BVG/index.m3u8
