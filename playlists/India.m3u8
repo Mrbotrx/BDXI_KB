@@ -2,8 +2,14 @@
 # KB IPTV - India
 # BEST FAST PLAYLIST
 # Total Channels: 250
-# Updated: 2026-11-20T20:37:38.908Z
+# Updated: 2026-11-21T01:55:04.389Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
+
+#EXTINF:-1 tvg-id="SonySportsTen1.in" tvg-name="Sony Sports Ten 1 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_SPORTS_TEN_1_HD/images/LOGO_HD/image.png" tvg-country="IN" group-title="Sports" tvg-quality="576p",Sony Sports Ten 1 KB
+http://116.90.120.149:8000/play/a126/index.m3u8
+
+#EXTINF:-1 tvg-id="SonySportsTen5.in" tvg-name="Sony Sports Ten 5 KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SONY_SPORTS_TEN_5_HD/images/LOGO_HD/image.png" tvg-country="IN" group-title="Sports" tvg-quality="576p",Sony Sports Ten 5 KB
+http://116.90.120.149:8000/play/a117/index.m3u8
 
 #EXTINF:-1 tvg-id="StarJalsha.in" tvg-name="Star Jalsha KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_STAR_JALSHA/images/LOGO_HD/LOGO_HD_image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Star Jalsha KB
 http://cdn98.com/play/live.php?extension=ts&mac=00:1A:79:99:54:11&play_token=o1cczsG9wV&stream=225805
@@ -752,10 +758,4 @@ http://27.124.71.27/Sony_Aath/index.m3u8
 
 #EXTINF:-1 tvg-id="SonyBBCEarth.in" tvg-name="Sony BBC Earth HD KB" tvg-logo="https://dtil.tmsimg.com/assets/s143799_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="Documentary" tvg-quality="1080p",Sony BBC Earth HD KB
 http://116.90.120.149:8000/play/a130/index.m3u8
-
-#EXTINF:-1 tvg-id="SonyEntertainmentTelevision.in" tvg-name="Sony Entertainment Television HD KB" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SET/images/LOGO_HD/image.png" tvg-country="IN" group-title="Entertainment" tvg-quality="1080p",Sony Entertainment Television HD KB
-http://38.96.178.205/SONYHD/index.m3u8
-
-#EXTINF:-1 tvg-id="SonyMax.in" tvg-name="Sony Max HD KB" tvg-logo="https://dtil.tmsimg.com/assets/s159098_ld_h15_aa.png?lock=720x540" tvg-country="IN" group-title="Movies" tvg-quality="1080p",Sony Max HD KB
-http://116.90.120.149:8000/play/a123/index.m3u8
 
