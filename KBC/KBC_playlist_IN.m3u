@@ -3,7 +3,7 @@
 # ============================================
 # KBCT M3U8
 # MAKE BY: www.Facebook.com/kallyan.biswas.29
-# Updated: 2026-11-26 09:34 | 730 channels
+# Updated: 2026-11-26 22:53 | 718 channels
 # ============================================
 #EXTINF:-1 tvg-id="TV13Gujarati.in@SD" tvg-name="TV13 Gujarati KBCT" tvg-logo="https://www.tv13gujarati.com/assets/front/img/footer-logo.jpg" group-title="IN | News",TV13 Gujarati KBCT
 https://live.wrencdn.in/wrencdn/hls/tv13_web/index.m3u8
@@ -113,9 +113,6 @@ https://dknttpxmr0dwf.cloudfront.net/index_57.m3u8
 https://mumbai-edge.smartplaytv.in/10TV/index.m3u8
 #EXTINF:-1 tvg-id="24News.in@SD" tvg-name="24 News KBCT" tvg-logo="https://sund-images.sunnxt.com/202222/300x300_24News_202222_d63feca0-79ae-47ea-b75a-66c17d456f4c.png" group-title="IN | News",24 News KBCT
 https://mumt07.tangotv.in/zHjX9OFlTWENTYFOURNEWS/index.m3u8
-#EXTINF:-1 tvg-id="4TVNews.in@SD" tvg-name="4TV News KBCT" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/4_TV.png" group-title="IN | News",4TV News KBCT
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
-https://fta.ektv.in/live/647/master.m3u8
 #EXTINF:-1 tvg-id="9PlusNews.in@SD" tvg-name="9 Plus News KBCT" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/9plusnews.png" group-title="IN | News",9 Plus News KBCT
 https://stream.ottlive.co.in/9plusnews/index.m3u8
 #EXTINF:-1 tvg-id="99TV.in@SD" tvg-name="99TV KBCT" tvg-logo="https://i.imgur.com/dZA4gel.png" group-title="IN | News",99TV KBCT
@@ -488,8 +485,6 @@ https://cdn.pishow.tv/ott/live/1437/master.m3u8
 https://stream.ottlive.co.in/primenews/index.m3u8
 #EXTINF:-1 tvg-id="Prime9News.in@SD" tvg-name="Prime9 News KBCT" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Prime_9_News.png" group-title="IN | News",Prime9 News KBCT
 https://mumbai-edge.smartplaytv.in/Prime9News/index.m3u8
-#EXTINF:-1 tvg-id="PrudentMedia.in@SD" tvg-name="Prudent Media KBCT" tvg-logo="https://i.imgur.com/DG0x4UD.png" group-title="IN | News",Prudent Media KBCT
-https://prudentmcdn.rixcast.com/prudentm.m3u8
 #EXTINF:-1 tvg-id="PTCNews.in@SD" tvg-name="PTC News KBCT" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PTC_NEWS/images/LOGO_HD/image.png" group-title="IN | News",PTC News KBCT
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
 https://fta.ektv.in/live/182/master.m3u8
@@ -570,8 +565,8 @@ https://stream.ottlive.co.in/thebonus/index.m3u8
 https://stream.ottlive.co.in/unmute/index.m3u8
 #EXTINF:-1 tvg-id="TheVoiceTV.in@SD" tvg-name="The Voice TV KBCT" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/thevoicetv.png" group-title="IN | News",The Voice TV KBCT
 https://legitpro.co.in/thevoicetv/thevoicetv/index.m3u8
-#EXTINF:-1 tvg-id="TimesNowNavbharat.in@SD" tvg-name="Times Now Navbharat KBCT" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_TIMES_NOW_NAVBHARAT_HD/images/LOGO_HD/image.png" group-title="IN | News",Times Now Navbharat KBCT
-https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/a5ee7c4e7a2a4b15a22a3bcf523b9776/index.m3u8
+#EXTINF:-1 tvg-id="TimesNowNavbharat.in@HD" tvg-name="Times Now Navbharat HD KBCT" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_TIMES_NOW_NAVBHARAT_HD/images/LOGO_HD/image.png" group-title="IN | News",Times Now Navbharat HD KBCT
+https://yupprestreamliveus.akamaized.net/v1/vglive-sk-717514/main.m3u8
 #EXTINF:-1 tvg-id="TNPNews.in@SD" tvg-name="TNP News KBCT" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/TNP_News.png" group-title="IN | News",TNP News KBCT
 https://server.thelegitpro.in/tnpnews/tnpnews/index.m3u8
 #EXTINF:-1 tvg-id="TOIGlobal.in@SD" tvg-name="TOI Global KBCT" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/npnhm84gz9.png" group-title="IN | News",TOI Global KBCT
@@ -686,9 +681,6 @@ https://live.skystream.in/live/citytv2924/index.m3u8
 https://live.skystream.in/live/citykannurcity/index.m3u8
 #EXTINF:-1 tvg-id="DarshanaTV.in@SD" tvg-name="Darshana TV KBCT" tvg-logo="https://dtil.tmsimg.com/assets/s142774_ld_h15_aa.png?lock=720x540" group-title="IN | Entertainment",Darshana TV KBCT
 https://cdn.pishow.tv/ott/live/1453/master.m3u8
-#EXTINF:-1 tvg-id="DDMalayalam.in@SD" tvg-name="DD Malayalam KBCT" tvg-logo="https://i.postimg.cc/BZjmjJJs/DD-Malayalam.png" group-title="IN | Entertainment",DD Malayalam KBCT
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
-https://fta.ektv.in/live/680/master.m3u8
 #EXTINF:-1 tvg-id="DesiChannel.in@SD" tvg-name="Desi Channel KBCT" tvg-logo="https://desichannel.in/wp-content/uploads/2025/01/desi-channel.png" group-title="IN | Entertainment",Desi Channel KBCT
 https://desichannel.kableone.com/desichannel/master.m3u8
 #EXTINF:-1 tvg-id="DrishyaTV.in@SD" tvg-name="Drishya TV KBCT" tvg-logo="https://play-lh.googleusercontent.com/P1gCOSlZjwEzxi6wy4zcvqYwBf6SdTXiGhnuIAIW8lNu9Ka-v28vXz2vUFqwFXQH6mCeFkQdphJVjYK0Qj30hQ=w240-h480-rw" group-title="IN | Entertainment",Drishya TV KBCT
@@ -732,8 +724,8 @@ https://fta.ektv.in/live/700/master.m3u8
 https://live.skystream.in/live/keralam2742/index.m3u8
 #EXTINF:-1 tvg-id="KalaignarMurasu.in@SD" tvg-name="Kalaignar Murasu KBCT" tvg-logo="https://dtil.tmsimg.com/assets/s143561_ld_h15_aa.png?lock=720x540" group-title="IN | Entertainment",Kalaignar Murasu KBCT
 https://yuppmedtaorire.akamaized.net/v1/master/a0d007312bfd99c47f76b77ae26b1ccdaae76cb1/murasu_nim_https/050522/murasu/playlist.m3u8
-#EXTINF:-1 tvg-id="KasargodVision.in@SD" tvg-name="Kasargod Vision KBCT" tvg-logo="https://coakerala.com/wp-content/uploads/2014/11/KSD-VISION-district-channel.jpg" group-title="IN | Entertainment",Kasargod Vision KBCT
-https://live.skystream.in/live/kasaragodvsn/index.m3u8
+#EXTINF:-1 tvg-id="KCLTV.in@SD" tvg-name="KCL TV KBCT" tvg-logo="https://i.imgur.com/bkp9dIm.png" group-title="IN | Entertainment",KCL TV KBCT
+https://kcltv.livebox.co.in/kclhls/live.m3u8
 #EXTINF:-1 tvg-id="KCNKasargod.in@SD" tvg-name="KCN Kasargod KBCT" tvg-logo="https://play-lh.googleusercontent.com/sfxGAj8et5iKbygQ7Plp6gSvsvLodM4b7HU0K_1dx_etJMo3FUEIkf0z7KdWTEb-Gwhx5Vz9bQjpB8g_oz6jry0=w240-h480" group-title="IN | Entertainment",KCN Kasargod KBCT
 https://live.skystream.in/live/kcnksrgod/index.m3u8
 #EXTINF:-1 tvg-id="KeralaTodayTV.in@SD" tvg-name="Kerala Today TV KBCT" tvg-logo="https://play-lh.googleusercontent.com/JpdLqTP2IiQDuLkr_jw0QeeDHfHOPd-vk00pnPF06f95Jca01t7v2BbrSENDeNuHktB2t0EbSfk_XyXvvUAumQ" group-title="IN | Entertainment",Kerala Today TV KBCT
@@ -768,12 +760,9 @@ https://fta.ektv.in/live/245/master.m3u8
 https://fta.ektv.in/live/351/master.m3u8
 #EXTINF:-1 tvg-id="MKSix.in@SD" tvg-name="MK Six KBCT" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/MK_Six.png" group-title="IN | Entertainment",MK Six KBCT
 https://mumt06.tangotv.in/qYyB8fXVMKSIX/index.m3u8
-#EXTINF:-1 tvg-id="MTV.in@International" tvg-name="MTV (India) International KBCT" tvg-logo="https://dtil.tmsimg.com/assets/s143558_ld_h15_aa.png?lock=720x540" group-title="IN | Entertainment",MTV (India) International KBCT
-#EXTVLCOPT:http-referrer=https://bhoomtv.org/
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/154.0.0.0 Safari/537.36
-https://yupp-music.keralive.workers.dev/out/v1/a797c00cba954265ba781f92a57e2cf5/index.m3u8
-#EXTINF:-1 tvg-id="NVision.in@SD" tvg-name="N Vision KBCT" tvg-logo="https://livetv.ashokadigital.net/upload/logo/1739890627_WhatsApp_Image_2025-02-18_at_8.25.19_PM__1_-removebg-preview.png" group-title="IN | Entertainment",N Vision KBCT
-https://ipcloud.live/nvision/nvisionhd/index.m3u8
+#EXTINF:-1 tvg-id="MTV.in@SD" tvg-name="MTV (India) KBCT" tvg-logo="https://dtil.tmsimg.com/assets/s143558_ld_h15_aa.png?lock=720x540" group-title="IN | Entertainment",MTV (India) KBCT
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/130.0.0.0 Safari/537.36
+https://da86m1sqpm3o0.cloudfront.net/28072023/smil:mtvindia.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="NammaBangalore.in@SD" tvg-name="Namma Bangalore KBCT" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Namma_Bangalore.png" group-title="IN | Entertainment",Namma Bangalore KBCT
 https://stream.ottlive.co.in/nammatv/index.m3u8
 #EXTINF:-1 tvg-id="Nepal1.in@SD" tvg-name="Nepal 1 KBCT" tvg-logo="https://i.ibb.co/bMZpdbYJ/Nepal-1.png" group-title="IN | Entertainment",Nepal 1 KBCT
@@ -793,6 +782,8 @@ https://d1msejlow1t3l4.cloudfront.net/fta/pasand/playlist.m3u8
 #EXTINF:-1 tvg-id="PearTV.in@SD" tvg-name="Pear TV KBCT" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PEARS_TV/images/LOGO_HD/image.png" group-title="IN | Entertainment",Pear TV KBCT
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
 https://fta.ektv.in/live/695/master.m3u8
+#EXTINF:-1 tvg-id="PeriyarVision.in@SD" tvg-name="Periyar Vision KBCT" tvg-logo="https://play-lh.googleusercontent.com/Oh0y8uEVV7LIlMBig3mi5xthzsUeOMWXxkHh6CpNf8uousEVwTCCEgLnNIYPPOd5aWw5f7lAWOqPqP93y2H7" group-title="IN | Entertainment",Periyar Vision KBCT
+https://stream.onecloudlive.in/periyarvision/periyarvision/index.m3u8
 #EXTINF:-1 tvg-id="PitaaraComedy.in@SD" tvg-name="Pitaara Comedy KBCT" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/PitaaraComedy.png" group-title="IN | Entertainment",Pitaara Comedy KBCT
 https://janya-pitaaralive.akamaized.net/ptnr-monitoring/v1/vglive-sk-217489/live/PitaaraComedy_15/chunks.m3u8
 #EXTINF:-1 tvg-id="PolimerTV.in@SD" tvg-name="Polimer TV KBCT" tvg-logo="https://dtil.tmsimg.com/assets/s143665_ld_h15_aa.png?lock=720x540" group-title="IN | Entertainment",Polimer TV KBCT
@@ -897,8 +888,8 @@ https://raw.githubusercontent.com/amazeyourself/adaptive-streams/refs/heads/main
 http://163.61.226.31:9981/stream/channelid/1709941389?profile=pass
 #EXTINF:-1 tvg-id="ColorsCineplexSuperhits.in@SD" tvg-name="Colors Cineplex Superhits KBCT" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_COLORS_CINEPLEX_SUPERHITS/images/LOGO_HD/image.png" group-title="IN | Movies",Colors Cineplex Superhits KBCT
 http://163.61.226.31:9981/stream/channelid/2039746374?profile=pass
-#EXTINF:-1 tvg-id="SonyMax.in@HD" tvg-name="Sony Max HD KBCT" tvg-logo="https://dtil.tmsimg.com/assets/s157590_ld_h15_aa.png?lock=720x540" group-title="IN | Movies",Sony Max HD KBCT
-https://rangdhonulive.samiulislamabhi.workers.dev/sonyMAXhd/tracks-v1a1/mono.ts.m3u8
+#EXTINF:-1 tvg-id="SonyMax.in@SD" tvg-name="Sony Max KBCT" tvg-logo="https://dtil.tmsimg.com/assets/s157590_ld_h15_aa.png?lock=720x540" group-title="IN | Movies",Sony Max KBCT
+https://drk6xq0vhn.gpcdn.net/hls/set_max_m4fb8dz2wp6kr9s_720/index.m3u8
 #EXTINF:-1 tvg-id="SonyWah.in@SD" tvg-name="Sony Wah KBCT" tvg-logo="https://dtil.tmsimg.com/assets/s157974_ld_h15_aa.png?lock=720x540" group-title="IN | Movies",Sony Wah KBCT
 http://163.61.226.31:9981/stream/channelid/1743466790?profile=pass
 #EXTINF:-1 tvg-id="AndTV.in@International" tvg-name="&TV International KBCT" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SYMANDTV/images/LOGO_HD/LOGO_HD_image.png" group-title="IN | Movies",&TV International KBCT
@@ -953,6 +944,8 @@ http://163.61.226.31:9981/stream/channelid/509213855?profile=pass
 https://fta.ektv.in/live/639/master.m3u8
 #EXTINF:-1 tvg-id="MoviePunjab.in@SD" tvg-name="Movie Punjab KBCT" tvg-logo="https://papaji.freetvindia.com/media/900_FreeTV_Movie_punjab.png" group-title="IN | Movies",Movie Punjab KBCT
 https://mumt01.tangotv.in/O5aw8Zn3MOVIEPUNJAB/index.m3u8
+#EXTINF:-1 tvg-id="MoviesNow.in@HD" tvg-name="Movies Now HD KBCT" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_MOVIES_NOW/images/LOGO_HD/image.png" group-title="IN | Movies",Movies Now HD KBCT
+http://27.124.71.27/Movies_Now/index.m3u8
 #EXTINF:-1 tvg-id="NHBollyFlix.in@HD" tvg-name="NH BollyFlix KBCT" tvg-logo="https://i.ibb.co/yF9MPTDK/blyflx.png" group-title="IN | Movies",NH BollyFlix KBCT
 https://jmp2.uk/stvp-IN46000140Q
 #EXTINF:-1 tvg-id="NHTamilGold.in@HD" tvg-name="NH Tamil Gold KBCT" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN400061DB_20260623T015348SQUARE.png" group-title="IN | Movies",NH Tamil Gold KBCT
@@ -988,8 +981,6 @@ https://da86m1sqpm3o0.cloudfront.net/28072023/smil:maamovies.smil/chunklist_b262
 http://163.61.226.31:9981/stream/channelid/1225596390?profile=pass
 #EXTINF:-1 tvg-id="StudioOnePlus.in@SD" tvg-name="Studio One + KBCT" tvg-logo="https://i.imgur.com/yOPB7JB.png" group-title="IN | Movies",Studio One + KBCT
 https://cdn.pishow.tv/ott/live/276/master.m3u8
-#EXTINF:-1 tvg-id="SuriyanTV.in@SD" tvg-name="Suriyan TV KBCT" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/Suriyan-tv-logo_2000_X_1125_Transpharent.png" group-title="IN | Movies",Suriyan TV KBCT
-https://hlslive.olidigital.in/suriyantv/suriyantv/index.m3u8
 #EXTINF:-1 tvg-id="ThalaaTV.in@HD" tvg-name="Thalaa TV KBCT" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yuppfast/content/common/channel/logos/thalaa-tv.png" group-title="IN | Movies",Thalaa TV KBCT
 https://streams2.sofast.tv/ptnr-khabriya/title-THALAA-TV-TAM_Khabriya/v1/master/611d79b11b77e2f571934fd80ca1413453772ac7/c9d5c8a0-8c52-47bc-954d-e64a11314de2/manifest.m3u8
 #EXTINF:-1 tvg-id="TheMovieClub.in@Plus2" tvg-name="The Movie Club +2 KBCT" tvg-logo="https://tvpnlogopus.samsungcloud.tv/platform/image/sourcelogo/vc/00/02/34/IN40000100Y_20260204T004058SQUARE.png" group-title="IN | Movies",The Movie Club +2 KBCT
@@ -1016,8 +1007,8 @@ https://wiselp.wiseplayout.com/9XM/master.m3u8
 https://stream.ottlive.co.in/aryatvtamil/index.m3u8
 #EXTINF:-1 tvg-id="B4UMusic.in@India" tvg-name="B4U Music KBCT" tvg-logo="https://dtil.tmsimg.com/assets/s158141_ld_h15_aa.png?lock=720x540" group-title="IN | Music",B4U Music KBCT
 https://amg01408-amg01408c5-amgplt0747.playout.now3.amagi.tv/b4um001/playlist.m3u8
-#EXTINF:-1 tvg-id="BalleBalle.in@SD" tvg-name="Balle Balle KBCT" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Balle_Balle_TV.png" group-title="IN | Music",Balle Balle KBCT
-https://mcncdndigital.com/worldpunjabitv/index.m3u8
+#EXTINF:-1 tvg-id="BalleBalle.in@HD" tvg-name="Balle Balle HD KBCT" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Balle_Balle_TV.png" group-title="IN | Music",Balle Balle HD KBCT
+https://mcncdndigital.com/balleballetv/index.m3u8
 #EXTINF:-1 tvg-id="BoogleBollywood.in@SD" tvg-name="Boogle Bollywood KBCT" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Boogle_Bollywood.png" group-title="IN | Music",Boogle Bollywood KBCT
 https://yuppnimrestreammum.akamaized.net/181224/smil:bogglebollywood.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF:-1 tvg-id="DhoolTV.in@SD" tvg-name="Dhool TV KBCT" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/DhoolTV.png" group-title="IN | Music",Dhool TV KBCT
@@ -1062,8 +1053,6 @@ https://d2lk5u59tns74c.cloudfront.net/out/v1/f913cf893c594f73b114216e74a2efbc/in
 #EXTINF:-1 tvg-id="PublicMusic.in@SD" tvg-name="Public Music KBCT" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PUBLIC_MUSIC/images/LOGO_HD/image.png" group-title="IN | Music",Public Music KBCT
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
 https://fta.ektv.in/live/240/master.m3u8
-#EXTINF:-1 tvg-id="PunjabiBeatsHD.in@HD" tvg-name="Punjabi Beats HD KBCT" tvg-logo="https://i.imgur.com/1Za9gNQ.jpg" group-title="IN | Music",Punjabi Beats HD KBCT
-https://mumt01.tangotv.in/O5aw8Zn3STVHARYANANEWS/index.m3u8
 #EXTINF:-1 tvg-id="PunjabiHits.in@SD" tvg-name="Punjabi Hits KBCT" tvg-logo="https://dtil.tmsimg.com/assets/s143691_ld_h15_aa.png?lock=720x540" group-title="IN | Music",Punjabi Hits KBCT
 https://legitpro.co.in/punjabihits/punjabihits/index.m3u8
 #EXTINF:-1 tvg-id="PunjabiMusicHD.in@SD" tvg-name="Punjabi Music HD KBCT" tvg-logo="https://papaji.freetvindia.com/media/Punjabi_Music_HD.png" group-title="IN | Music",Punjabi Music HD KBCT
@@ -1117,10 +1106,8 @@ https://cc-t8lqe1o99pszu.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da6
 https://cc-szrmqvu8zkg16.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-szrmqvu8zkg16/greengold/stream/grngld/playlist.m3u8
 #EXTINF:-1 tvg-id="TheJungleBook.in@SD" tvg-name="The Jungle Book KBCT" tvg-logo="https://pash.ink/storage/uploads/JungleBook_Logo.png" group-title="IN | Kids",The Jungle Book KBCT
 https://cc-4bhi5osabejc9.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-4bhi5osabejc9/junglebook.m3u8
-#EXTINF:-1 tvg-id="WOWKidz.in@Telugu" tvg-name="WOW Kidz Telugu KBCT" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yupptvnew/content/common/channel/logos/mjvezt.png" group-title="IN | Kids",WOW Kidz Telugu KBCT
-https://yuppparoriglin.akamaized.net/181224/smil:wowkidztelgu.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
-#EXTINF:-1 tvg-id="ZBCartoon.in@HD" tvg-name="ZB Cartoon KBCT" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/zbcatun.png" group-title="IN | Kids",ZB Cartoon KBCT
-https://server.zillarbarta.com/zbcatun/video.m3u8
+#EXTINF:-1 tvg-id="WOWKidz.in@Hindi" tvg-name="WOW Kidz KBCT" tvg-logo="https://d229kpbsb5jevy.cloudfront.net/yupptvnew/content/common/channel/logos/mjvezt.png" group-title="IN | Kids",WOW Kidz KBCT
+https://yuppparoriglin.akamaized.net/181224/smil:wowkidzhindi.smil/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF:-1 tvg-id="AadinathTV.in@SD" tvg-name="Aadinath TV KBCT" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_AADINATH_TV/images/LOGO_HD/image.png" group-title="IN | Religious",Aadinath TV KBCT
 https://cdn.pishow.tv/ott/live/252/master.m3u8
 #EXTINF:-1 tvg-id="AaseervathamTV.in@SD" tvg-name="Aaseervatham TV KBCT" tvg-logo="https://i.imgur.com/GlfrYs7.png" group-title="IN | Religious",Aaseervatham TV KBCT
@@ -1147,10 +1134,8 @@ https://mumbai-edge.smartplaytv.in/AdhyatmTV/index.m3u8
 https://samitaorigin.tangotv.in/AMRITGURBANI/SAMITAORIGIN/index.m3u8
 #EXTINF:-1 tvg-id="AnandTV.in@SD" tvg-name="Anand TV (India) KBCT" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Anand_TV.png" group-title="IN | Religious",Anand TV (India) KBCT
 https://live.legitpro.co.in/anandtv/index.m3u8
-#EXTINF:-1 tvg-id="AnandpurLive.in@HD" tvg-name="Anandpur Live KBCT" tvg-logo="https://papaji.freetvindia.com/media/Anandpur_Live.png" group-title="IN | Religious",Anandpur Live KBCT
-https://mumt05.tangotv.in/87NeALx2ANANDPURLIVE/index.m3u8
-#EXTINF:-1 tvg-id="AngelTV.in@Spanish" tvg-name="Angel TV Spanish KBCT" tvg-logo="https://i.imgur.com/qKLEGU7.png" group-title="IN | Religious",Angel TV Spanish KBCT
-https://janya-digimix.akamaized.net/vglive-sk-351398/spanish/ngrp:angelspanish_all/playlist.m3u8
+#EXTINF:-1 tvg-id="AngelTV.in@Nepal" tvg-name="Angel TV Nepal KBCT" tvg-logo="https://i.imgur.com/qKLEGU7.png" group-title="IN | Religious",Angel TV Nepal KBCT
+https://janya-digimix.akamaized.net/vglive-sk-109639/nepali/ngrp:angelnepali_all/playlist.m3u8
 #EXTINF:-1 tvg-id="ArputharYesuTV.in@SD" tvg-name="Arputhar Yesu TV KBCT" tvg-logo="https://arputharyesutv.net/wp-content/uploads/2022/07/AR-LOGO-PNG.png" group-title="IN | Religious",Arputhar Yesu TV KBCT
 https://account33.livebox.co.in/jesushelpshls/live.m3u8
 #EXTINF:-1 tvg-id="AwakeningTV.in@SD" tvg-name="Awakening TV KBCT" tvg-logo="https://i.imgur.com/p26iWOi.png" group-title="IN | Religious",Awakening TV KBCT
@@ -1159,12 +1144,16 @@ https://d2gvyg6lvauoko.cloudfront.net/230226/awakeningtv/playlist.m3u8?hdnts=st=
 https://ott.bhagyam.net/hls/bhagyamweb/index-1409148900-now.m3u8
 #EXTINF:-1 tvg-id="BhakthiTV.in@SD" tvg-name="Bhakthi TV KBCT" tvg-logo="https://upload.wikimedia.org/wikipedia/en/6/61/Bhakthi_TV_logo.jpg" group-title="IN | Religious",Bhakthi TV KBCT
 https://cdn.pishow.tv/ott/live/397/master.m3u8
+#EXTINF:-1 tvg-id="BhaktiDhara.in@SD" tvg-name="Bhakti Dhara KBCT" tvg-logo="https://papaji.freetvindia.com/media/channels/Bhakti_dhara1.png" group-title="IN | Religious",Bhakti Dhara KBCT
+https://newsliveindia.com:4433/bhaktidhara/index.m3u8
 #EXTINF:-1 tvg-id="BhaktiPlay.in@SD" tvg-name="Bhakti Play KBCT" tvg-logo="https://bhaktiplay.com/images/icons/logo.png" group-title="IN | Religious",Bhakti Play KBCT
 https://cc-pisq3rszc5kpz.akamaized.net/v1/master/3722c60a815c199d9c0ef36c5b73da68a62b09d1/cc-pisq3rszc5kpz/OTM/OTM_BhaktiFlix-SCTE_SAMSUNG/playlist.m3u8
 #EXTINF:-1 tvg-id="BhaktiSagar.in@SD" tvg-name="Bhakti Sagar KBCT" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Bhaktisagar.png" group-title="IN | Religious",Bhakti Sagar KBCT
 https://mumt05.tangotv.in/87NeALx2BHAKTISAGAR/index.m3u8
 #EXTINF:-1 tvg-id="ChannelDivya.in@SD" tvg-name="Channel Divya KBCT" tvg-logo="https://dtil.tmsimg.com/assets/s143010_ld_h15_aa.png?lock=720x540" group-title="IN | Religious",Channel Divya KBCT
 https://d2lk5u59tns74c.cloudfront.net/out/v1/40f46fa036df45ee9d28b6eda42eb27c/index.m3u8
+#EXTINF:-1 tvg-id="ChannelWIN.in@SD" tvg-name="Channel WIN KBCT" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_CHANNEL_WIN/images/LOGO_HD/image.png" group-title="IN | Religious",Channel WIN KBCT
+https://cdn.smartstream.video/smartstream-us/channelwinlive/channelwinlive/playlist.m3u8
 #EXTINF:-1 tvg-id="ChhayaChitramTelugu.in@SD" tvg-name="Chhaya Chitram Telugu KBCT" tvg-logo="https://papaji.freetvindia.com/media/channels/Chhaya_Chitram_Telugu.png" group-title="IN | Religious",Chhaya Chitram Telugu KBCT
 https://samitaorigin.tangotv.in/CHHAYACHITRAMTELUGU/SAMITAORIGIN/index.m3u8
 #EXTINF:-1 tvg-id="ChintpurniLive.in@SD" tvg-name="Chintpurni Live KBCT" tvg-logo="https://papaji.freetvindia.com/media/Chintpurni_Live.png" group-title="IN | Religious",Chintpurni Live KBCT
@@ -1201,6 +1190,8 @@ https://dcn72a38509t.cloudfront.net/v1/master/071c0467fcd02420cdf0d8a1ca3524b96c
 https://de3osy3rc63bo.cloudfront.net/v1/master/071c0467fcd02420cdf0d8a1ca3524b96c27a151/hktv/HKTV/HKWebApp/playlist.m3u8
 #EXTINF:-1 tvg-id="HarvestTVKeralam.in@SD" tvg-name="Harvest TV Keralam KBCT" tvg-logo="https://i.imgur.com/1DyPuIt.png" group-title="IN | Religious",Harvest TV Keralam KBCT
 https://7mbd4ogkr3gx-hls-live.wmncdn.net/harvestenglish/d1796a22d24e8696c7d5d0b5c349fdd2.sdp/index.m3u8
+#EXTINF:-1 tvg-id="HarvestUSA.in@SD" tvg-name="Harvest USA KBCT" tvg-logo="" group-title="IN | Religious",Harvest USA KBCT
+https://7mbd4ogkr3gx-hls-live.wmncdn.net/harvestusa/d57ffba6564caea2fee3f4085f19a098.sdp/playlist.m3u8
 #EXTINF:-1 tvg-id="HebronTV.in@SD" tvg-name="Hebron TV KBCT" tvg-logo="https://i0.wp.com/hebrontv.in/wp-content/uploads/2023/11/hebron-.png?w=512" group-title="IN | Religious",Hebron TV KBCT
 https://account20.livebox.co.in/charleshls/live.m3u8
 #EXTINF:-1 tvg-id="HopeChannelIndia.in@SD" tvg-name="Hope Channel India KBCT" tvg-logo="https://i.imgur.com/wPzPUrK.png" group-title="IN | Religious",Hope Channel India KBCT
@@ -1227,6 +1218,8 @@ https://mumbai-edge.smartplaytv.in/MahaBhakthi/index.m3u8
 https://ktismaservers.in:3161/live/mahimaitvlive.m3u8
 #EXTINF:-1 tvg-id="MahotsavTV.in@SD" tvg-name="Mahotsav TV KBCT" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Mahotsav_TV.png" group-title="IN | Religious",Mahotsav TV KBCT
 https://livetv.mahotsavtv.com/mahotsavtv/playout/index.m3u8
+#EXTINF:-1 tvg-id="MangalmayTV.in@SD" tvg-name="Mangalmay TV KBCT" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Mangalmaylive.png" group-title="IN | Religious",Mangalmay TV KBCT
+https://yupplivegcpusa.yuppcdn.net/100823/mangalmay_1800/playlist.m3u8?hdnts=st=1735898689~exp=1835898688~acl=*~hmac=f5fe24724fe05481e3841f9eb5ab8efdee0a3dd83645ae9dcf45703f525bab7b
 #EXTINF:-1 tvg-id="MercyTV.in@SD" tvg-name="Mercy TV (India) KBCT" tvg-logo="https://i.imgur.com/klNH4tV.png" group-title="IN | Religious",Mercy TV (India) KBCT
 https://5dd3981940faa.streamlock.net/mercytv/mercytv/playlist.m3u8
 #EXTINF:-1 tvg-id="MHOneShraddha.in@SD" tvg-name="MH One Shraddha KBCT" tvg-logo="https://i.imgur.com/Lrm8qTO.png" group-title="IN | Religious",MH One Shraddha KBCT
@@ -1236,15 +1229,11 @@ https://fta.ektv.in/live/344/master.m3u8
 https://cdn.pishow.tv/ott/live/1389/master.m3u8
 #EXTINF:-1 tvg-id="NamdhariTV.in@SD" tvg-name="Namdhari TV KBCT" tvg-logo="https://i.imgur.com/NalsXTo.png" group-title="IN | Religious",Namdhari TV KBCT
 https://samitaorigin.tangotv.in/NAMDHARICHANNEL/SAMITAORIGIN/index.m3u8
-#EXTINF:-1 tvg-id="NanaksarLive.in@SD" tvg-name="Nanaksar Live KBCT" tvg-logo="https://papaji.freetvindia.com/media/Nanasar_live.png" group-title="IN | Religious",Nanaksar Live KBCT
-https://mumt01.tangotv.in/O5aw8Zn3NANAKSARLIVE/index.m3u8
 #EXTINF:-1 tvg-id="NijamTV.in@SD" tvg-name="Nijam TV KBCT" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/nijamtv.png" group-title="IN | Religious",Nijam TV KBCT
 https://nijamtv.indiamatrix.in/nijamtv/nijamtv.m3u8
 #EXTINF:-1 tvg-id="NireekshanaTV.in@SD" tvg-name="Nireekshana TV KBCT" tvg-logo="https://i.imgur.com/nGJv6QR.png" group-title="IN | Religious",Nireekshana TV KBCT
 #EXTVLCOPT:http-user-agent=#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
 https://fta.ektv.in/live/706/master.m3u8
-#EXTINF:-1 tvg-id="OMTV.in@SD" tvg-name="OM TV KBCT" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/OM_TV.png" group-title="IN | Religious",OM TV KBCT
-https://mumt01.tangotv.in/O5aw8Zn3OMTV/index.m3u8
 #EXTINF:-1 tvg-id="PadharoSA.in@SD" tvg-name="Padharo SA KBCT" tvg-logo="https://papaji.freetvindia.com/media/padharosa.png" group-title="IN | Religious",Padharo SA KBCT
 https://samitaorigin.tangotv.in/PADHAROSA/SAMITAORIGIN/index.m3u8
 #EXTINF:-1 tvg-id="ParasGold.in@SD" tvg-name="Paras Gold KBCT" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_PARAS_GOLD_ONE/images/LOGO_HD/image.png" group-title="IN | Religious",Paras Gold KBCT
@@ -1281,8 +1270,8 @@ https://d34z4embz0hjf6.cloudfront.net/out/v1/7ac2789ff9a544a49337d1ffc54ce61c/in
 https://d2netiedy8cz3x.cloudfront.net/out/v1/9bf6fa4ac8d6432cb98da13b121ba3c2/index.m3u8
 #EXTINF:-1 tvg-id="SatsangTV.in@SD" tvg-name="Satsang TV KBCT" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SATSANG/images/LOGO_HD/image.png" group-title="IN | Religious",Satsang TV KBCT
 https://d2lk5u59tns74c.cloudfront.net/out/v1/e903e03c2b414ee0b74db68d7779ccad/index.m3u8
-#EXTINF:-1 tvg-id="Shalom.in@SD" tvg-name="Shalom KBCT" tvg-logo="https://dtil.tmsimg.com/assets/s143774_ld_h15_aa.png?lock=720x540" group-title="IN | Religious",Shalom KBCT
-https://d2c4zqo2rb5uf1.cloudfront.net/master.m3u8
+#EXTINF:-1 tvg-id="Shalom.in@Global" tvg-name="Shalom Global KBCT" tvg-logo="https://dtil.tmsimg.com/assets/s143774_ld_h15_aa.png?lock=720x540" group-title="IN | Religious",Shalom Global KBCT
+https://d28xtgmk9tfk6b.cloudfront.net/master.m3u8
 #EXTINF:-1 tvg-id="ShreeHazurSahibji.in@SD" tvg-name="Shree Hazur Sahibji KBCT" tvg-logo="https://papaji.freetvindia.com/media/Shree_Hazursahibji.png" group-title="IN | Religious",Shree Hazur Sahibji KBCT
 https://samitaorigin.tangotv.in/SHREEHAZURSAHIBJI/SAMITAORIGIN/index.m3u8
 #EXTINF:-1 tvg-id="ShreeSanatanTV.in@SD" tvg-name="Shree Sanatan TV KBCT" tvg-logo="https://papaji.freetvindia.com/media/channels/shri_Sanatan_TV.png" group-title="IN | Religious",Shree Sanatan TV KBCT
@@ -1358,9 +1347,6 @@ https://d1msejlow1t3l4.cloudfront.net/fta/kappatv/playlist.m3u8
 https://amg00416-amg00416c9-samsung-in-4882.playouts.now.amagi.tv/playlist/amg00416-travelxp-travelxphd-samsungin/playlist.m3u8
 #EXTINF:-1 tvg-id="DDBharati.in@SD" tvg-name="DD Bharati KBCT" tvg-logo="https://i.imgur.com/4tfUIEo.png" group-title="IN | Culture",DD Bharati KBCT
 https://cdn.pishow.tv/ott/live/10/master.m3u8
-#EXTINF:-1 tvg-id="DDMizoram.in@SD" tvg-name="DD Mizoram KBCT" tvg-logo="https://i.imgur.com/I5zT1DG.png" group-title="IN | Culture",DD Mizoram KBCT
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
-https://fta.ektv.in/live/381/master.m3u8
 #EXTINF:-1 tvg-id="DDPunjabi.in@SD" tvg-name="DD Punjabi KBCT" tvg-logo="https://dtil.tmsimg.com/assets/s142800_ld_h15_aa.png?lock=720x540" group-title="IN | Culture",DD Punjabi KBCT
 http://163.61.226.31:9981/stream/channelid/2094424586?profile=pass
 #EXTINF:-1 tvg-id="JTBSClassic.in@Main" tvg-name="JTBS Classic KBCT" tvg-logo="https://jtbsclassic.dpdns.org/logo.png" group-title="IN | Culture",JTBS Classic KBCT
@@ -1392,18 +1378,9 @@ https://cdn.pishow.tv/ott/live/35/master.m3u8
 https://cdn.pishow.tv/ott/live/28/master.m3u8
 #EXTINF:-1 tvg-id="DDChhattisgarh.in@SD" tvg-name="DD Chhattisgarh KBCT" tvg-logo="https://i.imgur.com/zBg6Iuv.png" group-title="IN | General",DD Chhattisgarh KBCT
 https://cdn.pishow.tv/ott/live/15/master.m3u8
-#EXTINF:-1 tvg-id="DDGirnar.in@SD" tvg-name="DD Girnar KBCT" tvg-logo="https://dtil.tmsimg.com/assets/s142782_ld_h15_aa.png?lock=720x540" group-title="IN | General",DD Girnar KBCT
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
-https://fta.ektv.in/live/368/master.m3u8
-#EXTINF:-1 tvg-id="DDGoa.in@SD" tvg-name="DD Goa KBCT" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Goa-Logo_2000_X_1125_Transpharent.png" group-title="IN | General",DD Goa KBCT
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
-https://fta.ektv.in/live/367/master.m3u8
 #EXTINF:-1 tvg-id="DDHaryana.in@SD" tvg-name="DD Haryana KBCT" tvg-logo="https://ltsk-cdn.s3.eu-west-1.amazonaws.com/jumpstart/Temp_Live/cdn/HLS/Channel/transparentImages/DD-Haryana-Logo_2000_X_1125_Transpharent.png" group-title="IN | General",DD Haryana KBCT
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
 https://fta.ektv.in/live/580/master.m3u8
-#EXTINF:-1 tvg-id="DDHimachalPradesh.in@SD" tvg-name="DD Himachal Pradesh KBCT" tvg-logo="https://dtil.tmsimg.com/assets/s142785_ld_h9_aa.png?lock=720x540" group-title="IN | General",DD Himachal Pradesh KBCT
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
-https://fta.ektv.in/live/575/master.m3u8
 #EXTINF:-1 tvg-id="DDIndia.in@SD" tvg-name="DD India KBCT" tvg-logo="https://dtil.tmsimg.com/assets/s158251_ld_h15_aa.png?lock=720x540" group-title="IN | General",DD India KBCT
 #EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
 https://fta.ektv.in/live/119/119_0.m3u8
@@ -1415,14 +1392,8 @@ https://cdn.pishow.tv/ott/live/16/master.m3u8
 https://mumbai-edge.smartplaytv.in/ddmadhyapradesh/index.m3u8
 #EXTINF:-1 tvg-id="DDMeghalaya.in@SD" tvg-name="DD Meghalaya KBCT" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_SHILLONG/images/LOGO_HD/image.png" group-title="IN | General",DD Meghalaya KBCT
 https://d3qs3d2rkhfqrt.cloudfront.net/out/v1/4f81bc8d13dd49b484da35988abb8729/index.m3u8
-#EXTINF:-1 tvg-id="DDOdia.in@SD" tvg-name="DD Odia KBCT" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_ORIYA/images/LOGO_HD/image.png" group-title="IN | General",DD Odia KBCT
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
-https://fta.ektv.in/live/384/master.m3u8
 #EXTINF:-1 tvg-id="DDRajasthan.in@SD" tvg-name="DD Rajasthan KBCT" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_RAJASTHAN/images/LOGO_HD/image.png" group-title="IN | General",DD Rajasthan KBCT
 https://cdn.pishow.tv/ott/live/34/master.m3u8
-#EXTINF:-1 tvg-id="DDSahyadri.in@SD" tvg-name="DD Sahyadri KBCT" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_SAHYADRI/images/LOGO_HD/image.png" group-title="IN | General",DD Sahyadri KBCT
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
-https://fta.ektv.in/live/187/master.m3u8
 #EXTINF:-1 tvg-id="DDSaptagiri.in@SD" tvg-name="DD Saptagiri KBCT" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_SAPTAGIRI/images/LOGO_HD/image.png" group-title="IN | General",DD Saptagiri KBCT
 https://cdn.pishow.tv/ott/live/22/master.m3u8
 #EXTINF:-1 tvg-id="DDTamil.in@HD" tvg-name="DD Tamil HD KBCT" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_TAMIL/images/LOGO_HD/image.png" group-title="IN | General",DD Tamil HD KBCT
@@ -1433,9 +1404,6 @@ https://cdn.pishow.tv/ott/live/8/master.m3u8
 https://cdn.pishow.tv/ott/live/36/master.m3u8
 #EXTINF:-1 tvg-id="DDUttarakhand.in@SD" tvg-name="DD Uttarakhand KBCT" tvg-logo="https://dtil.tmsimg.com/assets/s142809_ld_h15_aa.png?lock=720x540" group-title="IN | General",DD Uttarakhand KBCT
 https://cdn.pishow.tv/ott/live/17/master.m3u8
-#EXTINF:-1 tvg-id="DDYadagiri.in@SD" tvg-name="DD Yadagiri KBCT" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_DD_YADAGIRI/images/LOGO_HD/image.png" group-title="IN | General",DD Yadagiri KBCT
-#EXTVLCOPT:http-user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/147.0.0.0 Safari/537.36
-https://fta.ektv.in/live/678/master.m3u8
 #EXTINF:-1 tvg-id="DishaTV.in@SD" tvg-name="Disha TV KBCT" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Disha_tv.png" group-title="IN | General",Disha TV KBCT
 https://d1msejlow1t3l4.cloudfront.net/fta/dishatv/playlist.m3u8
 #EXTINF:-1 tvg-id="Fast1.in@SD" tvg-name="Fast1 KBCT" tvg-logo="https://papaji.freetvindia.com/media/channels/fast1.png" group-title="IN | General",Fast1 KBCT
@@ -1511,6 +1479,8 @@ https://d1hyhsds9hb4o2.cloudfront.net/master.m3u8
 https://d1msejlow1t3l4.cloudfront.net/fta/sarvdharmsangam/playlist.m3u8
 #EXTINF:-1 tvg-id="SharnamTV.in@SD" tvg-name="Sharnam TV KBCT" tvg-logo="https://papaji.freetvindia.com/media/channels/SarnamTV.png" group-title="IN | General",Sharnam TV KBCT
 https://d1msejlow1t3l4.cloudfront.net/fta/sharanamtv/playlist.m3u8
+#EXTINF:-1 tvg-id="ShemarooMarathiBana.in@SD" tvg-name="Shemaroo Marathi Bana KBCT" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SHEMAROO_MARATHIBANA/images/LOGO_HD/image.png" group-title="IN | General",Shemaroo Marathi Bana KBCT
+https://airtelapp.shemaroo.com/marathibana/smil:marathibanaadp.smil/playlist.m3u8
 #EXTINF:-1 tvg-id="ShubhTV.in@SD" tvg-name="Shubh TV KBCT" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_SHUBH_TV/images/LOGO_HD/image.png" group-title="IN | General",Shubh TV KBCT
 https://d2g1vdc6ozl2o8.cloudfront.net/out/v1/0a0dc7d7911b4fddbb4dfc963fdd4b9e/index.m3u8
 #EXTINF:-1 tvg-id="SristiTV.in@SD" tvg-name="Sristi TV KBCT" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/Sristi_TV.png" group-title="IN | General",Sristi TV KBCT
@@ -1523,16 +1493,12 @@ https://live.we2live.in/taazatv/live/playlist.m3u8
 https://mumt04.tangotv.in/m18aqlK4TAMILANTELEVISION/index.m3u8
 #EXTINF:-1 tvg-id="TehzeebTV.in@SD" tvg-name="Tehzeeb TV KBCT" tvg-logo="https://i.imgur.com/PCVOdup.png" group-title="IN | General",Tehzeeb TV KBCT
 https://cdn.pishow.tv/ott/live/239/master.m3u8
-#EXTINF:-1 tvg-id="ThendralTV.in@SD" tvg-name="Thendral TV KBCT" tvg-logo="https://i.imgur.com/kQK80gB.png" group-title="IN | General",Thendral TV KBCT
-https://hls.thendraltv.in/thendraltv_1210b43d/index.m3u8
 #EXTINF:-1 tvg-id="TotalTVHaryana.in@SD" tvg-name="Total TV Haryana KBCT" tvg-logo="https://xstreamcp-assets-msp.streamready.in/assets/LIVETV/LIVECHANNEL/LIVETV_LIVETVCHANNEL_TOTAL_TV/images/LOGO_HD/image.png" group-title="IN | General",Total TV Haryana KBCT
 https://d2lk5u59tns74c.cloudfront.net/out/v1/4836fb71b5764f70ab1f3815e0295dfd/index.m3u8
 #EXTINF:-1 tvg-id="UBangla.in@SD" tvg-name="U Bangla KBCT" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/U_Bangla.png" group-title="IN | General",U Bangla KBCT
 https://stream.ottlive.co.in/ubangla/index.m3u8
 #EXTINF:-1 tvg-id="UTVPalakkad.in@SD" tvg-name="UTV Palakkad KBCT" tvg-logo="https://utvpkd.in/assets/img/logo.png" group-title="IN | General",UTV Palakkad KBCT
 https://em4qj6nedyvg-hls-live.wmncdn.net/liveunit/89b1e919eed04e59383cf820d644c20e.sdp/playlist.m3u8
-#EXTINF:-1 tvg-id="VCV.in@SD" tvg-name="VCV KBCT" tvg-logo="https://i.imgur.com/KbU36xI.png" group-title="IN | General",VCV KBCT
-https://5a1178b42cc03.streamlock.net/8210/8210/playlist.m3u8
 #EXTINF:-1 tvg-id="ViiMEDIA.in@SD" tvg-name="Vii MEDIA KBCT" tvg-logo="https://yt3.googleusercontent.com/UYTVPDOHTs9b-v1h2pAUHC_e8I_QRTUITTutft_5hOGC2YLL2-jtgD0xaSWZGOfWjmXKjL3AexE=s1200" group-title="IN | General",Vii MEDIA KBCT
 https://viimedia.akamaized.net/viimedia/master.m3u8
 #EXTINF:-1 tvg-id="Vision.in@SD" tvg-name="Vision (India) KBCT" tvg-logo="https://i.imgur.com/YozqNL3.jpg" group-title="IN | General",Vision (India) KBCT
