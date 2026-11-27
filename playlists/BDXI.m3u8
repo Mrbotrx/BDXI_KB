@@ -2,7 +2,7 @@
 # KB IPTV - BDXI
 # BEST FAST PLAYLIST
 # Total Channels: 835
-# Updated: 2026-11-27T00:14:19.033Z
+# Updated: 2026-11-27T08:53:51.918Z
 # Facebook: https://www.facebook.com,kallyan.biswas.29
 
 #EXTINF:-1 tvg-id="ATNBangla.bd" tvg-name="ATN Bangla KB" tvg-logo="https://i.imgur.com/K1HmMRz.png" tvg-country="BD" group-title="Bangla" tvg-quality="720p",ATN Bangla KB
@@ -442,7 +442,7 @@ https://livingindia.ottlive.co.in/livingindia/index.m3u8
 #EXTINF:-1 tvg-id="LokmatBharat.in" tvg-name="Lokmat Bharat KB" tvg-logo="https://jiotvimages.cdn.jio.com/dare_images/images/lokmatbharat.png" tvg-country="IN" group-title="News" tvg-quality="1080p",Lokmat Bharat KB
 https://stream.ottlive.co.in/lokmatbharat/index.m3u8
 
-#EXTINF:-1 tvg-id="M3UWorld4K.bd" tvg-name="M3U World 4K KB" tvg-logo="https://i.imgur.com/9V6lrgV.png" tvg-country="BD" group-title="IPTV" tvg-quality="1080p",M3U World 4K KB
+#EXTINF:-1 tvg-id="M3UWorld4K.bd" tvg-name="M3U World 4K KB" tvg-logo="https://i.imgur.com/9V6lrgV.png" tvg-country="BD" group-title="Documentary" tvg-quality="1080p",M3U World 4K KB
 https://m3uworld4k.paid4k.workers.dev/index.m3u8
 
 #EXTINF:-1 tvg-id="MadaniChannelBangla.bd" tvg-name="Madani Channel Bangla KB" tvg-logo="https://i.imgur.com/vIJTVia.png" tvg-country="BD" group-title="Bangla" tvg-quality="1080p",Madani Channel Bangla KB
